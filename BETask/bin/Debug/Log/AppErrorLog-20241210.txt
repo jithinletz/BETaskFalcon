@@ -1,0 +1,30 @@
+
+10/12/2024 12:02:29 AM{LETZ} - System.ArgumentException: Cannot bind to the new display member.
+Parameter name: newDisplayMember
+   at System.Windows.Forms.ListControl.SetDataConnection(Object newDataSource, BindingMemberInfo newDisplayMember, Boolean force)
+   at System.Windows.Forms.ListControl.set_ValueMember(String value)
+   at BETask.Views.CustomerForm.GetGroupCustomer(betaskdbEntities context) in C:\Projects\BETask Falcon\Cloud\BETask\Views\CustomerForm.cs:line 253
+
+10/12/2024 12:12:44 AM{LETZ} - 
+0 - CustomerOutstandingRoutewise 15 minues
+
+10/12/2024 12:12:44 AM{LETZ} - 
+0 - completed CustomerOutstandingRoutewise 15 minues
+
+10/12/2024 12:25:43 AM{LETZ} - 
+0 - CustomerOutstandingRoutewise 15 minues
+
+10/12/2024 12:25:43 AM{LETZ} - 
+0 - completed CustomerOutstandingRoutewise 15 minues
+
+10/12/2024 12:33:55 AM{LETZ} - 
+0 - CustomerOutstandingRoutewise 15 minues
+
+10/12/2024 12:33:56 AM{LETZ} - 
+0 - completed CustomerOutstandingRoutewise 15 minues
+
+10/12/2024 12:34:32 AM{LETZ} - 
+0 - CustomerOutstandingRoutewise 15 minues
+
+10/12/2024 12:34:32 AM{LETZ} - 
+0 - completed CustomerOutstandingRoutewise 15 minues

@@ -1,0 +1,7 @@
+
+12/12/2024 11:58:31 AM{LETZ} - invalid try to login LETZ
+
+12/12/2024 11:03:09 PM{LETZ} - System.Exception: Backdate entry update is not allowed
+   at BETask.DAL.DAL.SaleDAL.SaveSale(sales _sale, List`1 items, SaleAccountPostModel saleAccountPostModel) in C:\Projects\BETask Falcon\Cloud\BETask.DAL\DAL\SaleDAL.cs:line 276
+   at BETask.BAL.SaleBAL.SaveSale(sales sale, List`1 items) in C:\Projects\BETask Falcon\Cloud\BETask\BAL\SaleBAL.cs:line 45
+   at BETask.Views.SaleForm.SaveSale() in C:\Projects\BETask Falcon\Cloud\BETask\Views\SaleForm.cs:line 506

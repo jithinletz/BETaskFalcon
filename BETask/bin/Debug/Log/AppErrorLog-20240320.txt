@@ -1,0 +1,79 @@
+
+20/Mar/2024 02:26:50 PM{LETZ} - System.ArgumentException: Column named clmLedger cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at BETask.Views.JournalForm.dgItems_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\JournalForm.cs:line 542
+
+20/Mar/2024 02:26:50 PM{LETZ} - System.ArgumentException: Column named clmLedger cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at BETask.Views.JournalForm.dgItems_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\JournalForm.cs:line 542
+
+20/Mar/2024 02:26:58 PM{LETZ} - System.ArgumentException: Column named clmLedger cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at BETask.Views.JournalForm.dgItems_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\JournalForm.cs:line 542
+
+20/Mar/2024 02:27:17 PM{LETZ} - System.ArgumentException: Column named clmLedger cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at BETask.Views.JournalForm.dgItems_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\JournalForm.cs:line 542
+
+20/Mar/2024 02:27:54 PM{LETZ} - System.ArgumentException: Column named clmLedger cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at BETask.Views.JournalForm.dgItems_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\JournalForm.cs:line 542
+
+20/Mar/2024 02:29:04 PM{LETZ} - System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BETask.DAL.DAL.UserLogDAL.Log(user_log _log) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\DAL\UserLogDAL.cs:line 29
+   at BETask.BAL.AccountTransactionBAL.SaveAccountTransaction(List`1 listAcountTransaction, Enum transactionType, String& referance) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\AccountTransactionBAL.cs:line 44
+   at BETask.Views.JournalForm.SaveJournal() in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\JournalForm.cs:line 380
+
+20/Mar/2024 02:35:42 PM{LETZ} - System.ArgumentException: Column named clmLedger cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at BETask.Views.JournalForm.dgItems_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\JournalForm.cs:line 542
+
+20/Mar/2024 02:35:51 PM{LETZ} - System.ArgumentException: Column named clmLedger cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at BETask.Views.JournalForm.dgItems_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\JournalForm.cs:line 542
+
+20/Mar/2024 02:36:01 PM{LETZ} - System.ArgumentException: Column named clmLedger cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at BETask.Views.JournalForm.dgItems_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\JournalForm.cs:line 542
+
+20/Mar/2024 02:38:11 PM{LETZ} - System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BETask.DAL.DAL.UserLogDAL.Log(user_log _log) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\DAL\UserLogDAL.cs:line 29
+   at BETask.BAL.AccountTransactionBAL.SaveAccountTransaction(List`1 listAcountTransaction, Enum transactionType, String& referance) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\AccountTransactionBAL.cs:line 44
+   at BETask.Views.JournalForm.SaveJournal() in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\JournalForm.cs:line 380
+
+20/Mar/2024 02:38:21 PM{LETZ} - System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BETask.DAL.DAL.UserLogDAL.Log(user_log _log) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\DAL\UserLogDAL.cs:line 29
+   at BETask.BAL.AccountTransactionBAL.SaveAccountTransaction(List`1 listAcountTransaction, Enum transactionType, String& referance) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\AccountTransactionBAL.cs:line 44
+   at BETask.Views.JournalForm.SaveJournal() in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\JournalForm.cs:line 380
+
+20/Mar/2024 02:42:06 PM{LETZ} - System.ArgumentException: Column named clmLedger cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at BETask.Views.JournalForm.dgItems_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\JournalForm.cs:line 542
+
+20/Mar/2024 02:42:26 PM{LETZ} - System.ArgumentException: Column named clmLedger cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at BETask.Views.JournalForm.dgItems_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\JournalForm.cs:line 542
+
+20/Mar/2024 02:42:47 PM{LETZ} - System.ArgumentException: Column named clmLedger cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at BETask.Views.JournalForm.dgItems_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\JournalForm.cs:line 542

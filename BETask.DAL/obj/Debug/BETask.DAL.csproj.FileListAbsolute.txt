@@ -1,0 +1,213 @@
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\BETask.DAL.dll.config
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\BETask.DAL.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\BETask.DAL.pdb
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\obj\Debug\BETask.DAL.csproj.CoreCompileInputs.cache
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\obj\Debug\BETask.DAL.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\obj\Debug\BETask.DAL.pdb
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.DAL\obj\Debug\BETask.DAL.csprojResolveAssemblyReference.cache
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\BETask.DAL.dll.config
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\BETask.DAL.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\BETask.DAL.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\obj\Debug\BETask.DAL.csproj.CoreCompileInputs.cache
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\obj\Debug\BETask.DAL.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\obj\Debug\BETask.DAL.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\obj\Debug\BETask.DAL.csproj.AssemblyReference.cache
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\obj\Debug\BETask.DAL.csproj.CopyComplete
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\BETask.DAL.dll.config
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\BETask.DAL.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\BETask.DAL.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\obj\Debug\BETask.DAL.csproj.CoreCompileInputs.cache
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\obj\Debug\BETask.DAL.csproj.CopyComplete
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\obj\Debug\BETask.DAL.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.DAL\obj\Debug\BETask.DAL.pdb
+C:\Projects\Cloud\BETask.DAL\obj\Debug\BETask.DAL.csproj.CoreCompileInputs.cache
+C:\Projects\Cloud\BETask.DAL\obj\Debug\BETask.DAL.dll
+C:\Projects\Cloud\BETask.DAL\obj\Debug\BETask.DAL.pdb
+C:\Projects\Cloud\BETask.DAL\bin\Debug\BETask.DAL.dll.config
+C:\Projects\Cloud\BETask.DAL\bin\Debug\BETask.DAL.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\BETask.DAL.pdb
+C:\Projects\Cloud\BETask.DAL\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\Cloud\BETask.DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\Cloud\BETask.DAL\obj\Debug\BETask.DAL.csproj.CopyComplete
+C:\Projects\Cloud\BETask.DAL\obj\Debug\BETask.DAL.csproj.AssemblyReference.cache
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\BETask.DAL.dll.config
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\BETask.DAL.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\BETask.DAL.pdb
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\obj\Debug\BETask.DAL.csproj.AssemblyReference.cache
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\obj\Debug\BETask.DAL.csproj.CoreCompileInputs.cache
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\obj\Debug\BETask.DAL.csproj.CopyComplete
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\obj\Debug\BETask.DAL.dll
+C:\Projects\BETask Falcon\Cloud\BETask.DAL\obj\Debug\BETask.DAL.pdb

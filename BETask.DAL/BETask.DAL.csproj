@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3915B802-CC06-49C7-9BEC-34526C8922B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BETask.DAL</RootNamespace>
+    <AssemblyName>BETask.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BETask.Report">
+      <HintPath>..\BETask.Report\bin\Debug\BETask.Report.exe</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\AccountGroupDAL.cs" />
+    <Compile Include="DAL\AccountLedgerDAL.cs" />
+    <Compile Include="DAL\AccountTransactionDAL.cs" />
+    <Compile Include="DAL\BalanceSheetDAL.cs" />
+    <Compile Include="DAL\CommonSettingDAL.cs" />
+    <Compile Include="DAL\CompanyDAL.cs" />
+    <Compile Include="DAL\CostCenterDAL.cs" />
+    <Compile Include="DAL\CouponDAL.cs" />
+    <Compile Include="DAL\CustomerAggrementDAL.cs" />
+    <Compile Include="DAL\CustomerAssetDAL.cs" />
+    <Compile Include="DAL\CustomerDAL.cs" />
+    <Compile Include="DAL\DeliveryDAL.cs" />
+    <Compile Include="DAL\DocumentSerialDAL.cs" />
+    <Compile Include="DAL\DOSaleDAL.cs" />
+    <Compile Include="DAL\EmployeeDAL.cs" />
+    <Compile Include="DAL\ItemDAL.cs" />
+    <Compile Include="DAL\ItemTransactionDAL.cs" />
+    <Compile Include="DAL\LedgerMappingDAL.cs" />
+    <Compile Include="DAL\LedgerSearchDAL.cs" />
+    <Compile Include="DAL\LoadDAL.cs" />
+    <Compile Include="DAL\MiscellaneousReportDAL.cs" />
+    <Compile Include="DAL\OfferDAL.cs" />
+    <Compile Include="DAL\PDCDAL.cs" />
+    <Compile Include="DAL\PrivilegeDAL.cs" />
+    <Compile Include="DAL\ProductionDAL.cs" />
+    <Compile Include="DAL\ProfitAndLossDAL.cs" />
+    <Compile Include="DAL\PurchaseDAL.cs" />
+    <Compile Include="DAL\PurchaseOrderDAL.cs" />
+    <Compile Include="DAL\PurchaseReturnDAL.cs" />
+    <Compile Include="DAL\BuildingDAL.cs" />
+    <Compile Include="DAL\RouteDAL.cs" />
+    <Compile Include="DAL\RoutewiseSaleDAL.cs" />
+    <Compile Include="DAL\SaleDAL.cs" />
+    <Compile Include="DAL\SaleMergingDAL.cs" />
+    <Compile Include="DAL\SaleReturnDAL.cs" />
+    <Compile Include="DAL\SynchronizationDAL.cs" />
+    <Compile Include="DAL\TrailBalanceDAL.cs" />
+    <Compile Include="DAL\TransferItemsDAL.cs" />
+    <Compile Include="DAL\UserLogDAL.cs" />
+    <Compile Include="DAL\WalletDAL.cs" />
+    <Compile Include="EDMX\account_group.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\account_ledger.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\account_transaction.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\account_transaction_cheque.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\BeTaskModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BeTaskModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\BeTaskModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\BeTaskModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BeTaskModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\building.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\company.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\cost_center.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\cost_center_transaction.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\coupon.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\coupon_leaf.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\customer.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\customer_aggrement.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\customer_asset.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\customer_division.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\daily_collection.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\default_values.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\delivery.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\delivery_book.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\delivery_items.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\delivery_item_summary.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\delivery_return.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\document_serial.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\do_sales.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\do_sales_item.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\employee.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\item.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\item_damage.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\item_return_exception.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\item_transaction.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\ledger_mapping.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\loading.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\mail_settings.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\offer.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\pdc.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\privileges.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\privilege_menu.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\production.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\production_mapping.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\production_mapping_rowmaterial.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\production_rawmaterial.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\purchase.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\purchase_item.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\purchase_order.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\purchase_order_item.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\purchase_return.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\purchase_return_item.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\route.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\route_group.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\sales.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\sales_item.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\sales_return.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\sales_return_item.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_CostCenterDatewiseDetailed_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_CostCenterDetailed_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_CostCenterSummary_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_CreateCompareDeliverySaleCollection_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_CustomerSummary_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_DeliverySalePaymentMode_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_DeliverySalesReportRoutewise_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_DeliverySalesReport_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_FOCbyPaymentmode_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_GetDeliveryItemsByDeliveryId_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_LedgerSearch_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_MiscWalletDefference_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_SalesMonthlyAnalysis_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_SalesMonthlyItemAnalysis_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_SyncCustomerOutstandingRoutewise_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_SyncCustomerOutstanding_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_TrialBalanceDetailed_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\SP_TrialBalanceSummary_Result.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\status.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\sysdiagrams.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\system_settings.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\tax_setting.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\transfer_item.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\uom_setting.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\user_log.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMX\wallet_history.cs">
+      <DependentUpon>BeTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\APosting.cs" />
+    <Compile Include="Interface\IOffer.cs" />
+    <Compile Include="Model\AccountTransactionTotalModel.cs" />
+    <Compile Include="Model\Constants.cs" />
+    <Compile Include="Model\CustomerAgreement_withClosingStockModel.cs" />
+    <Compile Include="Model\DebitCreditModel.cs" />
+    <Compile Include="Model\DeliveryLoadReportModel.cs" />
+    <Compile Include="Model\DSRDeliveryItemsModel.cs" />
+    <Compile Include="Model\FocPaymentGroupedModel.cs" />
+    <Compile Include="Model\GroupCustomerModel.cs" />
+    <Compile Include="Model\ItemStockReportModel.cs" />
+    <Compile Include="Model\BalanceSheetModel.cs" />
+    <Compile Include="Model\CashStatementRoutewiseModel.cs" />
+    <Compile Include="Model\ChartDataModel.cs" />
+    <Compile Include="Model\CustomerAgreementBalanceModel.cs" />
+    <Compile Include="Model\CustomerMonthlyOutstandingModel.cs" />
+    <Compile Include="Model\CustomerOutstandingvsWallet.cs" />
+    <Compile Include="Model\CustomerPerformanceModel.cs" />
+    <Compile Include="Model\CustomerStatementDetailedModel.cs" />
+    <Compile Include="Model\DaybookModel.cs" />
+    <Compile Include="Model\DeliveryItemSummaryModel.cs" />
+    <Compile Include="Model\ProductionDeliveryReportModel.cs" />
+    <Compile Include="Model\ProfitandLossModel.cs" />
+    <Compile Include="Model\PunchModel.cs" />
+    <Compile Include="Model\PurchaseAccountPostModel.cs" />
+    <Compile Include="Model\ReconciliationModel.cs" />
+    <Compile Include="Model\ReconcilUpdateModel.cs" />
+    <Compile Include="Model\RoutewiseCashbookModel.cs" />
+    <Compile Include="Model\RoutewiseSaleModel.cs" />
+    <Compile Include="Model\SaleAccountPostModel.cs" />
+    <Compile Include="Model\SaleDeliveryDiffModel.cs" />
+    <Compile Include="Model\SalesItemModel.cs" />
+    <Compile Include="Model\TrailBalanceModel.cs" />
+    <Compile Include="Model\TransactionResponse.cs" />
+    <Compile Include="Model\WalletAccountPostModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="bin\Debug\BETask.DAL.dll.config" />
+    <None Include="bin\Debug\BETask.Report.exe.config" />
+    <None Include="bin\Release\BETask.DAL.dll.config" />
+    <None Include="bin\Release\BETask.Report.exe.config" />
+    <EntityDeploy Include="EDMX\BeTaskModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BeTaskModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EDMX\BeTaskModel.edmx.diagram">
+      <DependentUpon>BeTaskModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Debug\BETask.DAL.dll" />
+    <Content Include="bin\Debug\BETask.DAL.pdb" />
+    <Content Include="bin\Debug\BETask.Report.exe" />
+    <Content Include="bin\Debug\BETask.Report.pdb" />
+    <Content Include="bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.DataVisualization.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.Types.dll" />
+    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\BETask.DAL.dll" />
+    <Content Include="bin\Release\BETask.DAL.pdb" />
+    <Content Include="bin\Release\BETask.Report.exe" />
+    <Content Include="bin\Release\BETask.Report.pdb" />
+    <Content Include="bin\Release\de\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\de\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\EntityFramework.dll" />
+    <Content Include="bin\Release\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Release\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Release\EntityFramework.xml" />
+    <Content Include="bin\Release\es\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\es\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\fr\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\fr\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\it\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\it\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\ja\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\ja\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\ko\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\ko\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="bin\Release\Microsoft.ReportViewer.DataVisualization.dll" />
+    <Content Include="bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+    <Content Include="bin\Release\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="bin\Release\Microsoft.SqlServer.Types.dll" />
+    <Content Include="bin\Release\pt\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\pt\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\ru\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\ru\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\zh-CHS\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\zh-CHT\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="EDMX\BeTaskModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BeTaskModel.edmx</DependentUpon>
+      <LastGenOutput>BeTaskModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EDMX\BeTaskModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BeTaskModel.edmx</DependentUpon>
+      <LastGenOutput>BeTaskModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

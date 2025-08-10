@@ -1,0 +1,58 @@
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.APP\bin\Debug\BETask.APP.dll.config
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.APP\bin\Debug\BETask.APP.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.APP\bin\Debug\BETask.APP.pdb
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.APP\bin\Debug\EntityFramework.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.APP\bin\Debug\EntityFramework.SqlServer.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.APP\bin\Debug\EntityFramework.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.APP\bin\Debug\EntityFramework.SqlServer.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.APP\obj\Debug\BETask.APP.csproj.CoreCompileInputs.cache
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.APP\obj\Debug\BETask.APP.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.APP\obj\Debug\BETask.APP.pdb
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.APP\obj\Debug\BETask.APP.csprojResolveAssemblyReference.cache
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.APP\bin\Debug\BETask.APP.dll.config
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.APP\bin\Debug\BETask.APP.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.APP\bin\Debug\BETask.APP.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.APP\bin\Debug\EntityFramework.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.APP\bin\Debug\EntityFramework.SqlServer.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.APP\bin\Debug\EntityFramework.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.APP\bin\Debug\EntityFramework.SqlServer.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.APP\obj\Debug\BETask.APP.csproj.CoreCompileInputs.cache
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.APP\obj\Debug\BETask.APP.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.APP\obj\Debug\BETask.APP.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.APP\obj\Debug\BETask.APP.csproj.AssemblyReference.cache
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.APP\obj\Debug\BETask.APP.csproj.CopyComplete
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.APP\bin\Debug\BETask.APP.dll.config
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.APP\bin\Debug\BETask.APP.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.APP\bin\Debug\BETask.APP.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.APP\bin\Debug\EntityFramework.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.APP\bin\Debug\EntityFramework.SqlServer.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.APP\bin\Debug\EntityFramework.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.APP\bin\Debug\EntityFramework.SqlServer.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.APP\obj\Debug\BETask.APP.csproj.CoreCompileInputs.cache
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.APP\obj\Debug\BETask.APP.csproj.CopyComplete
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.APP\obj\Debug\BETask.APP.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.APP\obj\Debug\BETask.APP.pdb
+C:\Projects\Cloud\BETask.APP\bin\Debug\BETask.APP.dll.config
+C:\Projects\Cloud\BETask.APP\bin\Debug\BETask.APP.dll
+C:\Projects\Cloud\BETask.APP\bin\Debug\BETask.APP.pdb
+C:\Projects\Cloud\BETask.APP\bin\Debug\EntityFramework.dll
+C:\Projects\Cloud\BETask.APP\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\Cloud\BETask.APP\bin\Debug\EntityFramework.xml
+C:\Projects\Cloud\BETask.APP\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\Cloud\BETask.APP\obj\Debug\BETask.APP.csproj.AssemblyReference.cache
+C:\Projects\Cloud\BETask.APP\obj\Debug\BETask.APP.csproj.CoreCompileInputs.cache
+C:\Projects\Cloud\BETask.APP\obj\Debug\BETask.APP.csproj.CopyComplete
+C:\Projects\Cloud\BETask.APP\obj\Debug\BETask.APP.dll
+C:\Projects\Cloud\BETask.APP\obj\Debug\BETask.APP.pdb
+C:\Projects\BETask Falcon\Cloud\BETask.APP\bin\Debug\BETask.APP.dll.config
+C:\Projects\BETask Falcon\Cloud\BETask.APP\bin\Debug\BETask.APP.dll
+C:\Projects\BETask Falcon\Cloud\BETask.APP\bin\Debug\BETask.APP.pdb
+C:\Projects\BETask Falcon\Cloud\BETask.APP\bin\Debug\EntityFramework.dll
+C:\Projects\BETask Falcon\Cloud\BETask.APP\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\BETask Falcon\Cloud\BETask.APP\bin\Debug\EntityFramework.xml
+C:\Projects\BETask Falcon\Cloud\BETask.APP\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\BETask Falcon\Cloud\BETask.APP\obj\Debug\BETask.APP.csproj.AssemblyReference.cache
+C:\Projects\BETask Falcon\Cloud\BETask.APP\obj\Debug\BETask.APP.csproj.CoreCompileInputs.cache
+C:\Projects\BETask Falcon\Cloud\BETask.APP\obj\Debug\BETask.APP.csproj.CopyComplete
+C:\Projects\BETask Falcon\Cloud\BETask.APP\obj\Debug\BETask.APP.dll
+C:\Projects\BETask Falcon\Cloud\BETask.APP\obj\Debug\BETask.APP.pdb

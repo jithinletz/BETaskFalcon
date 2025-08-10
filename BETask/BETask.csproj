@@ -1,0 +1,1322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA110C41-648D-4FCC-AE4E-BBC6B52E84DA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BETask</RootNamespace>
+    <AssemblyName>BETask</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LogoBeTask.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.10.1.1\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="BETask.APP">
+      <HintPath>..\BETask.APP\bin\Debug\BETask.APP.dll</HintPath>
+    </Reference>
+    <Reference Include="BETask.Report, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BETask.Report\bin\Debug\BETask.Report.exe</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\CNG\CNG\CNG.DataAccess\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\BETask.DAL\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BETask.Report\bin\Debug\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BETask.Report\bin\Debug\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net461\lib\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BAL\AccountGroupBAL.cs" />
+    <Compile Include="BAL\AccountLedgerBAL.cs" />
+    <Compile Include="BAL\AccountTransactionBAL.cs" />
+    <Compile Include="BAL\ApiClient.cs" />
+    <Compile Include="BAL\BalanceSheetBAL.cs" />
+    <Compile Include="BAL\BuildingBAL.cs" />
+    <Compile Include="BAL\CommonSettingBAL.cs" />
+    <Compile Include="BAL\CompanyBAL.cs" />
+    <Compile Include="BAL\CostCenterBAL.cs" />
+    <Compile Include="BAL\CouponBAL.cs" />
+    <Compile Include="BAL\CustomerAggrementBAL.cs" />
+    <Compile Include="BAL\CustomerAssetBAL.cs" />
+    <Compile Include="BAL\CustomerBAL.cs" />
+    <Compile Include="BAL\DeliveryBAL.cs" />
+    <Compile Include="BAL\DOSaleBAL.cs" />
+    <Compile Include="BAL\EmployeeBAL.cs" />
+    <Compile Include="BAL\HelpBAL.cs" />
+    <Compile Include="BAL\ItemBAL.cs" />
+    <Compile Include="BAL\ItemTransactionBAL.cs" />
+    <Compile Include="BAL\LoadingBAL.cs" />
+    <Compile Include="BAL\OfferBAL.cs" />
+    <Compile Include="BAL\PDCBAL.cs" />
+    <Compile Include="BAL\PrivilegeBAL.cs" />
+    <Compile Include="BAL\ProductionBAL.cs" />
+    <Compile Include="BAL\ProfitandLossBAL.cs" />
+    <Compile Include="BAL\PurchaseOrderBAL.cs" />
+    <Compile Include="BAL\PurchaseReturnBAL.cs" />
+    <Compile Include="BAL\RouteBAL.cs" />
+    <Compile Include="BAL\RoutewiseSaleBAL.cs" />
+    <Compile Include="BAL\SaleBAL.cs" />
+    <Compile Include="BAL\PurchaseBAL.cs" />
+    <Compile Include="BAL\SaleMergingBAL.cs" />
+    <Compile Include="BAL\SaleReturnBAL.cs" />
+    <Compile Include="BAL\SynchronizationBAL.cs" />
+    <Compile Include="BAL\TransferItemBAL.cs" />
+    <Compile Include="BAL\WalletBAL.cs" />
+    <Compile Include="Common\General.cs" />
+    <Compile Include="Common\StaticDBData.cs" />
+    <Compile Include="Mapper\Mapper.cs" />
+    <Compile Include="Model\AccountGroupModel.cs" />
+    <Compile Include="Model\AccountLedgerModel.cs" />
+    <Compile Include="Model\AccountTransactionModel.cs" />
+    <Compile Include="Model\CommonSettingModel.cs" />
+    <Compile Include="Model\CompanyModel.cs" />
+    <Compile Include="Model\CustomerModel.cs" />
+    <Compile Include="Model\MailSettingModel.cs" />
+    <Compile Include="Model\ItemModel.cs" />
+    <Compile Include="Model\OrderStatusModel.cs" />
+    <Compile Include="Model\PaymentModesModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Views\AccountGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AccountGroupForm.Designer.cs">
+      <DependentUpon>AccountGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CostCenterSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CostCenterSearchForm.Designer.cs">
+      <DependentUpon>CostCenterSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CostCenterEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CostCenterEntryForm.Designer.cs">
+      <DependentUpon>CostCenterEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CostCenterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CostCenterForm.designer.cs">
+      <DependentUpon>CostCenterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AccountLedgerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AccountLedgerForm.designer.cs">
+      <DependentUpon>AccountLedgerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BalanceSheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BalanceSheetForm.Designer.cs">
+      <DependentUpon>BalanceSheetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BuildingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BuildingForm.Designer.cs">
+      <DependentUpon>BuildingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CashStatementRoutewise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CashStatementRoutewise.Designer.cs">
+      <DependentUpon>CashStatementRoutewise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ChartDeliveryStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ChartDeliveryStatusForm.Designer.cs">
+      <DependentUpon>ChartDeliveryStatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CostCenterDetailedReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CostCenterDetailedReportForm.Designer.cs">
+      <DependentUpon>CostCenterDetailedReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CostCenterSummaryReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CostCenterSummaryReportForm.Designer.cs">
+      <DependentUpon>CostCenterSummaryReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CouponReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CouponReportForm.Designer.cs">
+      <DependentUpon>CouponReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerAssetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerAssetForm.designer.cs">
+      <DependentUpon>CustomerAssetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerAssetReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerAssetReportForm.Designer.cs">
+      <DependentUpon>CustomerAssetReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerDocumentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerDocumentsForm.Designer.cs">
+      <DependentUpon>CustomerDocumentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerMonthlyOutstandingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerMonthlyOutstandingForm.Designer.cs">
+      <DependentUpon>CustomerMonthlyOutstandingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerOnlineProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerOnlineProfile.Designer.cs">
+      <DependentUpon>CustomerOnlineProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerSearchForm.Designer.cs">
+      <DependentUpon>CustomerSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerStatementDetailedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerStatementDetailedForm.Designer.cs">
+      <DependentUpon>CustomerStatementDetailedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerDeliveryReportStaffwise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerDeliveryReportStaffwise.Designer.cs">
+      <DependentUpon>CustomerDeliveryReportStaffwise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerListRoutewise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerListRoutewise.Designer.cs">
+      <DependentUpon>CustomerListRoutewise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerOutstandingWalletDifferenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerOutstandingWalletDifferenceForm.Designer.cs">
+      <DependentUpon>CustomerOutstandingWalletDifferenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerPerformanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerPerformanceForm.Designer.cs">
+      <DependentUpon>CustomerPerformanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerStatementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerStatementForm.Designer.cs">
+      <DependentUpon>CustomerStatementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CommonSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CommonSettingsForm.Designer.cs">
+      <DependentUpon>CommonSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CompanyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CompanyForm.Designer.cs">
+      <DependentUpon>CompanyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CouponSaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CouponSaleForm.Designer.cs">
+      <DependentUpon>CouponSaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerAggrementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerAggrementForm.Designer.cs">
+      <DependentUpon>CustomerAggrementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerStockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerStockForm.Designer.cs">
+      <DependentUpon>CustomerStockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerSummaryRoutwise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerSummaryRoutwise.Designer.cs">
+      <DependentUpon>CustomerSummaryRoutwise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DailyCollectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DailyCollectionForm.Designer.cs">
+      <DependentUpon>DailyCollectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DailyCollectionReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DailyCollectionReportForm.Designer.cs">
+      <DependentUpon>DailyCollectionReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DamageReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DamageReportForm.Designer.cs">
+      <DependentUpon>DamageReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DaybookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DaybookForm.Designer.cs">
+      <DependentUpon>DaybookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryBookForm.Designer.cs">
+      <DependentUpon>DeliveryBookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryComparisonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryComparisonForm.Designer.cs">
+      <DependentUpon>DeliveryComparisonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryIDGeneratorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryIDGeneratorForm.Designer.cs">
+      <DependentUpon>DeliveryIDGeneratorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryLoadManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryLoadManageForm.Designer.cs">
+      <DependentUpon>DeliveryLoadManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryLoadReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryLoadReportForm.Designer.cs">
+      <DependentUpon>DeliveryLoadReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryRequestForm.Designer.cs">
+      <DependentUpon>DeliveryRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryStatusForm.Designer.cs">
+      <DependentUpon>DeliveryStatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DepositCollectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DepositCollectionForm.Designer.cs">
+      <DependentUpon>DepositCollectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DocumentViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DocumentViewerForm.Designer.cs">
+      <DependentUpon>DocumentViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DOForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DOForm.Designer.cs">
+      <DependentUpon>DOForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DOSalesReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DOSalesReportForm.Designer.cs">
+      <DependentUpon>DOSalesReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DSRMismatchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DSRMismatchForm.Designer.cs">
+      <DependentUpon>DSRMismatchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FOCSaleReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FOCSaleReportForm.Designer.cs">
+      <DependentUpon>FOCSaleReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ItemDeliveryProductionReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ItemDeliveryProductionReport.Designer.cs">
+      <DependentUpon>ItemDeliveryProductionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ItemOpeningStockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ItemOpeningStockForm.Designer.cs">
+      <DependentUpon>ItemOpeningStockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ItemRoutewiseReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ItemRoutewiseReportForm.Designer.cs">
+      <DependentUpon>ItemRoutewiseReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryReturnReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryReturnReportForm.Designer.cs">
+      <DependentUpon>DeliveryReturnReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryReturnForm.Designer.cs">
+      <DependentUpon>DeliveryReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryItemSummaryReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryItemSummaryReportForm.Designer.cs">
+      <DependentUpon>DeliveryItemSummaryReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ItemStockReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ItemStockReportForm.Designer.cs">
+      <DependentUpon>ItemStockReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ItemTransactionReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ItemTransactionReportForm.Designer.cs">
+      <DependentUpon>ItemTransactionReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OnlinePaymentTransactionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\OnlinePaymentTransactionsForm.Designer.cs">
+      <DependentUpon>OnlinePaymentTransactionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PettyCashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PettyCashForm.Designer.cs">
+      <DependentUpon>PettyCashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LedgerMappingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LedgerMappingForm.Designer.cs">
+      <DependentUpon>LedgerMappingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LedgerSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LedgerSearchForm.Designer.cs">
+      <DependentUpon>LedgerSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoadingReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoadingReport.Designer.cs">
+      <DependentUpon>LoadingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoadManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoadManagementForm.Designer.cs">
+      <DependentUpon>LoadManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MiscDeliverySaleCollectionCompare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MiscDeliverySaleCollectionCompare.designer.cs">
+      <DependentUpon>MiscDeliverySaleCollectionCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MiscWalletBalanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MiscWalletBalanceForm.Designer.cs">
+      <DependentUpon>MiscWalletBalanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MiscWalletDifferenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MiscWalletDifferenceForm.Designer.cs">
+      <DependentUpon>MiscWalletDifferenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OfferForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\OfferForm.Designer.cs">
+      <DependentUpon>OfferForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OpeningBalanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\OpeningBalanceForm.Designer.cs">
+      <DependentUpon>OpeningBalanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\JournalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\JournalForm.Designer.cs">
+      <DependentUpon>JournalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EmployeeReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EmployeeReportForm.Designer.cs">
+      <DependentUpon>EmployeeReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AccountStatementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AccountStatementForm.Designer.cs">
+      <DependentUpon>AccountStatementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OpeningBalanceReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\OpeningBalanceReportForm.Designer.cs">
+      <DependentUpon>OpeningBalanceReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PaymentReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PaymentReportForm.Designer.cs">
+      <DependentUpon>PaymentReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryItemReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryItemReportForm.Designer.cs">
+      <DependentUpon>DeliveryItemReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryTrackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryTrackForm.Designer.cs">
+      <DependentUpon>DeliveryTrackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ItemForm.Designer.cs">
+      <DependentUpon>ItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MDIBETask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MDIBETask.Designer.cs">
+      <DependentUpon>MDIBETask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\JournalSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\JournalSearchForm.Designer.cs">
+      <DependentUpon>JournalSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ItemValueReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ItemValueReportForm.Designer.cs">
+      <DependentUpon>ItemValueReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PDCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PDCForm.Designer.cs">
+      <DependentUpon>PDCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProductMapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProductMapForm.Designer.cs">
+      <DependentUpon>ProductMapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProfitandLossForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProfitandLossForm.Designer.cs">
+      <DependentUpon>ProfitandLossForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PunchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PunchForm.Designer.cs">
+      <DependentUpon>PunchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PurchaseOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PurchaseOrderForm.Designer.cs">
+      <DependentUpon>PurchaseOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PurchaseReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PurchaseReturnForm.Designer.cs">
+      <DependentUpon>PurchaseReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RecieptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RecieptForm.Designer.cs">
+      <DependentUpon>RecieptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PaymentSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PaymentSearchForm.Designer.cs">
+      <DependentUpon>PaymentSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProductionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProductionForm.Designer.cs">
+      <DependentUpon>ProductionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProductionReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProductionReportForm.Designer.cs">
+      <DependentUpon>ProductionReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ItemDamageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ItemDamageForm.Designer.cs">
+      <DependentUpon>ItemDamageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryForm.Designer.cs">
+      <DependentUpon>DeliveryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliverySearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliverySearchForm.Designer.cs">
+      <DependentUpon>DeliverySearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryStaffReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryStaffReportForm.Designer.cs">
+      <DependentUpon>DeliveryStaffReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PrivilegeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PrivilegeForm.Designer.cs">
+      <DependentUpon>PrivilegeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReconsiliationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ReconsiliationForm.Designer.cs">
+      <DependentUpon>ReconsiliationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RouteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RouteForm.Designer.cs">
+      <DependentUpon>RouteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SaleAnalyseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SaleAnalyseReport.Designer.cs">
+      <DependentUpon>SaleAnalyseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RotewiseCashBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RotewiseCashBookForm.Designer.cs">
+      <DependentUpon>RotewiseCashBookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SaleCustomerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SaleCustomerReport.Designer.cs">
+      <DependentUpon>SaleCustomerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SaleMergingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SaleMergingForm.Designer.cs">
+      <DependentUpon>SaleMergingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SaleNoTaxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SaleNoTaxForm.Designer.cs">
+      <DependentUpon>SaleNoTaxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SalePendingDeliveryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SalePendingDeliveryForm.Designer.cs">
+      <DependentUpon>SalePendingDeliveryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SaleRoutewiseReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SaleRoutewiseReportForm.Designer.cs">
+      <DependentUpon>SaleRoutewiseReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SaleReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SaleReturnForm.Designer.cs">
+      <DependentUpon>SaleReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SaleItemWiseReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SaleItemWiseReportForm.Designer.cs">
+      <DependentUpon>SaleItemWiseReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SalesDeliveryDiffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SalesDeliveryDiffForm.Designer.cs">
+      <DependentUpon>SalesDeliveryDiffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SaleSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SaleSearchForm.Designer.cs">
+      <DependentUpon>SaleSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SaleForm.Designer.cs">
+      <DependentUpon>SaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PurchaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PurchaseForm.Designer.cs">
+      <DependentUpon>PurchaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PurchaseSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PurchaseSearchForm.Designer.cs">
+      <DependentUpon>PurchaseSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DORecieptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DORecieptForm.Designer.cs">
+      <DependentUpon>DORecieptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SupplierPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SupplierPaymentForm.Designer.cs">
+      <DependentUpon>SupplierPaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SynchronizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SynchronizationForm.Designer.cs">
+      <DependentUpon>SynchronizationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TransferItemReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TransferItemReportForm.Designer.cs">
+      <DependentUpon>TransferItemReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TransferItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TransferItemsForm.Designer.cs">
+      <DependentUpon>TransferItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TrialBalanceDatewiseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TrialBalanceDatewiseForm.Designer.cs">
+      <DependentUpon>TrialBalanceDatewiseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TrialBalanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TrialBalanceForm.Designer.cs">
+      <DependentUpon>TrialBalanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ViewJournalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ViewJournalForm.designer.cs">
+      <DependentUpon>ViewJournalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WalletForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\WalletForm.Designer.cs">
+      <DependentUpon>WalletForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\AccountGroupForm.resx">
+      <DependentUpon>AccountGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CostCenterSearchForm.resx">
+      <DependentUpon>CostCenterSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CostCenterEntryForm.resx">
+      <DependentUpon>CostCenterEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CostCenterForm.resx">
+      <DependentUpon>CostCenterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AccountLedgerForm.resx">
+      <DependentUpon>AccountLedgerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BalanceSheetForm.resx">
+      <DependentUpon>BalanceSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BuildingForm.resx">
+      <DependentUpon>BuildingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CashStatementRoutewise.resx">
+      <DependentUpon>CashStatementRoutewise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ChartDeliveryStatusForm.resx">
+      <DependentUpon>ChartDeliveryStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CostCenterDetailedReportForm.resx">
+      <DependentUpon>CostCenterDetailedReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CostCenterSummaryReportForm.resx">
+      <DependentUpon>CostCenterSummaryReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CouponReportForm.resx">
+      <DependentUpon>CouponReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerAssetForm.resx">
+      <DependentUpon>CustomerAssetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerAssetReportForm.resx">
+      <DependentUpon>CustomerAssetReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerDocumentsForm.resx">
+      <DependentUpon>CustomerDocumentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerMonthlyOutstandingForm.resx">
+      <DependentUpon>CustomerMonthlyOutstandingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerOnlineProfile.resx">
+      <DependentUpon>CustomerOnlineProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerSearchForm.resx">
+      <DependentUpon>CustomerSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerStatementDetailedForm.resx">
+      <DependentUpon>CustomerStatementDetailedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerDeliveryReportStaffwise.resx">
+      <DependentUpon>CustomerDeliveryReportStaffwise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerListRoutewise.resx">
+      <DependentUpon>CustomerListRoutewise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerOutstandingWalletDifferenceForm.resx">
+      <DependentUpon>CustomerOutstandingWalletDifferenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerPerformanceForm.resx">
+      <DependentUpon>CustomerPerformanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerStatementForm.resx">
+      <DependentUpon>CustomerStatementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CommonSettingsForm.resx">
+      <DependentUpon>CommonSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CompanyForm.resx">
+      <DependentUpon>CompanyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CouponSaleForm.resx">
+      <DependentUpon>CouponSaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerAggrementForm.resx">
+      <DependentUpon>CustomerAggrementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerStockForm.resx">
+      <DependentUpon>CustomerStockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerSummaryRoutwise.resx">
+      <DependentUpon>CustomerSummaryRoutwise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DailyCollectionForm.resx">
+      <DependentUpon>DailyCollectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DailyCollectionReportForm.resx">
+      <DependentUpon>DailyCollectionReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DamageReportForm.resx">
+      <DependentUpon>DamageReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DaybookForm.resx">
+      <DependentUpon>DaybookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryBookForm.resx">
+      <DependentUpon>DeliveryBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryComparisonForm.resx">
+      <DependentUpon>DeliveryComparisonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryIDGeneratorForm.resx">
+      <DependentUpon>DeliveryIDGeneratorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryLoadManageForm.resx">
+      <DependentUpon>DeliveryLoadManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryLoadReportForm.resx">
+      <DependentUpon>DeliveryLoadReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryRequestForm.resx">
+      <DependentUpon>DeliveryRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryStatusForm.resx">
+      <DependentUpon>DeliveryStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DepositCollectionForm.resx">
+      <DependentUpon>DepositCollectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DocumentViewerForm.resx">
+      <DependentUpon>DocumentViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DOForm.resx">
+      <DependentUpon>DOForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DOSalesReportForm.resx">
+      <DependentUpon>DOSalesReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DSRMismatchForm.resx">
+      <DependentUpon>DSRMismatchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FOCSaleReportForm.resx">
+      <DependentUpon>FOCSaleReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ItemDeliveryProductionReport.resx">
+      <DependentUpon>ItemDeliveryProductionReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ItemOpeningStockForm.resx">
+      <DependentUpon>ItemOpeningStockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ItemRoutewiseReportForm.resx">
+      <DependentUpon>ItemRoutewiseReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryReturnReportForm.resx">
+      <DependentUpon>DeliveryReturnReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryReturnForm.resx">
+      <DependentUpon>DeliveryReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryItemSummaryReportForm.resx">
+      <DependentUpon>DeliveryItemSummaryReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ItemStockReportForm.resx">
+      <DependentUpon>ItemStockReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ItemTransactionReportForm.resx">
+      <DependentUpon>ItemTransactionReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\OnlinePaymentTransactionsForm.resx">
+      <DependentUpon>OnlinePaymentTransactionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PettyCashForm.resx">
+      <DependentUpon>PettyCashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LedgerMappingForm.resx">
+      <DependentUpon>LedgerMappingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LedgerSearchForm.resx">
+      <DependentUpon>LedgerSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoadingReport.resx">
+      <DependentUpon>LoadingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoadManagementForm.resx">
+      <DependentUpon>LoadManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MiscDeliverySaleCollectionCompare.resx">
+      <DependentUpon>MiscDeliverySaleCollectionCompare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MiscWalletBalanceForm.resx">
+      <DependentUpon>MiscWalletBalanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MiscWalletDifferenceForm.resx">
+      <DependentUpon>MiscWalletDifferenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\OfferForm.resx">
+      <DependentUpon>OfferForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\OpeningBalanceForm.resx">
+      <DependentUpon>OpeningBalanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\JournalForm.resx">
+      <DependentUpon>JournalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EmployeeReportForm.resx">
+      <DependentUpon>EmployeeReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AccountStatementForm.resx">
+      <DependentUpon>AccountStatementForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\OpeningBalanceReportForm.resx">
+      <DependentUpon>OpeningBalanceReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PaymentReportForm.resx">
+      <DependentUpon>PaymentReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryItemReportForm.resx">
+      <DependentUpon>DeliveryItemReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryTrackForm.resx">
+      <DependentUpon>DeliveryTrackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ItemForm.resx">
+      <DependentUpon>ItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MDIBETask.resx">
+      <DependentUpon>MDIBETask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\JournalSearchForm.resx">
+      <DependentUpon>JournalSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ItemValueReportForm.resx">
+      <DependentUpon>ItemValueReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PDCForm.resx">
+      <DependentUpon>PDCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProductMapForm.resx">
+      <DependentUpon>ProductMapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProfitandLossForm.resx">
+      <DependentUpon>ProfitandLossForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PunchForm.resx">
+      <DependentUpon>PunchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PurchaseOrderForm.resx">
+      <DependentUpon>PurchaseOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PurchaseReturnForm.resx">
+      <DependentUpon>PurchaseReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RecieptForm.resx">
+      <DependentUpon>RecieptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PaymentForm.resx">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PaymentSearchForm.resx">
+      <DependentUpon>PaymentSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProductionForm.resx">
+      <DependentUpon>ProductionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProductionReportForm.resx">
+      <DependentUpon>ProductionReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ItemDamageForm.resx">
+      <DependentUpon>ItemDamageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryForm.resx">
+      <DependentUpon>DeliveryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliverySearchForm.resx">
+      <DependentUpon>DeliverySearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryStaffReportForm.resx">
+      <DependentUpon>DeliveryStaffReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PrivilegeForm.resx">
+      <DependentUpon>PrivilegeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReconsiliationForm.resx">
+      <DependentUpon>ReconsiliationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RouteForm.resx">
+      <DependentUpon>RouteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SaleAnalyseReport.resx">
+      <DependentUpon>SaleAnalyseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RotewiseCashBookForm.resx">
+      <DependentUpon>RotewiseCashBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SaleCustomerReport.resx">
+      <DependentUpon>SaleCustomerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SaleMergingForm.resx">
+      <DependentUpon>SaleMergingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SaleNoTaxForm.resx">
+      <DependentUpon>SaleNoTaxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SalePendingDeliveryForm.resx">
+      <DependentUpon>SalePendingDeliveryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SaleReturnForm.resx">
+      <DependentUpon>SaleReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SaleItemWiseReportForm.resx">
+      <DependentUpon>SaleItemWiseReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SaleRoutewiseReportForm.resx">
+      <DependentUpon>SaleRoutewiseReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SalesDeliveryDiffForm.resx">
+      <DependentUpon>SalesDeliveryDiffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SaleSearchForm.resx">
+      <DependentUpon>SaleSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SaleForm.resx">
+      <DependentUpon>SaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PurchaseForm.resx">
+      <DependentUpon>PurchaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PurchaseSearchForm.resx">
+      <DependentUpon>PurchaseSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DORecieptForm.resx">
+      <DependentUpon>DORecieptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SupplierPaymentForm.resx">
+      <DependentUpon>SupplierPaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SynchronizationForm.resx">
+      <DependentUpon>SynchronizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TransferItemReportForm.resx">
+      <DependentUpon>TransferItemReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TransferItemsForm.resx">
+      <DependentUpon>TransferItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TrialBalanceDatewiseForm.resx">
+      <DependentUpon>TrialBalanceDatewiseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TrialBalanceForm.resx">
+      <DependentUpon>TrialBalanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ViewJournalForm.resx">
+      <DependentUpon>ViewJournalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\WalletForm.resx">
+      <DependentUpon>WalletForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LogoBeTask.ico" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BETask.DAL\BETask.DAL.csproj">
+      <Project>{3915b802-cc06-49c7-9bec-34526c8922b6}</Project>
+      <Name>BETask.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

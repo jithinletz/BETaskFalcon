@@ -1,0 +1,20 @@
+
+20/Mar/2024 02:26:32 PM{LETZ} - Login By LETZ
+
+20/Mar/2024 02:35:22 PM{LETZ} - Login By LETZ
+
+20/Mar/2024 02:41:50 PM{LETZ} - Login By LETZ
+
+20/Mar/2024 02:43:32 PM{LETZ} - New Jounral Saved for 750 
+
+20/Mar/2024 03:38:03 PM{LETZ} - Login By LETZ
+
+20/Mar/2024 03:41:50 PM{LETZ} - Login By LETZ
+
+20/Mar/2024 03:44:57 PM{LETZ} - Ledger mapping saved ASSET 
+
+20/Mar/2024 03:45:56 PM{LETZ} - Ledger mapping saved LIABILITY 
+
+20/Mar/2024 10:52:56 PM{LETZ} - Login By LETZ
+
+20/Mar/2024 11:40:49 PM{LETZ} - Login By LETZ

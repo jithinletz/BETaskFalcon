@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="41407bb12f564e10be7034447801b29f" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="betaskdbAPPModel.app_complaint" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.app_delivery_request" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.app_delivery_request_items" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.app_items" Width="1.5" PointX="2.75" PointY="4.75" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.app_transaction" Width="1.5" PointX="10.5" PointY="61.75" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.building" Width="1.5" PointX="3" PointY="49.375" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.company" Width="1.5" PointX="3" PointY="59.125" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.customer" Width="1.5" PointX="8.25" PointY="40.75" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.customer_aggrement" Width="1.5" PointX="16.5" PointY="46.5" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.customer_aggrement_temp" Width="1.5" PointX="10.5" PointY="46.625" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.customer_division" Width="1.5" PointX="13.5" PointY="42.125" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.customer_temp" Width="1.5" PointX="8.25" PointY="56.25" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.customer_upload" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.daily_collection" Width="1.5" PointX="13.5" PointY="45.375" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.default_values" Width="1.5" PointX="4.75" PointY="4.75" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.delivery" Width="1.5" PointX="7.5" PointY="34.5" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.delivery_book" Width="1.5" PointX="13.5" PointY="36.5" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.delivery_item_summary" Width="1.5" PointX="10.75" PointY="40.25" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.delivery_items" Width="1.5" PointX="18.75" PointY="39.625" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.delivery_return" Width="1.5" PointX="16.5" PointY="41.375" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.employee" Width="1.5" PointX="5.25" PointY="35.5" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.item" Width="1.5" PointX="5.25" PointY="45.125" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.mail_settings" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.route" Width="1.5" PointX="3" PointY="32" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.route_group" Width="1.5" PointX="5.25" PointY="32.375" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.status" Width="1.5" PointX="0.75" PointY="35.375" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.tax_setting" Width="1.5" PointX="3" PointY="64.5" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.uom_setting" Width="1.5" PointX="3" PointY="29.125" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_app_transaction_customer" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_building_status" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_customer_building" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_company_status" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_customer_aggrement_customer" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_customer_division_customer" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_customer_route" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_customer_status" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_daily_collection_customer" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_book_customer" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_items_customer" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_return_customer" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_customer_aggrement_item" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_customer_aggrement_status" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_customer_aggrement_temp_customer_temp" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_customer_aggrement_temp_item" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_customer_division_status" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_customer_upload_customer_upload" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_daily_collection_delivery" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_daily_collection_employee" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_daily_collection_status" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_items_daily_collection" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_book_delivery_id" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_employee" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_item_summary_delivery" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_items_delivery" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_route" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_status" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_book_employee" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_book_route" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_book_status" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_item_summary_item" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_item_summary_status" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_items_item" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_items_status" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_return_employee" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_delivery_return_item" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_employee_route" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_employee_status" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_item_status" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_item_tax" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_item_uom" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_route_group_mainRoute" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_route_status" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_tax_setting_status" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_uom_setting_status" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.coupon" Width="1.5" PointX="10.5" PointY="35.375" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.coupon_leaf" Width="1.5" PointX="15.75" PointY="36.25" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_coupon_customer" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_coupon_leaf_coupon_Id" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_coupon_status" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_coupon_leaf_status" />
+        <EntityTypeShape EntityType="betaskdbAPPModel.offer" Width="1.5" PointX="7.5" PointY="62.875" />
+        <AssociationConnector Association="betaskdbAPPModel.FK_Offer_Item" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,20 @@
+
+11/4/2024 1:42:17 PM{LETZ} - System.ArgumentException: Column named clmLedger cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at BETask.Views.PettyCashForm.dgItems_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in C:\Projects\BETask Falcon\Cloud\BETask\Views\PettyCashForm.cs:line 515
+
+11/4/2024 1:45:02 PM{LETZ} - System.ArgumentException: Column named clmLedger cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at BETask.Views.PettyCashForm.dgItems_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in C:\Projects\BETask Falcon\Cloud\BETask\Views\PettyCashForm.cs:line 515
+
+11/4/2024 1:45:24 PM{LETZ} - System.ArgumentException: Column named clmLedger cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at BETask.Views.PettyCashForm.dgItems_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in C:\Projects\BETask Falcon\Cloud\BETask\Views\PettyCashForm.cs:line 515
+
+11/4/2024 2:19:40 PM{LETZ} - System.ArgumentException: Column named clmLedger cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at BETask.Views.PettyCashForm.dgItems_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in C:\Projects\BETask Falcon\Cloud\BETask\Views\PettyCashForm.cs:line 515

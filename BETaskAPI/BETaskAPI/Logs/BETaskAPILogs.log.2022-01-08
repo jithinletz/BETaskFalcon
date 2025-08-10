@@ -1,0 +1,9 @@
+2022-01-08 12:00:44,289 ERROR MonitoringLogger - Exception occured while fetching Customer . Please check the logs for more details
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToDecimal(String value, IFormatProvider provider)
+   at System.String.System.IConvertible.ToDecimal(IFormatProvider provider)
+   at System.Convert.ToDecimal(Object value)
+   at BETaskAPI.DAL.CustomerDAL.GetCustomer(String company, String location, Int32 customerId) in D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskCustomerAPI\BETaskCustomerAPI\DAL\CustomerDAL.cs:line 84
+   at BETaskAPI.Controllers.CustomerController.GetCustomer(String company, String location, Int32 customerId) in D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskCustomerAPI\BETaskCustomerAPI\Controllers\CustomerController.cs:line 28

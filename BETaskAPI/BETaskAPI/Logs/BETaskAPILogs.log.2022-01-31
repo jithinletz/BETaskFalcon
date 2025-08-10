@@ -1,0 +1,4 @@
+2022-01-31 14:54:07,330 ERROR MonitoringLogger - Coupon delivery success. Customer Id: 65 , Delivery Id: 4241 , Amount: 29.4 
+2022-01-31 15:09:15,891 ERROR MonitoringLogger - Exception occured while fetching customer items . Please check the logs for more details
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BETaskAPI.Controllers.CustomerController.GetCustomerItem(Int32 customerId) in D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\Controllers\CustomerController.cs:line 430

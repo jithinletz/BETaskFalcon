@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5410c4c82d634e7b8062fc425b65ebec" Name="Diagram1">
+        <EntityTypeShape EntityType="betaskdbModel.account_group" Width="1.5" PointX="3" PointY="56.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.account_ledger" Width="1.5" PointX="5.25" PointY="62.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.account_transaction" Width="1.5" PointX="7.5" PointY="64.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.account_transaction_cheque" Width="1.5" PointX="12.75" PointY="62.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.company" Width="1.5" PointX="3" PointY="60.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.coupon" Width="1.5" PointX="15.75" PointY="68.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.coupon_leaf" Width="1.5" PointX="21" PointY="63.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.customer_aggrement" Width="1.5" PointX="15.75" PointY="80.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.daily_collection" Width="1.5" PointX="18.75" PointY="71.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.default_values" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.delivery" Width="1.5" PointX="5.25" PointY="75.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.delivery_item_summary" Width="1.5" PointX="7.5" PointY="70.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.delivery_items" Width="1.5" PointX="18.75" PointY="76.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.delivery_return" Width="1.5" PointX="15.75" PointY="84.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.document_serial" Width="1.5" PointX="3" PointY="71.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.employee" Width="1.5" PointX="8.25" PointY="75.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.item" Width="1.5" PointX="5.25" PointY="81.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.item_damage" Width="1.5" PointX="13.5" PointY="74.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.item_return_exception" Width="1.5" PointX="10.5" PointY="79.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.item_transaction" Width="1.5" PointX="13.5" PointY="66.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.ledger_mapping" Width="1.5" PointX="7.5" PointY="60.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.mail_settings" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.pdc" Width="1.5" PointX="10.5" PointY="63.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.privilege_menu" Width="1.5" PointX="11.25" PointY="59.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.privileges" Width="1.5" PointX="13.5" PointY="71.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.production" Width="1.5" PointX="13.5" PointY="82.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.production_mapping" Width="1.5" PointX="7.5" PointY="83.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.production_mapping_rowmaterial" Width="1.5" PointX="15.75" PointY="76.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.production_rawmaterial" Width="1.5" PointX="21.75" PointY="80.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.purchase" Width="1.5" PointX="15.75" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.purchase_item" Width="1.5" PointX="24" PointY="76" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.purchase_order" Width="1.5" PointX="18.75" PointY="64.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.purchase_order_item" Width="1.5" PointX="27" PointY="70.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.purchase_return" Width="1.5" PointX="21.75" PointY="67.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.purchase_return_item" Width="1.5" PointX="27" PointY="76.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.route" Width="1.5" PointX="3" PointY="91.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.sales" Width="1.5" PointX="21.75" PointY="74.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.sales_item" Width="1.5" PointX="30" PointY="74.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.sales_return" Width="1.5" PointX="18.75" PointY="59" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.sales_return_item" Width="1.5" PointX="24" PointY="70.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.status" Width="1.5" PointX="0.75" PointY="62.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.tax_setting" Width="1.5" PointX="3" PointY="94.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.transfer_item" Width="1.5" PointX="13.5" PointY="78.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.uom_setting" Width="1.5" PointX="3" PointY="97.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.user_log" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="betaskdbModel.wallet_history" Width="1.5" PointX="12.75" PointY="125.625" IsExpanded="true" />
+        <AssociationConnector Association="betaskdbModel.FK_account_group_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_account_ledger_groupid" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_autoledgermapping_group" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_account_ledger_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_account_transaction_ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_ledger_mapping_ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_pdc_ledger" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_pdc_party" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_account_transaction_cheque_transactionid" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_account_transaction_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_account_transaction__cheque_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_company_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_coupon_leaf_coupon_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_coupon_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_coupon_leaf_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_customer_aggrement_item" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_customer_aggrement_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_daily_collection_delivery" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_daily_collection_employee" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_daily_collection_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_delivery_employee" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_delivery_item_summary_delivery" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_delivery_items_delivery" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_delivery_route" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_delivery_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_sales_delivery" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_delivery_item_summary_item" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_delivery_item_summary_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_delivery_items_item" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_delivery_items_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_delivery_return_employee" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_delivery_return_item" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_document_serial_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_employee_route" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_employee_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_item_damage_employee" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_privileges_user" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_transfer_item_employee" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_item_damage_item" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_item_return_exception_item" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_item_return_exception_returnitem" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_item_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_item_tax" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_item_transaction_item" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_item_uom" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_production_item" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_production_mapping_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_production_mapping_item_id" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_production_rawmaterial_item" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_purchase_item_item_id" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_purchase_order_item_item" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_purchaseret_item_item_id" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_sales_item_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_sales_return_item_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_transfer_item_item" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_item_damage_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_item_return_exception_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_item_transaction_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_autoledgermapping_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_pdc_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_privileges_menu" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_privileges_menu_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_production_rawmaterial_production" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_production_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_production_mapping_mapping_id" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_production_mapping_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_production_mapping_rowmaterial_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_production_rawmaterial_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_purchase_item_purchase_id" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_purchase_order_org_purchase_id" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_purchase_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_purchase_item_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_purchase_order_item_purchase_id" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_purchase_order_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_purchase_order_item_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_purchaseret_item_purchase_id" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_purchaseret_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_purchaseret_item_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_route_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_sales_item_sales" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_sales_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_sales_item_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_salesret_item_sales" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_salesret_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_salesret_item_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_tax_setting_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_transfer_item_status" ManuallyRouted="false" />
+        <AssociationConnector Association="betaskdbModel.FK_uom_setting_status" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="betaskdbModel.building" Width="1.5" PointX="3" PointY="65.75" />
+        <EntityTypeShape EntityType="betaskdbModel.customer" Width="1.5" PointX="10.5" PointY="69.375" />
+        <AssociationConnector Association="betaskdbModel.FK_customer_ledger" />
+        <AssociationConnector Association="betaskdbModel.FK_building_status" />
+        <AssociationConnector Association="betaskdbModel.FK_customer_building" />
+        <AssociationConnector Association="betaskdbModel.FK_coupon_customer" />
+        <AssociationConnector Association="betaskdbModel.FK_customer_aggrement_customer" />
+        <AssociationConnector Association="betaskdbModel.FK_customer_route" />
+        <AssociationConnector Association="betaskdbModel.FK_customer_status" />
+        <AssociationConnector Association="betaskdbModel.FK_daily_collection_customer" />
+        <AssociationConnector Association="betaskdbModel.FK_delivery_items_customer" />
+        <AssociationConnector Association="betaskdbModel.FK_delivery_return_customer" />
+        <AssociationConnector Association="betaskdbModel.FK_purchase_order_vendor" />
+        <AssociationConnector Association="betaskdbModel.FK_purchase_vendor" />
+        <AssociationConnector Association="betaskdbModel.FK_purchaseret_vendor" />
+        <AssociationConnector Association="betaskdbModel.FK_sales_customer" />
+        <AssociationConnector Association="betaskdbModel.FK_salesret_customer" />
+        <AssociationConnector Association="betaskdbModel.FK_wallet_history_customer" />
+        <AssociationConnector Association="betaskdbModel.FK_employee_salesmancreditledger" />
+        <AssociationConnector Association="betaskdbModel.FK_item_purchase_ledger" />
+        <AssociationConnector Association="betaskdbModel.FK_item_sale_ledger" />
+        <AssociationConnector Association="betaskdbModel.FK_account_transaction_route" />
+        <AssociationConnector Association="betaskdbModel.FK_customer_user" />
+        <AssociationConnector Association="betaskdbModel.FK_daily_collection_route" />
+        <AssociationConnector Association="betaskdbModel.FK_delivery_items_collection_id" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

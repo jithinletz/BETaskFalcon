@@ -1,0 +1,47 @@
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI.DAL\bin\Debug\BETaskAPI.DAL.dll.config
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI.DAL\bin\Debug\BETaskAPI.DAL.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI.DAL\bin\Debug\BETaskAPI.DAL.pdb
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.csproj.CoreCompileInputs.cache
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.pdb
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.csprojResolveAssemblyReference.cache
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI.DAL\bin\Debug\BETaskAPI.DAL.dll.config
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI.DAL\bin\Debug\BETaskAPI.DAL.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI.DAL\bin\Debug\BETaskAPI.DAL.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.csproj.CoreCompileInputs.cache
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.csproj.AssemblyReference.cache
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.csproj.CopyComplete
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI.DAL\bin\Debug\BETaskAPI.DAL.dll.config
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI.DAL\bin\Debug\BETaskAPI.DAL.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI.DAL\bin\Debug\BETaskAPI.DAL.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.csproj.AssemblyReference.cache
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.csproj.CoreCompileInputs.cache
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.csproj.CopyComplete
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.pdb
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\bin\Debug\BETaskAPI.DAL.dll.config
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\bin\Debug\BETaskAPI.DAL.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\bin\Debug\BETaskAPI.DAL.pdb
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.csproj.CoreCompileInputs.cache
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.csproj.CopyComplete
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.pdb
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.csproj.AssemblyReference.cache

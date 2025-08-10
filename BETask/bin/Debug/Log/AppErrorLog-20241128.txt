@@ -1,0 +1,6 @@
+
+11/28/2024 4:59:32 PM{LETZ} - System.ArgumentException: Column 'AddedOn' does not belong to table .
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at BETask.BAL.CustomerBAL.PrintCustomerPerformanceReport(DateTime dateFrom, DateTime dateTo, Int32 transFrom, Int32 transTo, Int32 routeId, String header, Int32 employeeId) in C:\Projects\BETask Falcon\Cloud\BETask\BAL\CustomerBAL.cs:line 626
+   at BETask.Views.CustomerPerformanceForm.Print() in C:\Projects\BETask Falcon\Cloud\BETask\Views\CustomerPerformanceForm.cs:line 161

@@ -1,0 +1,2 @@
+
+20/12/2024 2:25:14 PM{LETZ} - The underlying provider failed on Open.

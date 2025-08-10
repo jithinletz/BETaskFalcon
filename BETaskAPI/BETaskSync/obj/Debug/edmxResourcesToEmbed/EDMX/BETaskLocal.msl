@@ -1,0 +1,913 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="betaskdbModelStoreContainer" CdmEntityContainer="betaskdbEntitiesLocal">
+    <EntitySetMapping Name="account_group">
+      <EntityTypeMapping TypeName="betaskdbModel.account_group">
+        <MappingFragment StoreEntitySet="account_group">
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="location_id" ColumnName="location_id" />
+          <ScalarProperty Name="group_id" ColumnName="group_id" />
+          <ScalarProperty Name="group_name" ColumnName="group_name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="account_ledger">
+      <EntityTypeMapping TypeName="betaskdbModel.account_ledger">
+        <MappingFragment StoreEntitySet="account_ledger">
+          <ScalarProperty Name="enable_cost_center" ColumnName="enable_cost_center" />
+          <ScalarProperty Name="ledger_id" ColumnName="ledger_id" />
+          <ScalarProperty Name="ledger_name" ColumnName="ledger_name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="group_id" ColumnName="group_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="account_transaction">
+      <EntityTypeMapping TypeName="betaskdbModel.account_transaction">
+        <MappingFragment StoreEntitySet="account_transaction">
+          <ScalarProperty Name="route_id" ColumnName="route_id" />
+          <ScalarProperty Name="reference_id" ColumnName="reference_id" />
+          <ScalarProperty Name="account_transaction_id" ColumnName="account_transaction_id" />
+          <ScalarProperty Name="transaction_number" ColumnName="transaction_number" />
+          <ScalarProperty Name="transaction_date" ColumnName="transaction_date" />
+          <ScalarProperty Name="transaction_type" ColumnName="transaction_type" />
+          <ScalarProperty Name="ledger_id" ColumnName="ledger_id" />
+          <ScalarProperty Name="debit" ColumnName="debit" />
+          <ScalarProperty Name="credit" ColumnName="credit" />
+          <ScalarProperty Name="narration" ColumnName="narration" />
+          <ScalarProperty Name="transaction_type_id" ColumnName="transaction_type_id" />
+          <ScalarProperty Name="voucher_number" ColumnName="voucher_number" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="added_time" ColumnName="added_time" />
+          <ScalarProperty Name="reconcil_date" ColumnName="reconcil_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="account_transaction_cheque">
+      <EntityTypeMapping TypeName="betaskdbModel.account_transaction_cheque">
+        <MappingFragment StoreEntitySet="account_transaction_cheque">
+          <ScalarProperty Name="cheque_id" ColumnName="cheque_id" />
+          <ScalarProperty Name="account_transaction_id" ColumnName="account_transaction_id" />
+          <ScalarProperty Name="account_transaction_number" ColumnName="account_transaction_number" />
+          <ScalarProperty Name="cheque_number" ColumnName="cheque_number" />
+          <ScalarProperty Name="cheque_date" ColumnName="cheque_date" />
+          <ScalarProperty Name="bank" ColumnName="bank" />
+          <ScalarProperty Name="other_details" ColumnName="other_details" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="company">
+      <EntityTypeMapping TypeName="betaskdbModel.company">
+        <MappingFragment StoreEntitySet="company">
+          <ScalarProperty Name="financial_to_date" ColumnName="financial_to_date" />
+          <ScalarProperty Name="financial_from_date" ColumnName="financial_from_date" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="tin" ColumnName="tin" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="address2" ColumnName="address2" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="pobox" ColumnName="pobox" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="web" ColumnName="web" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="cloud_connection" ColumnName="cloud_connection" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="coupon">
+      <EntityTypeMapping TypeName="betaskdbModel.coupon">
+        <MappingFragment StoreEntitySet="coupon">
+          <ScalarProperty Name="coupon_id" ColumnName="coupon_id" />
+          <ScalarProperty Name="book_number" ColumnName="book_number" />
+          <ScalarProperty Name="leaf_from" ColumnName="leaf_from" />
+          <ScalarProperty Name="leaf_end" ColumnName="leaf_end" />
+          <ScalarProperty Name="leaf_rate" ColumnName="leaf_rate" />
+          <ScalarProperty Name="book_rate" ColumnName="book_rate" />
+          <ScalarProperty Name="leaf_count" ColumnName="leaf_count" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="issue_date" ColumnName="issue_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="coupon_leaf">
+      <EntityTypeMapping TypeName="betaskdbModel.coupon_leaf">
+        <MappingFragment StoreEntitySet="coupon_leaf">
+          <ScalarProperty Name="leaf_id" ColumnName="leaf_id" />
+          <ScalarProperty Name="coupon_id" ColumnName="coupon_id" />
+          <ScalarProperty Name="leaf_number" ColumnName="leaf_number" />
+          <ScalarProperty Name="leaf_rate" ColumnName="leaf_rate" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="issue_date" ColumnName="issue_date" />
+          <ScalarProperty Name="redeem_date" ColumnName="redeem_date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="customer_aggrement">
+      <EntityTypeMapping TypeName="betaskdbModel.customer_aggrement">
+        <MappingFragment StoreEntitySet="customer_aggrement">
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="serail_number" ColumnName="serail_number" />
+          <ScalarProperty Name="show_app" ColumnName="show_app" />
+          <ScalarProperty Name="customer_aggrement_id" ColumnName="customer_aggrement_id" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="max_qty" ColumnName="max_qty" />
+          <ScalarProperty Name="unit_price" ColumnName="unit_price" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="daily_collection">
+      <EntityTypeMapping TypeName="betaskdbModel.daily_collection">
+        <MappingFragment StoreEntitySet="daily_collection">
+          <ScalarProperty Name="route_id" ColumnName="route_id" />
+          <ScalarProperty Name="old_leaf_count" ColumnName="old_leaf_count" />
+          <ScalarProperty Name="is_refund" ColumnName="is_refund" />
+          <ScalarProperty Name="is_deposit" ColumnName="is_deposit" />
+          <ScalarProperty Name="division_id" ColumnName="division_id" />
+          <ScalarProperty Name="delivery_leaf" ColumnName="delivery_leaf" />
+          <ScalarProperty Name="daily_collection_id_app" ColumnName="daily_collection_id_app" />
+          <ScalarProperty Name="daily_collection_id" ColumnName="daily_collection_id" />
+          <ScalarProperty Name="delivery_id" ColumnName="delivery_id" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="net_amount" ColumnName="net_amount" />
+          <ScalarProperty Name="collected_amount" ColumnName="collected_amount" />
+          <ScalarProperty Name="payment_mode" ColumnName="payment_mode" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="delivery_time" ColumnName="delivery_time" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="default_values">
+      <EntityTypeMapping TypeName="betaskdbModel.default_values">
+        <MappingFragment StoreEntitySet="default_values">
+          <ScalarProperty Name="type_id" ColumnName="type_id" />
+          <ScalarProperty Name="type_name" ColumnName="type_name" />
+          <ScalarProperty Name="type_value" ColumnName="type_value" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="delivery">
+      <EntityTypeMapping TypeName="betaskdbModel.delivery">
+        <MappingFragment StoreEntitySet="delivery">
+          <ScalarProperty Name="helper" ColumnName="helper" />
+          <ScalarProperty Name="delivery_id" ColumnName="delivery_id" />
+          <ScalarProperty Name="delivery_date" ColumnName="delivery_date" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="vehicle_no" ColumnName="vehicle_no" />
+          <ScalarProperty Name="delivery_route" ColumnName="delivery_route" />
+          <ScalarProperty Name="route_id" ColumnName="route_id" />
+          <ScalarProperty Name="customer_count" ColumnName="customer_count" />
+          <ScalarProperty Name="gross_amount" ColumnName="gross_amount" />
+          <ScalarProperty Name="total_discount" ColumnName="total_discount" />
+          <ScalarProperty Name="total_beforevat" ColumnName="total_beforevat" />
+          <ScalarProperty Name="total_vat" ColumnName="total_vat" />
+          <ScalarProperty Name="net_amount" ColumnName="net_amount" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="delivery_item_summary">
+      <EntityTypeMapping TypeName="betaskdbModel.delivery_item_summary">
+        <MappingFragment StoreEntitySet="delivery_item_summary">
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="damage_qty" ColumnName="damage_qty" />
+          <ScalarProperty Name="delivery_summary_id" ColumnName="delivery_summary_id" />
+          <ScalarProperty Name="delivery_id" ColumnName="delivery_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="used_qty" ColumnName="used_qty" />
+          <ScalarProperty Name="balance_qty" ColumnName="balance_qty" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="delivery_items">
+      <EntityTypeMapping TypeName="betaskdbModel.delivery_items">
+        <MappingFragment StoreEntitySet="delivery_items">
+          <ScalarProperty Name="division_id" ColumnName="division_id" />
+          <ScalarProperty Name="delivery_leaf" ColumnName="delivery_leaf" />
+          <ScalarProperty Name="daily_collection_id_app" ColumnName="daily_collection_id_app" />
+          <ScalarProperty Name="daily_collection_id" ColumnName="daily_collection_id" />
+          <ScalarProperty Name="delivery_item_id" ColumnName="delivery_item_id" />
+          <ScalarProperty Name="delivery_id" ColumnName="delivery_id" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="rate" ColumnName="rate" />
+          <ScalarProperty Name="gross_amount" ColumnName="gross_amount" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="total_beforvat" ColumnName="total_beforvat" />
+          <ScalarProperty Name="vat_amount" ColumnName="vat_amount" />
+          <ScalarProperty Name="net_amount" ColumnName="net_amount" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="delivery_time" ColumnName="delivery_time" />
+          <ScalarProperty Name="sales_id" ColumnName="sales_id" />
+          <ScalarProperty Name="sales_date" ColumnName="sales_date" />
+          <ScalarProperty Name="delivered_qty" ColumnName="delivered_qty" />
+          <ScalarProperty Name="delivery_item_id_app" ColumnName="delivery_item_id_app" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="delivery_return">
+      <EntityTypeMapping TypeName="betaskdbModel.delivery_return">
+        <MappingFragment StoreEntitySet="delivery_return">
+          <ScalarProperty Name="server_time" ColumnName="server_time" />
+          <ScalarProperty Name="return_type" ColumnName="return_type" />
+          <ScalarProperty Name="delivery_return_id" ColumnName="delivery_return_id" />
+          <ScalarProperty Name="return_date" ColumnName="return_date" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="document_serial">
+      <EntityTypeMapping TypeName="betaskdbModel.document_serial">
+        <MappingFragment StoreEntitySet="document_serial">
+          <ScalarProperty Name="document_id" ColumnName="document_id" />
+          <ScalarProperty Name="document_type" ColumnName="document_type" />
+          <ScalarProperty Name="prefix" ColumnName="prefix" />
+          <ScalarProperty Name="next_number" ColumnName="next_number" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employee">
+      <EntityTypeMapping TypeName="betaskdbModel.employee">
+        <MappingFragment StoreEntitySet="employee">
+          <ScalarProperty Name="helper" ColumnName="helper" />
+          <ScalarProperty Name="vehicle" ColumnName="vehicle" />
+          <ScalarProperty Name="salesman_credit_ledger" ColumnName="salesman_credit_ledger" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="employee_code" ColumnName="employee_code" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="join_date" ColumnName="join_date" />
+          <ScalarProperty Name="resign_date" ColumnName="resign_date" />
+          <ScalarProperty Name="national_id" ColumnName="national_id" />
+          <ScalarProperty Name="passport" ColumnName="passport" />
+          <ScalarProperty Name="visa" ColumnName="visa" />
+          <ScalarProperty Name="department" ColumnName="department" />
+          <ScalarProperty Name="designation" ColumnName="designation" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="salary" ColumnName="salary" />
+          <ScalarProperty Name="nationality" ColumnName="nationality" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="address2" ColumnName="address2" />
+          <ScalarProperty Name="dob" ColumnName="dob" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="other_details" ColumnName="other_details" />
+          <ScalarProperty Name="route_id" ColumnName="route_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="item">
+      <EntityTypeMapping TypeName="betaskdbModel.item">
+        <MappingFragment StoreEntitySet="item">
+          <ScalarProperty Name="agreement_item" ColumnName="agreement_item" />
+          <ScalarProperty Name="purchase_ledger" ColumnName="purchase_ledger" />
+          <ScalarProperty Name="sale_ledger" ColumnName="sale_ledger" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="item_name" ColumnName="item_name" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="brand" ColumnName="brand" />
+          <ScalarProperty Name="uom" ColumnName="uom" />
+          <ScalarProperty Name="tax" ColumnName="tax" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="purchase_rate" ColumnName="purchase_rate" />
+          <ScalarProperty Name="sale_rate" ColumnName="sale_rate" />
+          <ScalarProperty Name="opening_stock" ColumnName="opening_stock" />
+          <ScalarProperty Name="rawmeterial" ColumnName="rawmeterial" />
+          <ScalarProperty Name="sellable" ColumnName="sellable" />
+          <ScalarProperty Name="stockable" ColumnName="stockable" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="godown_stock" ColumnName="godown_stock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="item_damage">
+      <EntityTypeMapping TypeName="betaskdbModel.item_damage">
+        <MappingFragment StoreEntitySet="item_damage">
+          <ScalarProperty Name="item_damage_id" ColumnName="item_damage_id" />
+          <ScalarProperty Name="damage_date" ColumnName="damage_date" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="item_id_damaged" ColumnName="item_id_damaged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="item_return_exception">
+      <EntityTypeMapping TypeName="betaskdbModel.item_return_exception">
+        <MappingFragment StoreEntitySet="item_return_exception">
+          <ScalarProperty Name="return_id" ColumnName="return_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="return_item_id" ColumnName="return_item_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="item_transaction">
+      <EntityTypeMapping TypeName="betaskdbModel.item_transaction">
+        <MappingFragment StoreEntitySet="item_transaction">
+          <ScalarProperty Name="item_transaction_id" ColumnName="item_transaction_id" />
+          <ScalarProperty Name="transaction_date" ColumnName="transaction_date" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="item_cost" ColumnName="item_cost" />
+          <ScalarProperty Name="qty_added" ColumnName="qty_added" />
+          <ScalarProperty Name="qty_reduced" ColumnName="qty_reduced" />
+          <ScalarProperty Name="closing_stock" ColumnName="closing_stock" />
+          <ScalarProperty Name="closing_value" ColumnName="closing_value" />
+          <ScalarProperty Name="transaction_type" ColumnName="transaction_type" />
+          <ScalarProperty Name="transaction_type_id" ColumnName="transaction_type_id" />
+          <ScalarProperty Name="narration" ColumnName="narration" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ledger_mapping">
+      <EntityTypeMapping TypeName="betaskdbModel.ledger_mapping">
+        <MappingFragment StoreEntitySet="ledger_mapping">
+          <ScalarProperty Name="ledger_mapping_id" ColumnName="ledger_mapping_id" />
+          <ScalarProperty Name="ledger_type" ColumnName="ledger_type" />
+          <ScalarProperty Name="group_id" ColumnName="group_id" />
+          <ScalarProperty Name="ledger_id" ColumnName="ledger_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mail_settings">
+      <EntityTypeMapping TypeName="betaskdbModel.mail_settings">
+        <MappingFragment StoreEntitySet="mail_settings">
+          <ScalarProperty Name="mail_id" ColumnName="mail_id" />
+          <ScalarProperty Name="from_mail" ColumnName="from_mail" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="cc1" ColumnName="cc1" />
+          <ScalarProperty Name="cc2" ColumnName="cc2" />
+          <ScalarProperty Name="bcc1" ColumnName="bcc1" />
+          <ScalarProperty Name="bcc2" ColumnName="bcc2" />
+          <ScalarProperty Name="smtp_host" ColumnName="smtp_host" />
+          <ScalarProperty Name="enable_ssl" ColumnName="enable_ssl" />
+          <ScalarProperty Name="smtp_port" ColumnName="smtp_port" />
+          <ScalarProperty Name="smtp_timeout" ColumnName="smtp_timeout" />
+          <ScalarProperty Name="smtp_use_deafaultcredential" ColumnName="smtp_use_deafaultcredential" />
+          <ScalarProperty Name="mail_subject" ColumnName="mail_subject" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pdc">
+      <EntityTypeMapping TypeName="betaskdbModel.pdc">
+        <MappingFragment StoreEntitySet="pdc">
+          <ScalarProperty Name="pdc_id" ColumnName="pdc_id" />
+          <ScalarProperty Name="doc_date" ColumnName="doc_date" />
+          <ScalarProperty Name="cheque_number" ColumnName="cheque_number" />
+          <ScalarProperty Name="cheque_date" ColumnName="cheque_date" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="ledger_id" ColumnName="ledger_id" />
+          <ScalarProperty Name="party_id" ColumnName="party_id" />
+          <ScalarProperty Name="pdc_mode" ColumnName="pdc_mode" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="cheque_status" ColumnName="cheque_status" />
+          <ScalarProperty Name="updated_on" ColumnName="updated_on" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="privilege_menu">
+      <EntityTypeMapping TypeName="betaskdbModel.privilege_menu">
+        <MappingFragment StoreEntitySet="privilege_menu">
+          <ScalarProperty Name="menu_id" ColumnName="menu_id" />
+          <ScalarProperty Name="menu_name" ColumnName="menu_name" />
+          <ScalarProperty Name="menu_type" ColumnName="menu_type" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="privileges">
+      <EntityTypeMapping TypeName="betaskdbModel.privileges">
+        <MappingFragment StoreEntitySet="privileges">
+          <ScalarProperty Name="privilege_id" ColumnName="privilege_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="menu_id" ColumnName="menu_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="production">
+      <EntityTypeMapping TypeName="betaskdbModel.production">
+        <MappingFragment StoreEntitySet="production">
+          <ScalarProperty Name="production_id" ColumnName="production_id" />
+          <ScalarProperty Name="production_date" ColumnName="production_date" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="production_mapping">
+      <EntityTypeMapping TypeName="betaskdbModel.production_mapping">
+        <MappingFragment StoreEntitySet="production_mapping">
+          <ScalarProperty Name="mapping_id" ColumnName="mapping_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="total_rawmaterial" ColumnName="total_rawmaterial" />
+          <ScalarProperty Name="total_value" ColumnName="total_value" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="production_mapping_rowmaterial">
+      <EntityTypeMapping TypeName="betaskdbModel.production_mapping_rowmaterial">
+        <MappingFragment StoreEntitySet="production_mapping_rowmaterial">
+          <ScalarProperty Name="mapping_rowmaterial_id" ColumnName="mapping_rowmaterial_id" />
+          <ScalarProperty Name="mapping_id" ColumnName="mapping_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="item_value" ColumnName="item_value" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="production_rawmaterial">
+      <EntityTypeMapping TypeName="betaskdbModel.production_rawmaterial">
+        <MappingFragment StoreEntitySet="production_rawmaterial">
+          <ScalarProperty Name="production_rawmaterial_id" ColumnName="production_rawmaterial_id" />
+          <ScalarProperty Name="production_id" ColumnName="production_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="item_value" ColumnName="item_value" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="purchase">
+      <EntityTypeMapping TypeName="betaskdbModel.purchase">
+        <MappingFragment StoreEntitySet="purchase">
+          <ScalarProperty Name="purchase_id" ColumnName="purchase_id" />
+          <ScalarProperty Name="purchase_date" ColumnName="purchase_date" />
+          <ScalarProperty Name="invoice_number" ColumnName="invoice_number" />
+          <ScalarProperty Name="invoice_date" ColumnName="invoice_date" />
+          <ScalarProperty Name="vendor_id" ColumnName="vendor_id" />
+          <ScalarProperty Name="purchase_order" ColumnName="purchase_order" />
+          <ScalarProperty Name="payment_mode" ColumnName="payment_mode" />
+          <ScalarProperty Name="bank_id" ColumnName="bank_id" />
+          <ScalarProperty Name="cheque_no" ColumnName="cheque_no" />
+          <ScalarProperty Name="gross_amount" ColumnName="gross_amount" />
+          <ScalarProperty Name="total_discount" ColumnName="total_discount" />
+          <ScalarProperty Name="total_beforevat" ColumnName="total_beforevat" />
+          <ScalarProperty Name="total_vat" ColumnName="total_vat" />
+          <ScalarProperty Name="roundup" ColumnName="roundup" />
+          <ScalarProperty Name="net_amount" ColumnName="net_amount" />
+          <ScalarProperty Name="cash_paid" ColumnName="cash_paid" />
+          <ScalarProperty Name="balance_amount" ColumnName="balance_amount" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="purchase_item">
+      <EntityTypeMapping TypeName="betaskdbModel.purchase_item">
+        <MappingFragment StoreEntitySet="purchase_item">
+          <ScalarProperty Name="purchase_item_id" ColumnName="purchase_item_id" />
+          <ScalarProperty Name="purchase_id" ColumnName="purchase_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="rate" ColumnName="rate" />
+          <ScalarProperty Name="gross_amount" ColumnName="gross_amount" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="total_beforevat" ColumnName="total_beforevat" />
+          <ScalarProperty Name="vat_amount" ColumnName="vat_amount" />
+          <ScalarProperty Name="net_amount" ColumnName="net_amount" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="purchase_order">
+      <EntityTypeMapping TypeName="betaskdbModel.purchase_order">
+        <MappingFragment StoreEntitySet="purchase_order">
+          <ScalarProperty Name="purchase_id" ColumnName="purchase_id" />
+          <ScalarProperty Name="purchase_date" ColumnName="purchase_date" />
+          <ScalarProperty Name="invoice_number" ColumnName="invoice_number" />
+          <ScalarProperty Name="invoice_date" ColumnName="invoice_date" />
+          <ScalarProperty Name="vendor_id" ColumnName="vendor_id" />
+          <ScalarProperty Name="purchase_order1" ColumnName="purchase_order" />
+          <ScalarProperty Name="payment_mode" ColumnName="payment_mode" />
+          <ScalarProperty Name="bank_id" ColumnName="bank_id" />
+          <ScalarProperty Name="cheque_no" ColumnName="cheque_no" />
+          <ScalarProperty Name="gross_amount" ColumnName="gross_amount" />
+          <ScalarProperty Name="total_discount" ColumnName="total_discount" />
+          <ScalarProperty Name="total_beforevat" ColumnName="total_beforevat" />
+          <ScalarProperty Name="total_vat" ColumnName="total_vat" />
+          <ScalarProperty Name="roundup" ColumnName="roundup" />
+          <ScalarProperty Name="net_amount" ColumnName="net_amount" />
+          <ScalarProperty Name="cash_paid" ColumnName="cash_paid" />
+          <ScalarProperty Name="balance_amount" ColumnName="balance_amount" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="purchase_order_item">
+      <EntityTypeMapping TypeName="betaskdbModel.purchase_order_item">
+        <MappingFragment StoreEntitySet="purchase_order_item">
+          <ScalarProperty Name="purchase_item_id" ColumnName="purchase_item_id" />
+          <ScalarProperty Name="purchase_id" ColumnName="purchase_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="rate" ColumnName="rate" />
+          <ScalarProperty Name="gross_amount" ColumnName="gross_amount" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="total_beforevat" ColumnName="total_beforevat" />
+          <ScalarProperty Name="vat_amount" ColumnName="vat_amount" />
+          <ScalarProperty Name="net_amount" ColumnName="net_amount" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="original_prurchase_id" ColumnName="original_prurchase_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="purchase_return">
+      <EntityTypeMapping TypeName="betaskdbModel.purchase_return">
+        <MappingFragment StoreEntitySet="purchase_return">
+          <ScalarProperty Name="purchase_return_id" ColumnName="purchase_return_id" />
+          <ScalarProperty Name="purchase_date" ColumnName="purchase_date" />
+          <ScalarProperty Name="invoice_number" ColumnName="invoice_number" />
+          <ScalarProperty Name="invoice_date" ColumnName="invoice_date" />
+          <ScalarProperty Name="vendor_id" ColumnName="vendor_id" />
+          <ScalarProperty Name="purchase_order" ColumnName="purchase_order" />
+          <ScalarProperty Name="payment_mode" ColumnName="payment_mode" />
+          <ScalarProperty Name="bank_id" ColumnName="bank_id" />
+          <ScalarProperty Name="cheque_no" ColumnName="cheque_no" />
+          <ScalarProperty Name="gross_amount" ColumnName="gross_amount" />
+          <ScalarProperty Name="total_discount" ColumnName="total_discount" />
+          <ScalarProperty Name="total_beforevat" ColumnName="total_beforevat" />
+          <ScalarProperty Name="total_vat" ColumnName="total_vat" />
+          <ScalarProperty Name="roundup" ColumnName="roundup" />
+          <ScalarProperty Name="net_amount" ColumnName="net_amount" />
+          <ScalarProperty Name="cash_paid" ColumnName="cash_paid" />
+          <ScalarProperty Name="balance_amount" ColumnName="balance_amount" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="purchase_return_item">
+      <EntityTypeMapping TypeName="betaskdbModel.purchase_return_item">
+        <MappingFragment StoreEntitySet="purchase_return_item">
+          <ScalarProperty Name="purchase_item_id" ColumnName="purchase_item_id" />
+          <ScalarProperty Name="purchase_return_id" ColumnName="purchase_return_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="rate" ColumnName="rate" />
+          <ScalarProperty Name="gross_amount" ColumnName="gross_amount" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="total_beforevat" ColumnName="total_beforevat" />
+          <ScalarProperty Name="vat_amount" ColumnName="vat_amount" />
+          <ScalarProperty Name="net_amount" ColumnName="net_amount" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="route">
+      <EntityTypeMapping TypeName="betaskdbModel.route">
+        <MappingFragment StoreEntitySet="route">
+          <ScalarProperty Name="route_id" ColumnName="route_id" />
+          <ScalarProperty Name="route_name" ColumnName="route_name" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sales">
+      <EntityTypeMapping TypeName="betaskdbModel.sales">
+        <MappingFragment StoreEntitySet="sales">
+          <ScalarProperty Name="division_id" ColumnName="division_id" />
+          <ScalarProperty Name="delivery_leaf" ColumnName="delivery_leaf" />
+          <ScalarProperty Name="collection_id" ColumnName="collection_id" />
+          <ScalarProperty Name="do_id" ColumnName="do_id" />
+          <ScalarProperty Name="do_number" ColumnName="do_number" />
+          <ScalarProperty Name="sales_id" ColumnName="sales_id" />
+          <ScalarProperty Name="sales_date" ColumnName="sales_date" />
+          <ScalarProperty Name="sales_number" ColumnName="sales_number" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="sales_order" ColumnName="sales_order" />
+          <ScalarProperty Name="payment_mode" ColumnName="payment_mode" />
+          <ScalarProperty Name="bank_id" ColumnName="bank_id" />
+          <ScalarProperty Name="cheque_no" ColumnName="cheque_no" />
+          <ScalarProperty Name="gross_amount" ColumnName="gross_amount" />
+          <ScalarProperty Name="total_discount" ColumnName="total_discount" />
+          <ScalarProperty Name="total_beforevat" ColumnName="total_beforevat" />
+          <ScalarProperty Name="total_vat" ColumnName="total_vat" />
+          <ScalarProperty Name="roundup" ColumnName="roundup" />
+          <ScalarProperty Name="net_amount" ColumnName="net_amount" />
+          <ScalarProperty Name="cash_paid" ColumnName="cash_paid" />
+          <ScalarProperty Name="balance_amount" ColumnName="balance_amount" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sales_item">
+      <EntityTypeMapping TypeName="betaskdbModel.sales_item">
+        <MappingFragment StoreEntitySet="sales_item">
+          <ScalarProperty Name="sales_item_id" ColumnName="sales_item_id" />
+          <ScalarProperty Name="sales_id" ColumnName="sales_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="rate" ColumnName="rate" />
+          <ScalarProperty Name="gross_amount" ColumnName="gross_amount" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="total_beforvat" ColumnName="total_beforvat" />
+          <ScalarProperty Name="vat_amount" ColumnName="vat_amount" />
+          <ScalarProperty Name="net_amount" ColumnName="net_amount" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sales_return">
+      <EntityTypeMapping TypeName="betaskdbModel.sales_return">
+        <MappingFragment StoreEntitySet="sales_return">
+          <ScalarProperty Name="sales_return_id" ColumnName="sales_return_id" />
+          <ScalarProperty Name="sales_date" ColumnName="sales_date" />
+          <ScalarProperty Name="sales_number" ColumnName="sales_number" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="sales_order" ColumnName="sales_order" />
+          <ScalarProperty Name="payment_mode" ColumnName="payment_mode" />
+          <ScalarProperty Name="bank_id" ColumnName="bank_id" />
+          <ScalarProperty Name="cheque_no" ColumnName="cheque_no" />
+          <ScalarProperty Name="gross_amount" ColumnName="gross_amount" />
+          <ScalarProperty Name="total_discount" ColumnName="total_discount" />
+          <ScalarProperty Name="total_beforevat" ColumnName="total_beforevat" />
+          <ScalarProperty Name="total_vat" ColumnName="total_vat" />
+          <ScalarProperty Name="roundup" ColumnName="roundup" />
+          <ScalarProperty Name="net_amount" ColumnName="net_amount" />
+          <ScalarProperty Name="cash_paid" ColumnName="cash_paid" />
+          <ScalarProperty Name="balance_amount" ColumnName="balance_amount" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sales_return_item">
+      <EntityTypeMapping TypeName="betaskdbModel.sales_return_item">
+        <MappingFragment StoreEntitySet="sales_return_item">
+          <ScalarProperty Name="sales_return_item_id" ColumnName="sales_return_item_id" />
+          <ScalarProperty Name="sales_return_id" ColumnName="sales_return_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="rate" ColumnName="rate" />
+          <ScalarProperty Name="gross_amount" ColumnName="gross_amount" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="total_beforvat" ColumnName="total_beforvat" />
+          <ScalarProperty Name="vat_amount" ColumnName="vat_amount" />
+          <ScalarProperty Name="net_amount" ColumnName="net_amount" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="status">
+      <EntityTypeMapping TypeName="betaskdbModel.status">
+        <MappingFragment StoreEntitySet="status">
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="status_name" ColumnName="status_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tax_setting">
+      <EntityTypeMapping TypeName="betaskdbModel.tax_setting">
+        <MappingFragment StoreEntitySet="tax_setting">
+          <ScalarProperty Name="tax_id" ColumnName="tax_id" />
+          <ScalarProperty Name="tax_name" ColumnName="tax_name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="tax_value" ColumnName="tax_value" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="transfer_item">
+      <EntityTypeMapping TypeName="betaskdbModel.transfer_item">
+        <MappingFragment StoreEntitySet="transfer_item">
+          <ScalarProperty Name="transfer_id" ColumnName="transfer_id" />
+          <ScalarProperty Name="transfer_date" ColumnName="transfer_date" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="transfer_type" ColumnName="transfer_type" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="uom_setting">
+      <EntityTypeMapping TypeName="betaskdbModel.uom_setting">
+        <MappingFragment StoreEntitySet="uom_setting">
+          <ScalarProperty Name="uom_id" ColumnName="uom_id" />
+          <ScalarProperty Name="uom_name" ColumnName="uom_name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_log">
+      <EntityTypeMapping TypeName="betaskdbModel.user_log">
+        <MappingFragment StoreEntitySet="user_log">
+          <ScalarProperty Name="log_id" ColumnName="log_id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="module_action" ColumnName="module_action" />
+          <ScalarProperty Name="server_time" ColumnName="server_time" />
+          <ScalarProperty Name="reference_id" ColumnName="reference_id" />
+          <ScalarProperty Name="summary" ColumnName="summary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wallet_history">
+      <EntityTypeMapping TypeName="betaskdbModel.wallet_history">
+        <MappingFragment StoreEntitySet="wallet_history">
+          <ScalarProperty Name="wallet_history_id" ColumnName="wallet_history_id" />
+          <ScalarProperty Name="wallet_number" ColumnName="wallet_number" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="recharge_by" ColumnName="recharge_by" />
+          <ScalarProperty Name="payment_mode" ColumnName="payment_mode" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_ChartDelivery" FunctionName="betaskdbModel.Store.SP_ChartDelivery">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="betaskdbModel.SP_ChartDelivery_Result">
+          <ScalarProperty Name="route_name" ColumnName="route_name" />
+          <ScalarProperty Name="delivered" ColumnName="delivered" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_DeliverySalesReport" FunctionName="betaskdbModel.Store.SP_DeliverySalesReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="betaskdbModel.SP_DeliverySalesReport_Result">
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="customer_name" ColumnName="customer_name" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Soled" ColumnName="Soled" />
+          <ScalarProperty Name="Vehicle_no" ColumnName="Vehicle_no" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_MiscWalletDefference" FunctionName="betaskdbModel.Store.SP_MiscWalletDefference">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="betaskdbModel.SP_MiscWalletDefference_Result">
+          <ScalarProperty Name="RouteName" ColumnName="RouteName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="Wallet" ColumnName="Wallet" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="RechargeNet" ColumnName="RechargeNet" />
+          <ScalarProperty Name="CouponSale" ColumnName="CouponSale" />
+          <ScalarProperty Name="Differenc" ColumnName="Differenc" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_OpeningStockPandL" FunctionName="betaskdbModel.Store.SP_OpeningStockPandL" />
+    <FunctionImportMapping FunctionImportName="SP_SalesMonthlyAnalysis" FunctionName="betaskdbModel.Store.SP_SalesMonthlyAnalysis">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="betaskdbModel.SP_SalesMonthlyAnalysis_Result">
+          <ScalarProperty Name="RouteName" ColumnName="RouteName" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="SaleAmoumt" ColumnName="SaleAmoumt" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SalesMonthlyItemAnalysis" FunctionName="betaskdbModel.Store.SP_SalesMonthlyItemAnalysis">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="betaskdbModel.SP_SalesMonthlyItemAnalysis_Result">
+          <ScalarProperty Name="RouteName" ColumnName="RouteName" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="SaleAmount" ColumnName="SaleAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SyncCustomerOutstanding" FunctionName="betaskdbModel.Store.SP_SyncCustomerOutstanding">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="betaskdbModel.SP_SyncCustomerOutstanding_Result">
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="customer_name" ColumnName="customer_name" />
+          <ScalarProperty Name="wallet_balance" ColumnName="wallet_balance" />
+          <ScalarProperty Name="outstanding" ColumnName="outstanding" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SyncCustomerOutstandingRoutewise" FunctionName="betaskdbModel.Store.SP_SyncCustomerOutstandingRoutewise">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="betaskdbModel.SP_SyncCustomerOutstandingRoutewise_Result">
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="customer_name" ColumnName="customer_name" />
+          <ScalarProperty Name="wallet_balance" ColumnName="wallet_balance" />
+          <ScalarProperty Name="outstanding" ColumnName="outstanding" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SyncDeliveryReturn" FunctionName="betaskdbModel.Store.SP_SyncDeliveryReturn" />
+    <FunctionImportMapping FunctionImportName="SP_SyncUpdateOutstandingCollection" FunctionName="betaskdbModel.Store.SP_SyncUpdateOutstandingCollection" />
+    <FunctionImportMapping FunctionImportName="SP_TrialBalanceDetailed" FunctionName="betaskdbModel.Store.SP_TrialBalanceDetailed">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="betaskdbModel.SP_TrialBalanceDetailed_Result">
+          <ScalarProperty Name="ledger_name" ColumnName="ledger_name" />
+          <ScalarProperty Name="group_name" ColumnName="group_name" />
+          <ScalarProperty Name="debit" ColumnName="debit" />
+          <ScalarProperty Name="credit" ColumnName="credit" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_TrialBalanceSummary" FunctionName="betaskdbModel.Store.SP_TrialBalanceSummary">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="betaskdbModel.SP_TrialBalanceSummary_Result">
+          <ScalarProperty Name="group_name" ColumnName="group_name" />
+          <ScalarProperty Name="debit" ColumnName="debit" />
+          <ScalarProperty Name="credit" ColumnName="credit" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="building">
+      <EntityTypeMapping TypeName="betaskdbModel.building">
+        <MappingFragment StoreEntitySet="building">
+          <ScalarProperty Name="route" ColumnName="route" />
+          <ScalarProperty Name="area" ColumnName="area" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="building_name" ColumnName="building_name" />
+          <ScalarProperty Name="building_id" ColumnName="building_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="customer">
+      <EntityTypeMapping TypeName="betaskdbModel.customer">
+        <MappingFragment StoreEntitySet="customer">
+          <ScalarProperty Name="credit_limit" ColumnName="credit_limit" />
+          <ScalarProperty Name="new_customer" ColumnName="new_customer" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="salesman_ledger" ColumnName="salesman_ledger" />
+          <ScalarProperty Name="building_id" ColumnName="building_id" />
+          <ScalarProperty Name="customer_temp_id" ColumnName="customer_temp_id" />
+          <ScalarProperty Name="added_time" ColumnName="added_time" />
+          <ScalarProperty Name="delivery_interval" ColumnName="delivery_interval" />
+          <ScalarProperty Name="payment_mode" ColumnName="payment_mode" />
+          <ScalarProperty Name="cloud_sync" ColumnName="cloud_sync" />
+          <ScalarProperty Name="route_id" ColumnName="route_id" />
+          <ScalarProperty Name="lng" ColumnName="lng" />
+          <ScalarProperty Name="lat" ColumnName="lat" />
+          <ScalarProperty Name="ledger_id" ColumnName="ledger_id" />
+          <ScalarProperty Name="wallet_balance" ColumnName="wallet_balance" />
+          <ScalarProperty Name="wallet_number" ColumnName="wallet_number" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="trn" ColumnName="trn" />
+          <ScalarProperty Name="contact_person" ColumnName="contact_person" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="customer_type" ColumnName="customer_type" />
+          <ScalarProperty Name="pobox" ColumnName="pobox" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="address2" ColumnName="address2" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="customer_name" ColumnName="customer_name" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

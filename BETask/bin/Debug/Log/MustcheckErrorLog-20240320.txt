@@ -1,0 +1,3 @@
+
+20/Mar/2024 10:54:10 PM{LETZ} - Error while setting payment mode in DSR of BAQAR HUSSAIN  customer=2707646, do amount=35.00 
+Index was outside the bounds of the array.

@@ -1,0 +1,3207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="betaskdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="account_group">
+    <Key>
+      <PropertyRef Name="group_id" />
+    </Key>
+    <Property Name="company_id" Type="int" Nullable="false" />
+    <Property Name="location_id" Type="int" Nullable="false" />
+    <Property Name="group_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="group_name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="description" Type="varchar" MaxLength="100" />
+    <Property Name="parent_id" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="account_ledger">
+    <Key>
+      <PropertyRef Name="ledger_id" />
+    </Key>
+    <Property Name="ledger_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ledger_name" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="description" Type="varchar" MaxLength="100" />
+    <Property Name="group_id" Type="int" Nullable="false" />
+    <Property Name="enable_cost_center" Type="int" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="account_transaction">
+    <Key>
+      <PropertyRef Name="account_transaction_id" />
+    </Key>
+    <Property Name="account_transaction_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="transaction_number" Type="int" Nullable="false" />
+    <Property Name="transaction_date" Type="date" Nullable="false" />
+    <Property Name="transaction_type" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="ledger_id" Type="int" Nullable="false" />
+    <Property Name="debit" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="credit" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="narration" Type="nvarchar(max)" />
+    <Property Name="transaction_type_id" Type="int" />
+    <Property Name="voucher_number" Type="nvarchar" MaxLength="50" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="added_time" Type="datetime" />
+    <Property Name="reconcil_date" Type="date" />
+    <Property Name="reference_id" Type="nvarchar" MaxLength="150" />
+    <Property Name="route_id" Type="int" />
+  </EntityType>
+  <EntityType Name="account_transaction_cheque">
+    <Key>
+      <PropertyRef Name="cheque_id" />
+    </Key>
+    <Property Name="cheque_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="account_transaction_id" Type="int" Nullable="false" />
+    <Property Name="account_transaction_number" Type="int" Nullable="false" />
+    <Property Name="cheque_number" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="cheque_date" Type="date" Nullable="false" />
+    <Property Name="bank" Type="nvarchar" MaxLength="100" />
+    <Property Name="other_details" Type="nvarchar" MaxLength="250" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="building">
+    <Key>
+      <PropertyRef Name="building_id" />
+    </Key>
+    <Property Name="building_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="building_name" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="area" Type="nvarchar" MaxLength="250" />
+    <Property Name="route" Type="nvarchar(max)" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="company">
+    <Key>
+      <PropertyRef Name="company_id" />
+    </Key>
+    <Property Name="company_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_name" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="150" />
+    <Property Name="tin" Type="nvarchar" MaxLength="50" />
+    <Property Name="address1" Type="nvarchar" MaxLength="250" />
+    <Property Name="address2" Type="nvarchar" MaxLength="250" />
+    <Property Name="city" Type="nvarchar" MaxLength="50" />
+    <Property Name="street" Type="nvarchar" MaxLength="50" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+    <Property Name="pobox" Type="nvarchar" MaxLength="50" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="mobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="web" Type="nvarchar" MaxLength="50" />
+    <Property Name="status" Type="int" />
+    <Property Name="cloud_connection" Type="varchar" MaxLength="250" />
+    <Property Name="financial_from_date" Type="date" Nullable="false" />
+    <Property Name="financial_to_date" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cost_center">
+    <Key>
+      <PropertyRef Name="cost_center_id" />
+    </Key>
+    <Property Name="cost_center_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cost_center_name" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="parent_id" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cost_center_transaction">
+    <Key>
+      <PropertyRef Name="entry_id" />
+    </Key>
+    <Property Name="entry_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cost_center_id" Type="int" Nullable="false" />
+    <Property Name="ledger_id" Type="int" Nullable="false" />
+    <Property Name="transaction_id" Type="int" />
+    <Property Name="transaction_number" Type="int" />
+    <Property Name="debit" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="credit" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="reference_id" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="coupon">
+    <Key>
+      <PropertyRef Name="coupon_id" />
+    </Key>
+    <Property Name="coupon_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="book_number" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="leaf_from" Type="bigint" Nullable="false" />
+    <Property Name="leaf_end" Type="bigint" Nullable="false" />
+    <Property Name="leaf_rate" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="book_rate" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="leaf_count" Type="int" Nullable="false" />
+    <Property Name="remarks" Type="varchar" MaxLength="100" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="issue_date" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="coupon_leaf">
+    <Key>
+      <PropertyRef Name="leaf_id" />
+    </Key>
+    <Property Name="leaf_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="coupon_id" Type="int" Nullable="false" />
+    <Property Name="leaf_number" Type="bigint" Nullable="false" />
+    <Property Name="leaf_rate" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="remarks" Type="varchar" MaxLength="100" />
+    <Property Name="issue_date" Type="date" Nullable="false" />
+    <Property Name="redeem_date" Type="datetime" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="customer">
+    <Key>
+      <PropertyRef Name="customer_id" />
+    </Key>
+    <Property Name="customer_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="customer_name" Type="nvarchar" MaxLength="250" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="mobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+    <Property Name="address1" Type="nvarchar" MaxLength="250" />
+    <Property Name="address2" Type="nvarchar" MaxLength="250" />
+    <Property Name="city" Type="nvarchar" MaxLength="250" />
+    <Property Name="street" Type="nvarchar" MaxLength="250" />
+    <Property Name="pobox" Type="nvarchar" MaxLength="50" />
+    <Property Name="customer_type" Type="int" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="250" />
+    <Property Name="contact_person" Type="nvarchar" MaxLength="50" />
+    <Property Name="trn" Type="nvarchar" MaxLength="75" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="wallet_number" Type="nvarchar" MaxLength="50" />
+    <Property Name="wallet_balance" Type="decimal" Precision="11" Scale="2" />
+    <Property Name="ledger_id" Type="int" />
+    <Property Name="lat" Type="nvarchar" MaxLength="75" />
+    <Property Name="lng" Type="nvarchar" MaxLength="75" />
+    <Property Name="route_id" Type="int" />
+    <Property Name="cloud_sync" Type="int" Nullable="false" />
+    <Property Name="payment_mode" Type="varchar" MaxLength="25" />
+    <Property Name="delivery_interval" Type="varchar" MaxLength="25" />
+    <Property Name="added_time" Type="datetime" />
+    <Property Name="customer_temp_id" Type="int" />
+    <Property Name="building_id" Type="int" />
+    <Property Name="salesman_ledger" Type="int" />
+    <Property Name="employee_id" Type="int" />
+    <Property Name="new_customer" Type="int" />
+    <Property Name="credit_limit" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="offer_id" Type="int" />
+    <Property Name="enable_online_payment" Type="int" Nullable="false" />
+    <Property Name="enable_offer" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="customer_aggrement">
+    <Key>
+      <PropertyRef Name="customer_aggrement_id" />
+    </Key>
+    <Property Name="customer_aggrement_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="max_qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="unit_price" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="show_app" Type="int" Nullable="false" />
+    <Property Name="serail_number" Type="nvarchar" MaxLength="100" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="customer_asset">
+    <Key>
+      <PropertyRef Name="customer_asset_id" />
+    </Key>
+    <Property Name="customer_asset_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="delivery_date" Type="datetime" Nullable="false" />
+    <Property Name="delivery_type" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="qty" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="employee_id" Type="int" />
+    <Property Name="other_details" Type="nvarchar" MaxLength="150" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="barcode" Type="nvarchar" MaxLength="50" />
+    <Property Name="customer_aggrement_id" Type="int" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="150" />
+    <Property Name="updated_on" Type="datetime" Nullable="false" />
+    <Property Name="agreement_from" Type="date" />
+    <Property Name="agreement_to" Type="date" />
+    <Property Name="agreement_no" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="monthly_purchase" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="customer_division">
+    <Key>
+      <PropertyRef Name="division_id" />
+    </Key>
+    <Property Name="division_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="division_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="daily_collection">
+    <Key>
+      <PropertyRef Name="daily_collection_id" />
+    </Key>
+    <Property Name="daily_collection_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="delivery_id" Type="int" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="net_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="collected_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="payment_mode" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="employee_id" Type="int" Nullable="false" />
+    <Property Name="delivery_time" Type="datetime" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="150" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="daily_collection_id_app" Type="int" />
+    <Property Name="delivery_leaf" Type="nvarchar" MaxLength="8" />
+    <Property Name="division_id" Type="int" />
+    <Property Name="is_deposit" Type="int" Nullable="false" />
+    <Property Name="is_refund" Type="int" Nullable="false" />
+    <Property Name="old_leaf_count" Type="int" Nullable="false" />
+    <Property Name="route_id" Type="int" />
+  </EntityType>
+  <EntityType Name="default_values">
+    <Key>
+      <PropertyRef Name="type_id" />
+    </Key>
+    <Property Name="type_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="type_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="type_value" Type="int" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <EntityType Name="delivery">
+    <Key>
+      <PropertyRef Name="delivery_id" />
+    </Key>
+    <Property Name="delivery_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="delivery_date" Type="date" Nullable="false" />
+    <Property Name="employee_id" Type="int" Nullable="false" />
+    <Property Name="vehicle_no" Type="nvarchar" MaxLength="20" />
+    <Property Name="helper" Type="nvarchar" MaxLength="25" />
+    <Property Name="delivery_route" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="route_id" Type="int" />
+    <Property Name="customer_count" Type="int" Nullable="false" />
+    <Property Name="gross_amount" Type="decimal" Precision="11" Scale="2" />
+    <Property Name="total_discount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_beforevat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_vat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="net_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="delivery_book">
+    <Key>
+      <PropertyRef Name="delivery_book_id" />
+    </Key>
+    <Property Name="delivery_book_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="book_number" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="employee_id" Type="int" Nullable="false" />
+    <Property Name="customer_id" Type="int" />
+    <Property Name="issue_date" Type="date" Nullable="false" />
+    <Property Name="leaf_no" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="delivery_id" Type="int" />
+    <Property Name="redeemed_date" Type="datetime" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="route_id" Type="int" />
+  </EntityType>
+  <EntityType Name="delivery_item_summary">
+    <Key>
+      <PropertyRef Name="delivery_summary_id" />
+    </Key>
+    <Property Name="delivery_summary_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="delivery_id" Type="int" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="used_qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="damage_qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="balance_qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="delivery_items">
+    <Key>
+      <PropertyRef Name="delivery_item_id" />
+    </Key>
+    <Property Name="delivery_item_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="delivery_id" Type="int" Nullable="false" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="rate" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="gross_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="discount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_beforvat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="vat_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="net_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="delivery_time" Type="datetime" />
+    <Property Name="sales_id" Type="int" />
+    <Property Name="sales_date" Type="datetime" />
+    <Property Name="delivered_qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="delivery_item_id_app" Type="int" />
+    <Property Name="daily_collection_id" Type="int" />
+    <Property Name="daily_collection_id_app" Type="int" />
+    <Property Name="delivery_leaf" Type="nvarchar" MaxLength="8" />
+    <Property Name="division_id" Type="int" />
+    <Property Name="is_deposit" Type="int" Nullable="false" />
+    <Property Name="payment_mode" Type="nvarchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="delivery_return">
+    <Key>
+      <PropertyRef Name="delivery_return_id" />
+    </Key>
+    <Property Name="delivery_return_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="return_date" Type="date" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="employee_id" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="150" />
+    <Property Name="return_type" Type="int" Nullable="false" />
+    <Property Name="server_time" Type="datetime" Nullable="false" />
+    <Property Name="route_id" Type="int" />
+  </EntityType>
+  <EntityType Name="do_sales">
+    <Key>
+      <PropertyRef Name="do_id" />
+    </Key>
+    <Property Name="do_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="do_date" Type="datetime" Nullable="false" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="do_invoice_number" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="route_id" Type="int" />
+    <Property Name="gross_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_discount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_beforevat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_vat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="net_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="250" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="amount_paid" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="do_sales_item">
+    <Key>
+      <PropertyRef Name="do_item_id" />
+    </Key>
+    <Property Name="do_item_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="do_id" Type="int" Nullable="false" />
+    <Property Name="sales_id" Type="int" Nullable="false" />
+    <Property Name="do_number" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="gross_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_discount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_beforevat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_vat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="net_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="document_serial">
+    <Key>
+      <PropertyRef Name="document_id" />
+    </Key>
+    <Property Name="document_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="document_type" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="prefix" Type="nvarchar" MaxLength="6" />
+    <Property Name="next_number" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="employee_id" />
+    </Key>
+    <Property Name="employee_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="employee_code" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="first_name" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="last_name" Type="nvarchar" MaxLength="150" />
+    <Property Name="username" Type="nvarchar" MaxLength="15" />
+    <Property Name="password" Type="nvarchar" MaxLength="15" />
+    <Property Name="join_date" Type="date" Nullable="false" />
+    <Property Name="resign_date" Type="date" />
+    <Property Name="national_id" Type="nvarchar" MaxLength="50" />
+    <Property Name="passport" Type="nvarchar" MaxLength="50" />
+    <Property Name="visa" Type="nvarchar" MaxLength="50" />
+    <Property Name="department" Type="nvarchar" MaxLength="25" />
+    <Property Name="designation" Type="nvarchar" MaxLength="50" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+    <Property Name="salary" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="nationality" Type="nvarchar" MaxLength="25" />
+    <Property Name="state" Type="nvarchar" MaxLength="25" />
+    <Property Name="address1" Type="nvarchar" MaxLength="200" />
+    <Property Name="address2" Type="nvarchar" MaxLength="200" />
+    <Property Name="dob" Type="date" />
+    <Property Name="gender" Type="nvarchar" MaxLength="6" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="other_details" Type="nvarchar" MaxLength="200" />
+    <Property Name="route_id" Type="int" />
+    <Property Name="salesman_credit_ledger" Type="int" />
+    <Property Name="vehicle" Type="nvarchar" MaxLength="25" />
+    <Property Name="helper" Type="nvarchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="item">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="item_name" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="barcode" Type="nvarchar" MaxLength="50" />
+    <Property Name="brand" Type="nvarchar" MaxLength="50" />
+    <Property Name="uom" Type="int" Nullable="false" />
+    <Property Name="tax" Type="int" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="150" />
+    <Property Name="cost" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="purchase_rate" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="sale_rate" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="opening_stock" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="rawmeterial" Type="int" Nullable="false" />
+    <Property Name="sellable" Type="int" Nullable="false" />
+    <Property Name="stockable" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="Stock" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="godown_stock" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="sale_ledger" Type="int" />
+    <Property Name="purchase_ledger" Type="int" />
+    <Property Name="agreement_item" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="item_damage">
+    <Key>
+      <PropertyRef Name="item_damage_id" />
+    </Key>
+    <Property Name="item_damage_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="damage_date" Type="date" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="employee_id" Type="int" />
+    <Property Name="qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="cost" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="150" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="item_id_damaged" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="item_return_exception">
+    <Key>
+      <PropertyRef Name="return_id" />
+    </Key>
+    <Property Name="return_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="return_item_id" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="item_transaction">
+    <Key>
+      <PropertyRef Name="item_transaction_id" />
+    </Key>
+    <Property Name="item_transaction_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="transaction_date" Type="date" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="item_cost" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="qty_added" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="qty_reduced" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="closing_stock" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="closing_value" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="transaction_type" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="transaction_type_id" Type="int" />
+    <Property Name="narration" Type="nvarchar" MaxLength="150" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ledger_mapping">
+    <Key>
+      <PropertyRef Name="ledger_mapping_id" />
+    </Key>
+    <Property Name="ledger_mapping_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ledger_type" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="group_id" Type="int" />
+    <Property Name="ledger_id" Type="int" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="loading">
+    <Key>
+      <PropertyRef Name="load_id" />
+    </Key>
+    <Property Name="load_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="employee_id" Type="int" Nullable="false" />
+    <Property Name="delivery_id" Type="int" Nullable="false" />
+    <Property Name="load_date" Type="datetime" Nullable="false" />
+    <Property Name="helper" Type="nvarchar" MaxLength="75" />
+    <Property Name="vehicle" Type="nvarchar" MaxLength="25" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="old_stock" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="empty" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="damage" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="balance" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="new_load" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_load" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="short" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="extra" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="new_stock" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="offload" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="act_stock" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="150" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="server_time" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mail_settings">
+    <Key>
+      <PropertyRef Name="mail_id" />
+    </Key>
+    <Property Name="mail_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="from_mail" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="cc1" Type="nvarchar" MaxLength="75" />
+    <Property Name="cc2" Type="nvarchar" MaxLength="75" />
+    <Property Name="bcc1" Type="nvarchar" MaxLength="75" />
+    <Property Name="bcc2" Type="nvarchar" MaxLength="75" />
+    <Property Name="smtp_host" Type="nvarchar" MaxLength="75" />
+    <Property Name="enable_ssl" Type="int" Nullable="false" />
+    <Property Name="smtp_port" Type="int" Nullable="false" />
+    <Property Name="smtp_timeout" Type="int" Nullable="false" />
+    <Property Name="smtp_use_deafaultcredential" Type="int" Nullable="false" />
+    <Property Name="mail_subject" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="offer">
+    <Key>
+      <PropertyRef Name="offer_id" />
+    </Key>
+    <Property Name="offer_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="offer_name" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="qty" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="category" Type="nvarchar" MaxLength="25" />
+    <Property Name="price_range_base_from" Type="decimal" Precision="6" Scale="2" Nullable="false" />
+    <Property Name="price_range_base_to" Type="decimal" Precision="6" Scale="2" Nullable="false" />
+    <Property Name="price_range_from" Type="decimal" Precision="6" Scale="2" Nullable="false" />
+    <Property Name="price_range_to" Type="decimal" Precision="6" Scale="2" Nullable="false" />
+    <Property Name="rate_exclude_vat" Type="decimal" Precision="6" Scale="2" Nullable="false" />
+    <Property Name="vat" Type="decimal" Precision="6" Scale="2" Nullable="false" />
+    <Property Name="rate_include_vat" Type="decimal" Precision="6" Scale="2" Nullable="false" />
+    <Property Name="remarks" Type="varchar" MaxLength="250" />
+    <Property Name="added_on" Type="datetime" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="pdc">
+    <Key>
+      <PropertyRef Name="pdc_id" />
+    </Key>
+    <Property Name="pdc_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="doc_date" Type="date" Nullable="false" />
+    <Property Name="cheque_number" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="cheque_date" Type="date" Nullable="false" />
+    <Property Name="amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="ledger_id" Type="int" Nullable="false" />
+    <Property Name="party_id" Type="int" Nullable="false" />
+    <Property Name="pdc_mode" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="150" />
+    <Property Name="cheque_status" Type="nvarchar" MaxLength="15" />
+    <Property Name="updated_on" Type="date" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="privilege_menu">
+    <Key>
+      <PropertyRef Name="menu_id" />
+    </Key>
+    <Property Name="menu_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="menu_name" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="menu_type" Type="nvarchar" MaxLength="15" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="privileges">
+    <Key>
+      <PropertyRef Name="privilege_id" />
+    </Key>
+    <Property Name="privilege_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="menu_id" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="production">
+    <Key>
+      <PropertyRef Name="production_id" />
+    </Key>
+    <Property Name="production_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="production_date" Type="date" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="cost" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="150" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="production_mapping">
+    <Key>
+      <PropertyRef Name="mapping_id" />
+    </Key>
+    <Property Name="mapping_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="total_rawmaterial" Type="int" Nullable="false" />
+    <Property Name="total_value" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="production_mapping_rowmaterial">
+    <Key>
+      <PropertyRef Name="mapping_rowmaterial_id" />
+    </Key>
+    <Property Name="mapping_rowmaterial_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mapping_id" Type="int" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="qty" Type="decimal" Precision="10" Scale="4" Nullable="false" />
+    <Property Name="item_value" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="production_rawmaterial">
+    <Key>
+      <PropertyRef Name="production_rawmaterial_id" />
+    </Key>
+    <Property Name="production_rawmaterial_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="production_id" Type="int" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="item_value" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="purchase">
+    <Key>
+      <PropertyRef Name="purchase_id" />
+    </Key>
+    <Property Name="purchase_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="purchase_date" Type="datetime" Nullable="false" />
+    <Property Name="invoice_number" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="invoice_date" Type="date" Nullable="false" />
+    <Property Name="vendor_id" Type="int" Nullable="false" />
+    <Property Name="purchase_order" Type="int" />
+    <Property Name="payment_mode" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="bank_id" Type="int" />
+    <Property Name="cheque_no" Type="nvarchar" MaxLength="25" />
+    <Property Name="gross_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_discount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_beforevat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_vat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="roundup" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="net_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="cash_paid" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="balance_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="150" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="purchase_item">
+    <Key>
+      <PropertyRef Name="purchase_item_id" />
+    </Key>
+    <Property Name="purchase_item_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="purchase_id" Type="int" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="rate" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="gross_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="discount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_beforevat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="vat_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="net_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="purchase_order">
+    <Key>
+      <PropertyRef Name="purchase_id" />
+    </Key>
+    <Property Name="purchase_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="purchase_date" Type="datetime" Nullable="false" />
+    <Property Name="invoice_number" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="invoice_date" Type="date" Nullable="false" />
+    <Property Name="vendor_id" Type="int" Nullable="false" />
+    <Property Name="purchase_order" Type="int" />
+    <Property Name="payment_mode" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="bank_id" Type="int" />
+    <Property Name="cheque_no" Type="nvarchar" MaxLength="25" />
+    <Property Name="gross_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_discount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_beforevat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_vat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="roundup" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="net_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="cash_paid" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="balance_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="150" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="purchase_order_item">
+    <Key>
+      <PropertyRef Name="purchase_item_id" />
+    </Key>
+    <Property Name="purchase_item_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="purchase_id" Type="int" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="rate" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="gross_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="discount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_beforevat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="vat_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="net_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="original_prurchase_id" Type="int" />
+  </EntityType>
+  <EntityType Name="purchase_return">
+    <Key>
+      <PropertyRef Name="purchase_return_id" />
+    </Key>
+    <Property Name="purchase_return_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="purchase_date" Type="datetime" Nullable="false" />
+    <Property Name="invoice_number" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="invoice_date" Type="date" Nullable="false" />
+    <Property Name="vendor_id" Type="int" Nullable="false" />
+    <Property Name="purchase_order" Type="int" />
+    <Property Name="payment_mode" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="bank_id" Type="int" />
+    <Property Name="cheque_no" Type="nvarchar" MaxLength="25" />
+    <Property Name="gross_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_discount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_beforevat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_vat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="roundup" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="net_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="cash_paid" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="balance_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="150" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="purchase_return_item">
+    <Key>
+      <PropertyRef Name="purchase_item_id" />
+    </Key>
+    <Property Name="purchase_item_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="purchase_return_id" Type="int" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="rate" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="gross_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="discount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_beforevat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="vat_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="net_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="route">
+    <Key>
+      <PropertyRef Name="route_id" />
+    </Key>
+    <Property Name="route_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="route_name" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="route_group">
+    <Key>
+      <PropertyRef Name="route_group_id" />
+    </Key>
+    <Property Name="route_group_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="route_id" Type="int" Nullable="false" />
+    <Property Name="sub_route_id" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sales">
+    <Key>
+      <PropertyRef Name="sales_id" />
+    </Key>
+    <Property Name="sales_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sales_date" Type="datetime" Nullable="false" />
+    <Property Name="sales_number" Type="nvarchar" MaxLength="50" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="sales_order" Type="int" />
+    <Property Name="payment_mode" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="bank_id" Type="int" />
+    <Property Name="cheque_no" Type="nvarchar" MaxLength="25" />
+    <Property Name="gross_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_discount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_beforevat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_vat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="roundup" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="net_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="cash_paid" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="balance_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="150" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="do_number" Type="nvarchar" MaxLength="50" />
+    <Property Name="do_id" Type="int" />
+    <Property Name="collection_id" Type="int" />
+    <Property Name="delivery_leaf" Type="nvarchar" MaxLength="8" />
+    <Property Name="division_id" Type="int" />
+    <Property Name="old_leaf_count" Type="int" Nullable="false" />
+    <Property Name="route_id" Type="int" />
+    <Property Name="lpo_number" Type="nvarchar" MaxLength="15" />
+    <Property Name="payment_terms" Type="nvarchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="sales_item">
+    <Key>
+      <PropertyRef Name="sales_item_id" />
+    </Key>
+    <Property Name="sales_item_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sales_id" Type="int" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="rate" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="gross_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="discount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_beforvat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="vat_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="net_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="status" Type="int" />
+    <Property Name="delivery_item_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sales_return">
+    <Key>
+      <PropertyRef Name="sales_return_id" />
+    </Key>
+    <Property Name="sales_return_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sales_date" Type="datetime" Nullable="false" />
+    <Property Name="sales_number" Type="nvarchar" MaxLength="50" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="sales_order" Type="int" />
+    <Property Name="payment_mode" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="bank_id" Type="int" />
+    <Property Name="cheque_no" Type="nvarchar" MaxLength="25" />
+    <Property Name="gross_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_discount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_beforevat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_vat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="roundup" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="net_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="cash_paid" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="balance_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="150" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sales_return_item">
+    <Key>
+      <PropertyRef Name="sales_return_item_id" />
+    </Key>
+    <Property Name="sales_return_item_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sales_return_id" Type="int" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="rate" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="gross_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="discount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="total_beforvat" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="vat_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="net_amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="status">
+    <Key>
+      <PropertyRef Name="status_id" />
+    </Key>
+    <Property Name="status_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="status_name" Type="varchar" MaxLength="25" Nullable="false" />
+  </EntityType>
+  <EntityType Name="system_settings">
+    <Key>
+      <PropertyRef Name="settings_id" />
+    </Key>
+    <Property Name="settings_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="wallet_prefix" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="auto_wallet_generation" Type="int" Nullable="false" />
+    <Property Name="min_wallet_length" Type="int" Nullable="false" />
+    <Property Name="tax_on_recharge" Type="decimal" Precision="6" Scale="2" Nullable="false" />
+    <Property Name="default_item_id" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="allowed_backdate" Type="int" Nullable="false" />
+    <Property Name="hide_do" Type="int" Nullable="false" />
+    <Property Name="pdc_enable" Type="int" Nullable="false" />
+    <Property Name="software_startdate" Type="date" Nullable="false" />
+    <Property Name="cloud_url" Type="nvarchar" MaxLength="150" />
+    <Property Name="empty_bottle_item_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tax_setting">
+    <Key>
+      <PropertyRef Name="tax_id" />
+    </Key>
+    <Property Name="tax_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tax_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="description" Type="varchar" MaxLength="150" />
+    <Property Name="tax_value" Type="decimal" Precision="4" Scale="2" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="transfer_item">
+    <Key>
+      <PropertyRef Name="transfer_id" />
+    </Key>
+    <Property Name="transfer_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="transfer_date" Type="datetime" Nullable="false" />
+    <Property Name="employee_id" Type="int" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="qty" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="transfer_type" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="250" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="uom_setting">
+    <Key>
+      <PropertyRef Name="uom_id" />
+    </Key>
+    <Property Name="uom_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uom_name" Type="varchar" MaxLength="25" />
+    <Property Name="description" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="user_log">
+    <Key>
+      <PropertyRef Name="log_id" />
+    </Key>
+    <Property Name="log_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="module" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="module_action" Type="nvarchar" MaxLength="100" />
+    <Property Name="server_time" Type="datetime" />
+    <Property Name="reference_id" Type="int" />
+    <Property Name="summary" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="wallet_history">
+    <Key>
+      <PropertyRef Name="wallet_history_id" />
+    </Key>
+    <Property Name="wallet_history_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="wallet_number" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="date" Type="datetime" Nullable="false" />
+    <Property Name="recharge_by" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="payment_mode" Type="nvarchar" MaxLength="6" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <Association Name="FK_account_group_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="account_group" Type="Self.account_group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="account_group">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_account_ledger_groupid">
+    <End Role="account_group" Type="Self.account_group" Multiplicity="1" />
+    <End Role="account_ledger" Type="Self.account_ledger" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account_group">
+        <PropertyRef Name="group_id" />
+      </Principal>
+      <Dependent Role="account_ledger">
+        <PropertyRef Name="group_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_account_ledger_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="account_ledger" Type="Self.account_ledger" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="account_ledger">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_account_transaction__cheque_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="account_transaction_cheque" Type="Self.account_transaction_cheque" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="account_transaction_cheque">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_account_transaction_cheque_transactionid">
+    <End Role="account_transaction" Type="Self.account_transaction" Multiplicity="1" />
+    <End Role="account_transaction_cheque" Type="Self.account_transaction_cheque" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account_transaction">
+        <PropertyRef Name="account_transaction_id" />
+      </Principal>
+      <Dependent Role="account_transaction_cheque">
+        <PropertyRef Name="account_transaction_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_account_transaction_ledger">
+    <End Role="account_ledger" Type="Self.account_ledger" Multiplicity="1" />
+    <End Role="account_transaction" Type="Self.account_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account_ledger">
+        <PropertyRef Name="ledger_id" />
+      </Principal>
+      <Dependent Role="account_transaction">
+        <PropertyRef Name="ledger_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_account_transaction_route">
+    <End Role="route" Type="Self.route" Multiplicity="0..1" />
+    <End Role="account_transaction" Type="Self.account_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="route">
+        <PropertyRef Name="route_id" />
+      </Principal>
+      <Dependent Role="account_transaction">
+        <PropertyRef Name="route_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_account_transaction_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="account_transaction" Type="Self.account_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="account_transaction">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_autoledgermapping_group">
+    <End Role="account_group" Type="Self.account_group" Multiplicity="0..1" />
+    <End Role="ledger_mapping" Type="Self.ledger_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account_group">
+        <PropertyRef Name="group_id" />
+      </Principal>
+      <Dependent Role="ledger_mapping">
+        <PropertyRef Name="group_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_autoledgermapping_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="ledger_mapping" Type="Self.ledger_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="ledger_mapping">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_building_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="building" Type="Self.building" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="building">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_company_status">
+    <End Role="status" Type="Self.status" Multiplicity="0..1" />
+    <End Role="company" Type="Self.company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="company">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cost_center_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="cost_center" Type="Self.cost_center" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="cost_center">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cost_center_transaction_cost_center">
+    <End Role="cost_center" Type="Self.cost_center" Multiplicity="1" />
+    <End Role="cost_center_transaction" Type="Self.cost_center_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cost_center">
+        <PropertyRef Name="cost_center_id" />
+      </Principal>
+      <Dependent Role="cost_center_transaction">
+        <PropertyRef Name="cost_center_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cost_center_transaction_cost_ledger">
+    <End Role="account_ledger" Type="Self.account_ledger" Multiplicity="1" />
+    <End Role="cost_center_transaction" Type="Self.cost_center_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account_ledger">
+        <PropertyRef Name="ledger_id" />
+      </Principal>
+      <Dependent Role="cost_center_transaction">
+        <PropertyRef Name="ledger_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cost_center_transaction_cost_transaction_id">
+    <End Role="account_transaction" Type="Self.account_transaction" Multiplicity="0..1" />
+    <End Role="cost_center_transaction" Type="Self.cost_center_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account_transaction">
+        <PropertyRef Name="account_transaction_id" />
+      </Principal>
+      <Dependent Role="cost_center_transaction">
+        <PropertyRef Name="transaction_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cost_center_transaction_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="cost_center_transaction" Type="Self.cost_center_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="cost_center_transaction">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_coupon_customer">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="coupon" Type="Self.coupon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="coupon">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_coupon_leaf_coupon_Id">
+    <End Role="coupon" Type="Self.coupon" Multiplicity="1" />
+    <End Role="coupon_leaf" Type="Self.coupon_leaf" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="coupon">
+        <PropertyRef Name="coupon_id" />
+      </Principal>
+      <Dependent Role="coupon_leaf">
+        <PropertyRef Name="coupon_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_coupon_leaf_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="coupon_leaf" Type="Self.coupon_leaf" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="coupon_leaf">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_coupon_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="coupon" Type="Self.coupon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="coupon">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customer_aggrement_customer">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="customer_aggrement" Type="Self.customer_aggrement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="customer_aggrement">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customer_aggrement_item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="customer_aggrement" Type="Self.customer_aggrement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="customer_aggrement">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customer_aggrement_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="customer_aggrement" Type="Self.customer_aggrement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="customer_aggrement">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customer_asset_customer">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="customer_asset" Type="Self.customer_asset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="customer_asset">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customer_asset_employe">
+    <End Role="employee" Type="Self.employee" Multiplicity="0..1" />
+    <End Role="customer_asset" Type="Self.customer_asset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee">
+        <PropertyRef Name="employee_id" />
+      </Principal>
+      <Dependent Role="customer_asset">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customer_asset_item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="customer_asset" Type="Self.customer_asset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="customer_asset">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customer_division_customer">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="customer_division" Type="Self.customer_division" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="customer_division">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customer_division_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="customer_division" Type="Self.customer_division" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="customer_division">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_daily_collection_customer">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="daily_collection" Type="Self.daily_collection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="daily_collection">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_daily_collection_delivery">
+    <End Role="delivery" Type="Self.delivery" Multiplicity="0..1" />
+    <End Role="daily_collection" Type="Self.daily_collection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="delivery">
+        <PropertyRef Name="delivery_id" />
+      </Principal>
+      <Dependent Role="daily_collection">
+        <PropertyRef Name="delivery_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_daily_collection_employee">
+    <End Role="employee" Type="Self.employee" Multiplicity="1" />
+    <End Role="daily_collection" Type="Self.daily_collection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee">
+        <PropertyRef Name="employee_id" />
+      </Principal>
+      <Dependent Role="daily_collection">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_daily_collection_route">
+    <End Role="route" Type="Self.route" Multiplicity="0..1" />
+    <End Role="daily_collection" Type="Self.daily_collection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="route">
+        <PropertyRef Name="route_id" />
+      </Principal>
+      <Dependent Role="daily_collection">
+        <PropertyRef Name="route_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_daily_collection_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="daily_collection" Type="Self.daily_collection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="daily_collection">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_book_customer">
+    <End Role="customer" Type="Self.customer" Multiplicity="0..1" />
+    <End Role="delivery_book" Type="Self.delivery_book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="delivery_book">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_book_delivery_id">
+    <End Role="delivery" Type="Self.delivery" Multiplicity="0..1" />
+    <End Role="delivery_book" Type="Self.delivery_book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="delivery">
+        <PropertyRef Name="delivery_id" />
+      </Principal>
+      <Dependent Role="delivery_book">
+        <PropertyRef Name="delivery_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_book_employee">
+    <End Role="employee" Type="Self.employee" Multiplicity="1" />
+    <End Role="delivery_book" Type="Self.delivery_book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee">
+        <PropertyRef Name="employee_id" />
+      </Principal>
+      <Dependent Role="delivery_book">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_book_route">
+    <End Role="route" Type="Self.route" Multiplicity="0..1" />
+    <End Role="delivery_book" Type="Self.delivery_book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="route">
+        <PropertyRef Name="route_id" />
+      </Principal>
+      <Dependent Role="delivery_book">
+        <PropertyRef Name="route_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_book_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="delivery_book" Type="Self.delivery_book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="delivery_book">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_employee">
+    <End Role="employee" Type="Self.employee" Multiplicity="1" />
+    <End Role="delivery" Type="Self.delivery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee">
+        <PropertyRef Name="employee_id" />
+      </Principal>
+      <Dependent Role="delivery">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_item_summary_delivery">
+    <End Role="delivery" Type="Self.delivery" Multiplicity="1" />
+    <End Role="delivery_item_summary" Type="Self.delivery_item_summary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="delivery">
+        <PropertyRef Name="delivery_id" />
+      </Principal>
+      <Dependent Role="delivery_item_summary">
+        <PropertyRef Name="delivery_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_item_summary_item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="delivery_item_summary" Type="Self.delivery_item_summary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="delivery_item_summary">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_item_summary_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="delivery_item_summary" Type="Self.delivery_item_summary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="delivery_item_summary">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_items_collection_id">
+    <End Role="daily_collection" Type="Self.daily_collection" Multiplicity="0..1" />
+    <End Role="delivery_items" Type="Self.delivery_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="daily_collection">
+        <PropertyRef Name="daily_collection_id" />
+      </Principal>
+      <Dependent Role="delivery_items">
+        <PropertyRef Name="daily_collection_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_items_customer">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="delivery_items" Type="Self.delivery_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="delivery_items">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_items_delivery">
+    <End Role="delivery" Type="Self.delivery" Multiplicity="1" />
+    <End Role="delivery_items" Type="Self.delivery_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="delivery">
+        <PropertyRef Name="delivery_id" />
+      </Principal>
+      <Dependent Role="delivery_items">
+        <PropertyRef Name="delivery_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_items_item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="delivery_items" Type="Self.delivery_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="delivery_items">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_items_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="delivery_items" Type="Self.delivery_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="delivery_items">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_return_customer">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="delivery_return" Type="Self.delivery_return" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="delivery_return">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_return_employee">
+    <End Role="employee" Type="Self.employee" Multiplicity="1" />
+    <End Role="delivery_return" Type="Self.delivery_return" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee">
+        <PropertyRef Name="employee_id" />
+      </Principal>
+      <Dependent Role="delivery_return">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_return_item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="delivery_return" Type="Self.delivery_return" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="delivery_return">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_route">
+    <End Role="route" Type="Self.route" Multiplicity="0..1" />
+    <End Role="delivery" Type="Self.delivery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="route">
+        <PropertyRef Name="route_id" />
+      </Principal>
+      <Dependent Role="delivery">
+        <PropertyRef Name="route_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="delivery" Type="Self.delivery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="delivery">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_do_item_do_id">
+    <End Role="do_sales" Type="Self.do_sales" Multiplicity="1" />
+    <End Role="do_sales_item" Type="Self.do_sales_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="do_sales">
+        <PropertyRef Name="do_id" />
+      </Principal>
+      <Dependent Role="do_sales_item">
+        <PropertyRef Name="do_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_do_item_sales">
+    <End Role="sales" Type="Self.sales" Multiplicity="1" />
+    <End Role="do_sales_item" Type="Self.do_sales_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sales">
+        <PropertyRef Name="sales_id" />
+      </Principal>
+      <Dependent Role="do_sales_item">
+        <PropertyRef Name="sales_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_do_route">
+    <End Role="route" Type="Self.route" Multiplicity="0..1" />
+    <End Role="do_sales" Type="Self.do_sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="route">
+        <PropertyRef Name="route_id" />
+      </Principal>
+      <Dependent Role="do_sales">
+        <PropertyRef Name="route_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_do_sales_do_customer">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="do_sales" Type="Self.do_sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="do_sales">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_do_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="do_sales" Type="Self.do_sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="do_sales">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_document_serial_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="document_serial" Type="Self.document_serial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="document_serial">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_employee_route">
+    <End Role="route" Type="Self.route" Multiplicity="0..1" />
+    <End Role="employee" Type="Self.employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="route">
+        <PropertyRef Name="route_id" />
+      </Principal>
+      <Dependent Role="employee">
+        <PropertyRef Name="route_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_employee_salesmancreditledger">
+    <End Role="account_ledger" Type="Self.account_ledger" Multiplicity="0..1" />
+    <End Role="employee" Type="Self.employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account_ledger">
+        <PropertyRef Name="ledger_id" />
+      </Principal>
+      <Dependent Role="employee">
+        <PropertyRef Name="salesman_credit_ledger" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_employee_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="employee" Type="Self.employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="employee">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_damage_employee">
+    <End Role="employee" Type="Self.employee" Multiplicity="0..1" />
+    <End Role="item_damage" Type="Self.item_damage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee">
+        <PropertyRef Name="employee_id" />
+      </Principal>
+      <Dependent Role="item_damage">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_damage_item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="item_damage" Type="Self.item_damage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="item_damage">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_damage_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="item_damage" Type="Self.item_damage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="item_damage">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_purchase_ledger">
+    <End Role="account_ledger" Type="Self.account_ledger" Multiplicity="0..1" />
+    <End Role="item" Type="Self.item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account_ledger">
+        <PropertyRef Name="ledger_id" />
+      </Principal>
+      <Dependent Role="item">
+        <PropertyRef Name="purchase_ledger" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_return_exception_item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="item_return_exception" Type="Self.item_return_exception" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="item_return_exception">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_return_exception_returnitem">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="item_return_exception" Type="Self.item_return_exception" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="item_return_exception">
+        <PropertyRef Name="return_item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_return_exception_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="item_return_exception" Type="Self.item_return_exception" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="item_return_exception">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_sale_ledger">
+    <End Role="account_ledger" Type="Self.account_ledger" Multiplicity="0..1" />
+    <End Role="item" Type="Self.item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account_ledger">
+        <PropertyRef Name="ledger_id" />
+      </Principal>
+      <Dependent Role="item">
+        <PropertyRef Name="sale_ledger" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="item" Type="Self.item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="item">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_tax">
+    <End Role="tax_setting" Type="Self.tax_setting" Multiplicity="1" />
+    <End Role="item" Type="Self.item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tax_setting">
+        <PropertyRef Name="tax_id" />
+      </Principal>
+      <Dependent Role="item">
+        <PropertyRef Name="tax" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_transaction_item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="item_transaction" Type="Self.item_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="item_transaction">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_transaction_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="item_transaction" Type="Self.item_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="item_transaction">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_uom">
+    <End Role="uom_setting" Type="Self.uom_setting" Multiplicity="1" />
+    <End Role="item" Type="Self.item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="uom_setting">
+        <PropertyRef Name="uom_id" />
+      </Principal>
+      <Dependent Role="item">
+        <PropertyRef Name="uom" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ledger_mapping_ledger">
+    <End Role="account_ledger" Type="Self.account_ledger" Multiplicity="0..1" />
+    <End Role="ledger_mapping" Type="Self.ledger_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account_ledger">
+        <PropertyRef Name="ledger_id" />
+      </Principal>
+      <Dependent Role="ledger_mapping">
+        <PropertyRef Name="ledger_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_loading_delivery">
+    <End Role="delivery" Type="Self.delivery" Multiplicity="1" />
+    <End Role="loading" Type="Self.loading" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="delivery">
+        <PropertyRef Name="delivery_id" />
+      </Principal>
+      <Dependent Role="loading">
+        <PropertyRef Name="delivery_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_loading_employee">
+    <End Role="employee" Type="Self.employee" Multiplicity="1" />
+    <End Role="loading" Type="Self.loading" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee">
+        <PropertyRef Name="employee_id" />
+      </Principal>
+      <Dependent Role="loading">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_loading_item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="loading" Type="Self.loading" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="loading">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Offer_Item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="offer" Type="Self.offer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="offer">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_pdc_ledger">
+    <End Role="account_ledger" Type="Self.account_ledger" Multiplicity="1" />
+    <End Role="pdc" Type="Self.pdc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account_ledger">
+        <PropertyRef Name="ledger_id" />
+      </Principal>
+      <Dependent Role="pdc">
+        <PropertyRef Name="ledger_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_pdc_party">
+    <End Role="account_ledger" Type="Self.account_ledger" Multiplicity="1" />
+    <End Role="pdc" Type="Self.pdc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account_ledger">
+        <PropertyRef Name="ledger_id" />
+      </Principal>
+      <Dependent Role="pdc">
+        <PropertyRef Name="party_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_pdc_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="pdc" Type="Self.pdc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="pdc">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_privileges_menu">
+    <End Role="privilege_menu" Type="Self.privilege_menu" Multiplicity="1" />
+    <End Role="privileges" Type="Self.privileges" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="privilege_menu">
+        <PropertyRef Name="menu_id" />
+      </Principal>
+      <Dependent Role="privileges">
+        <PropertyRef Name="menu_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_privileges_menu_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="privileges" Type="Self.privileges" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="privileges">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_privileges_user">
+    <End Role="employee" Type="Self.employee" Multiplicity="1" />
+    <End Role="privileges" Type="Self.privileges" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee">
+        <PropertyRef Name="employee_id" />
+      </Principal>
+      <Dependent Role="privileges">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="production" Type="Self.production" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="production">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_mapping_Item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="production_mapping_rowmaterial" Type="Self.production_mapping_rowmaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="production_mapping_rowmaterial">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_mapping_item_id">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="production_mapping" Type="Self.production_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="production_mapping">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_mapping_mapping_id">
+    <End Role="production_mapping" Type="Self.production_mapping" Multiplicity="1" />
+    <End Role="production_mapping_rowmaterial" Type="Self.production_mapping_rowmaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="production_mapping">
+        <PropertyRef Name="mapping_id" />
+      </Principal>
+      <Dependent Role="production_mapping_rowmaterial">
+        <PropertyRef Name="mapping_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_mapping_rowmaterial_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="production_mapping_rowmaterial" Type="Self.production_mapping_rowmaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="production_mapping_rowmaterial">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_mapping_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="production_mapping" Type="Self.production_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="production_mapping">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_rawmaterial_item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="production_rawmaterial" Type="Self.production_rawmaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="production_rawmaterial">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_rawmaterial_production">
+    <End Role="production" Type="Self.production" Multiplicity="1" />
+    <End Role="production_rawmaterial" Type="Self.production_rawmaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="production">
+        <PropertyRef Name="production_id" />
+      </Principal>
+      <Dependent Role="production_rawmaterial">
+        <PropertyRef Name="production_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_rawmaterial_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="production_rawmaterial" Type="Self.production_rawmaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="production_rawmaterial">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="production" Type="Self.production" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="production">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_item_item_id">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="purchase_item" Type="Self.purchase_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="purchase_item">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_item_purchase_id">
+    <End Role="purchase" Type="Self.purchase" Multiplicity="1" />
+    <End Role="purchase_item" Type="Self.purchase_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="purchase">
+        <PropertyRef Name="purchase_id" />
+      </Principal>
+      <Dependent Role="purchase_item">
+        <PropertyRef Name="purchase_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_item_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="purchase_item" Type="Self.purchase_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="purchase_item">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_order_item_item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="purchase_order_item" Type="Self.purchase_order_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="purchase_order_item">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_order_item_purchase_id">
+    <End Role="purchase_order" Type="Self.purchase_order" Multiplicity="1" />
+    <End Role="purchase_order_item" Type="Self.purchase_order_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="purchase_order">
+        <PropertyRef Name="purchase_id" />
+      </Principal>
+      <Dependent Role="purchase_order_item">
+        <PropertyRef Name="purchase_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_order_item_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="purchase_order_item" Type="Self.purchase_order_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="purchase_order_item">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_order_org_purchase_id">
+    <End Role="purchase" Type="Self.purchase" Multiplicity="0..1" />
+    <End Role="purchase_order_item" Type="Self.purchase_order_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="purchase">
+        <PropertyRef Name="purchase_id" />
+      </Principal>
+      <Dependent Role="purchase_order_item">
+        <PropertyRef Name="original_prurchase_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_order_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="purchase_order" Type="Self.purchase_order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="purchase_order">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_order_vendor">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="purchase_order" Type="Self.purchase_order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="purchase_order">
+        <PropertyRef Name="vendor_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="purchase" Type="Self.purchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="purchase">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_vendor">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="purchase" Type="Self.purchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="purchase">
+        <PropertyRef Name="vendor_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchaseret_item_item_id">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="purchase_return_item" Type="Self.purchase_return_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="purchase_return_item">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchaseret_item_purchase_id">
+    <End Role="purchase_return" Type="Self.purchase_return" Multiplicity="1" />
+    <End Role="purchase_return_item" Type="Self.purchase_return_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="purchase_return">
+        <PropertyRef Name="purchase_return_id" />
+      </Principal>
+      <Dependent Role="purchase_return_item">
+        <PropertyRef Name="purchase_return_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchaseret_item_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="purchase_return_item" Type="Self.purchase_return_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="purchase_return_item">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchaseret_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="purchase_return" Type="Self.purchase_return" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="purchase_return">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchaseret_vendor">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="purchase_return" Type="Self.purchase_return" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="purchase_return">
+        <PropertyRef Name="vendor_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_route_group_mainRoute">
+    <End Role="route" Type="Self.route" Multiplicity="1" />
+    <End Role="route_group" Type="Self.route_group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="route">
+        <PropertyRef Name="route_id" />
+      </Principal>
+      <Dependent Role="route_group">
+        <PropertyRef Name="route_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_route_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="route" Type="Self.route" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="route">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_customer">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="sales" Type="Self.sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="sales">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_customer_division">
+    <End Role="customer_division" Type="Self.customer_division" Multiplicity="0..1" />
+    <End Role="sales" Type="Self.sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer_division">
+        <PropertyRef Name="division_id" />
+      </Principal>
+      <Dependent Role="sales">
+        <PropertyRef Name="division_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_delivery">
+    <End Role="delivery" Type="Self.delivery" Multiplicity="0..1" />
+    <End Role="sales" Type="Self.sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="delivery">
+        <PropertyRef Name="delivery_id" />
+      </Principal>
+      <Dependent Role="sales">
+        <PropertyRef Name="sales_order" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_do_invoice">
+    <End Role="do_sales" Type="Self.do_sales" Multiplicity="0..1" />
+    <End Role="sales" Type="Self.sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="do_sales">
+        <PropertyRef Name="do_id" />
+      </Principal>
+      <Dependent Role="sales">
+        <PropertyRef Name="do_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_item_Item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="sales_item" Type="Self.sales_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="sales_item">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_item_sales">
+    <End Role="sales" Type="Self.sales" Multiplicity="1" />
+    <End Role="sales_item" Type="Self.sales_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sales">
+        <PropertyRef Name="sales_id" />
+      </Principal>
+      <Dependent Role="sales_item">
+        <PropertyRef Name="sales_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_item_status">
+    <End Role="status" Type="Self.status" Multiplicity="0..1" />
+    <End Role="sales_item" Type="Self.sales_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="sales_item">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_return_item_Item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="sales_return_item" Type="Self.sales_return_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="sales_return_item">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_route">
+    <End Role="route" Type="Self.route" Multiplicity="0..1" />
+    <End Role="sales" Type="Self.sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="route">
+        <PropertyRef Name="route_id" />
+      </Principal>
+      <Dependent Role="sales">
+        <PropertyRef Name="route_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="sales" Type="Self.sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="sales">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_salesret_customer">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="sales_return" Type="Self.sales_return" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="sales_return">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_salesret_item_sales">
+    <End Role="sales_return" Type="Self.sales_return" Multiplicity="1" />
+    <End Role="sales_return_item" Type="Self.sales_return_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sales_return">
+        <PropertyRef Name="sales_return_id" />
+      </Principal>
+      <Dependent Role="sales_return_item">
+        <PropertyRef Name="sales_return_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_salesret_item_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="sales_return_item" Type="Self.sales_return_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="sales_return_item">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_salesret_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="sales_return" Type="Self.sales_return" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="sales_return">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tax_setting_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="tax_setting" Type="Self.tax_setting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="tax_setting">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_transfer_item_employee">
+    <End Role="employee" Type="Self.employee" Multiplicity="1" />
+    <End Role="transfer_item" Type="Self.transfer_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee">
+        <PropertyRef Name="employee_id" />
+      </Principal>
+      <Dependent Role="transfer_item">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_transfer_item_item">
+    <End Role="item" Type="Self.item" Multiplicity="1" />
+    <End Role="transfer_item" Type="Self.transfer_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="transfer_item">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_transfer_item_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="transfer_item" Type="Self.transfer_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="transfer_item">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_uom_setting_status">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="uom_setting" Type="Self.uom_setting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="uom_setting">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_wallet_history_customer">
+    <End Role="customer" Type="Self.customer" Multiplicity="1" />
+    <End Role="wallet_history" Type="Self.wallet_history" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="wallet_history">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="SP_CostCenterDatewiseDetailed" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dateFrom" Type="date" Mode="In" />
+    <Parameter Name="dateTo" Type="date" Mode="In" />
+  </Function>
+  <Function Name="SP_CostCenterDetailed" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dateFrom" Type="date" Mode="In" />
+    <Parameter Name="dateTo" Type="date" Mode="In" />
+  </Function>
+  <Function Name="SP_CostCenterSummary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dateFrom" Type="date" Mode="In" />
+    <Parameter Name="dateTo" Type="date" Mode="In" />
+  </Function>
+  <Function Name="SP_CustomerSummary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_DeliverySalePaymentMode" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="deliveryId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FOCbyPaymentmode" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="deliveryId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_LedgerSearch" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ledgerName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="maxCount" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_OpeningStockPandL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="SP_SalesMonthlyAnalysis" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="saleyear" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_SalesMonthlyItemAnalysis" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="saleyear" Type="int" Mode="In" />
+    <Parameter Name="itemId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_SyncCustomerOutstanding" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_SyncCustomerOutstandingRoutewise" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="routeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_SyncOutstandingToWallet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_TrialBalanceDetailed" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dateFrom" Type="date" Mode="In" />
+    <Parameter Name="dateTo" Type="date" Mode="In" />
+  </Function>
+  <Function Name="SP_TrialBalanceSummary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dateFrom" Type="date" Mode="In" />
+    <Parameter Name="dateTo" Type="date" Mode="In" />
+  </Function>
+  <EntityContainer Name="betaskdbModelStoreContainer">
+    <EntitySet Name="account_group" EntityType="Self.account_group" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="account_ledger" EntityType="Self.account_ledger" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="account_transaction" EntityType="Self.account_transaction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="account_transaction_cheque" EntityType="Self.account_transaction_cheque" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="building" EntityType="Self.building" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="company" EntityType="Self.company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cost_center" EntityType="Self.cost_center" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cost_center_transaction" EntityType="Self.cost_center_transaction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="coupon" EntityType="Self.coupon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="coupon_leaf" EntityType="Self.coupon_leaf" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="customer" EntityType="Self.customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="customer_aggrement" EntityType="Self.customer_aggrement" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="customer_asset" EntityType="Self.customer_asset" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="customer_division" EntityType="Self.customer_division" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="daily_collection" EntityType="Self.daily_collection" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="default_values" EntityType="Self.default_values" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="delivery" EntityType="Self.delivery" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="delivery_book" EntityType="Self.delivery_book" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="delivery_item_summary" EntityType="Self.delivery_item_summary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="delivery_items" EntityType="Self.delivery_items" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="delivery_return" EntityType="Self.delivery_return" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="do_sales" EntityType="Self.do_sales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="do_sales_item" EntityType="Self.do_sales_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="document_serial" EntityType="Self.document_serial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="employee" EntityType="Self.employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="item" EntityType="Self.item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="item_damage" EntityType="Self.item_damage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="item_return_exception" EntityType="Self.item_return_exception" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="item_transaction" EntityType="Self.item_transaction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ledger_mapping" EntityType="Self.ledger_mapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="loading" EntityType="Self.loading" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mail_settings" EntityType="Self.mail_settings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="offer" EntityType="Self.offer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pdc" EntityType="Self.pdc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="privilege_menu" EntityType="Self.privilege_menu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="privileges" EntityType="Self.privileges" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="production" EntityType="Self.production" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="production_mapping" EntityType="Self.production_mapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="production_mapping_rowmaterial" EntityType="Self.production_mapping_rowmaterial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="production_rawmaterial" EntityType="Self.production_rawmaterial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="purchase" EntityType="Self.purchase" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="purchase_item" EntityType="Self.purchase_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="purchase_order" EntityType="Self.purchase_order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="purchase_order_item" EntityType="Self.purchase_order_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="purchase_return" EntityType="Self.purchase_return" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="purchase_return_item" EntityType="Self.purchase_return_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="route" EntityType="Self.route" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="route_group" EntityType="Self.route_group" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sales" EntityType="Self.sales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sales_item" EntityType="Self.sales_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sales_return" EntityType="Self.sales_return" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sales_return_item" EntityType="Self.sales_return_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="status" EntityType="Self.status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="system_settings" EntityType="Self.system_settings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tax_setting" EntityType="Self.tax_setting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="transfer_item" EntityType="Self.transfer_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="uom_setting" EntityType="Self.uom_setting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user_log" EntityType="Self.user_log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="wallet_history" EntityType="Self.wallet_history" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_account_group_status" Association="Self.FK_account_group_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="account_group" EntitySet="account_group" />
+    </AssociationSet>
+    <AssociationSet Name="FK_account_ledger_groupid" Association="Self.FK_account_ledger_groupid">
+      <End Role="account_group" EntitySet="account_group" />
+      <End Role="account_ledger" EntitySet="account_ledger" />
+    </AssociationSet>
+    <AssociationSet Name="FK_account_ledger_status" Association="Self.FK_account_ledger_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="account_ledger" EntitySet="account_ledger" />
+    </AssociationSet>
+    <AssociationSet Name="FK_account_transaction__cheque_status" Association="Self.FK_account_transaction__cheque_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="account_transaction_cheque" EntitySet="account_transaction_cheque" />
+    </AssociationSet>
+    <AssociationSet Name="FK_account_transaction_cheque_transactionid" Association="Self.FK_account_transaction_cheque_transactionid">
+      <End Role="account_transaction" EntitySet="account_transaction" />
+      <End Role="account_transaction_cheque" EntitySet="account_transaction_cheque" />
+    </AssociationSet>
+    <AssociationSet Name="FK_account_transaction_ledger" Association="Self.FK_account_transaction_ledger">
+      <End Role="account_ledger" EntitySet="account_ledger" />
+      <End Role="account_transaction" EntitySet="account_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_account_transaction_route" Association="Self.FK_account_transaction_route">
+      <End Role="route" EntitySet="route" />
+      <End Role="account_transaction" EntitySet="account_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_account_transaction_status" Association="Self.FK_account_transaction_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="account_transaction" EntitySet="account_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_autoledgermapping_group" Association="Self.FK_autoledgermapping_group">
+      <End Role="account_group" EntitySet="account_group" />
+      <End Role="ledger_mapping" EntitySet="ledger_mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_autoledgermapping_status" Association="Self.FK_autoledgermapping_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="ledger_mapping" EntitySet="ledger_mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_building_status" Association="Self.FK_building_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="building" EntitySet="building" />
+    </AssociationSet>
+    <AssociationSet Name="FK_company_status" Association="Self.FK_company_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="company" EntitySet="company" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cost_center_status" Association="Self.FK_cost_center_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="cost_center" EntitySet="cost_center" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cost_center_transaction_cost_center" Association="Self.FK_cost_center_transaction_cost_center">
+      <End Role="cost_center" EntitySet="cost_center" />
+      <End Role="cost_center_transaction" EntitySet="cost_center_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cost_center_transaction_cost_ledger" Association="Self.FK_cost_center_transaction_cost_ledger">
+      <End Role="account_ledger" EntitySet="account_ledger" />
+      <End Role="cost_center_transaction" EntitySet="cost_center_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cost_center_transaction_cost_transaction_id" Association="Self.FK_cost_center_transaction_cost_transaction_id">
+      <End Role="account_transaction" EntitySet="account_transaction" />
+      <End Role="cost_center_transaction" EntitySet="cost_center_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cost_center_transaction_status" Association="Self.FK_cost_center_transaction_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="cost_center_transaction" EntitySet="cost_center_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_coupon_customer" Association="Self.FK_coupon_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="coupon" EntitySet="coupon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_coupon_leaf_coupon_Id" Association="Self.FK_coupon_leaf_coupon_Id">
+      <End Role="coupon" EntitySet="coupon" />
+      <End Role="coupon_leaf" EntitySet="coupon_leaf" />
+    </AssociationSet>
+    <AssociationSet Name="FK_coupon_leaf_status" Association="Self.FK_coupon_leaf_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="coupon_leaf" EntitySet="coupon_leaf" />
+    </AssociationSet>
+    <AssociationSet Name="FK_coupon_status" Association="Self.FK_coupon_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="coupon" EntitySet="coupon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customer_aggrement_customer" Association="Self.FK_customer_aggrement_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="customer_aggrement" EntitySet="customer_aggrement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customer_aggrement_item" Association="Self.FK_customer_aggrement_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="customer_aggrement" EntitySet="customer_aggrement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customer_aggrement_status" Association="Self.FK_customer_aggrement_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="customer_aggrement" EntitySet="customer_aggrement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customer_asset_customer" Association="Self.FK_customer_asset_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="customer_asset" EntitySet="customer_asset" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customer_asset_employe" Association="Self.FK_customer_asset_employe">
+      <End Role="employee" EntitySet="employee" />
+      <End Role="customer_asset" EntitySet="customer_asset" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customer_asset_item" Association="Self.FK_customer_asset_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="customer_asset" EntitySet="customer_asset" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customer_division_customer" Association="Self.FK_customer_division_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="customer_division" EntitySet="customer_division" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customer_division_status" Association="Self.FK_customer_division_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="customer_division" EntitySet="customer_division" />
+    </AssociationSet>
+    <AssociationSet Name="FK_daily_collection_customer" Association="Self.FK_daily_collection_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="daily_collection" EntitySet="daily_collection" />
+    </AssociationSet>
+    <AssociationSet Name="FK_daily_collection_delivery" Association="Self.FK_daily_collection_delivery">
+      <End Role="delivery" EntitySet="delivery" />
+      <End Role="daily_collection" EntitySet="daily_collection" />
+    </AssociationSet>
+    <AssociationSet Name="FK_daily_collection_employee" Association="Self.FK_daily_collection_employee">
+      <End Role="employee" EntitySet="employee" />
+      <End Role="daily_collection" EntitySet="daily_collection" />
+    </AssociationSet>
+    <AssociationSet Name="FK_daily_collection_route" Association="Self.FK_daily_collection_route">
+      <End Role="route" EntitySet="route" />
+      <End Role="daily_collection" EntitySet="daily_collection" />
+    </AssociationSet>
+    <AssociationSet Name="FK_daily_collection_status" Association="Self.FK_daily_collection_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="daily_collection" EntitySet="daily_collection" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_book_customer" Association="Self.FK_delivery_book_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="delivery_book" EntitySet="delivery_book" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_book_delivery_id" Association="Self.FK_delivery_book_delivery_id">
+      <End Role="delivery" EntitySet="delivery" />
+      <End Role="delivery_book" EntitySet="delivery_book" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_book_employee" Association="Self.FK_delivery_book_employee">
+      <End Role="employee" EntitySet="employee" />
+      <End Role="delivery_book" EntitySet="delivery_book" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_book_route" Association="Self.FK_delivery_book_route">
+      <End Role="route" EntitySet="route" />
+      <End Role="delivery_book" EntitySet="delivery_book" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_book_status" Association="Self.FK_delivery_book_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="delivery_book" EntitySet="delivery_book" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_employee" Association="Self.FK_delivery_employee">
+      <End Role="employee" EntitySet="employee" />
+      <End Role="delivery" EntitySet="delivery" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_item_summary_delivery" Association="Self.FK_delivery_item_summary_delivery">
+      <End Role="delivery" EntitySet="delivery" />
+      <End Role="delivery_item_summary" EntitySet="delivery_item_summary" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_item_summary_item" Association="Self.FK_delivery_item_summary_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="delivery_item_summary" EntitySet="delivery_item_summary" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_item_summary_status" Association="Self.FK_delivery_item_summary_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="delivery_item_summary" EntitySet="delivery_item_summary" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_items_collection_id" Association="Self.FK_delivery_items_collection_id">
+      <End Role="daily_collection" EntitySet="daily_collection" />
+      <End Role="delivery_items" EntitySet="delivery_items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_items_customer" Association="Self.FK_delivery_items_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="delivery_items" EntitySet="delivery_items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_items_delivery" Association="Self.FK_delivery_items_delivery">
+      <End Role="delivery" EntitySet="delivery" />
+      <End Role="delivery_items" EntitySet="delivery_items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_items_item" Association="Self.FK_delivery_items_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="delivery_items" EntitySet="delivery_items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_items_status" Association="Self.FK_delivery_items_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="delivery_items" EntitySet="delivery_items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_return_customer" Association="Self.FK_delivery_return_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="delivery_return" EntitySet="delivery_return" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_return_employee" Association="Self.FK_delivery_return_employee">
+      <End Role="employee" EntitySet="employee" />
+      <End Role="delivery_return" EntitySet="delivery_return" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_return_item" Association="Self.FK_delivery_return_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="delivery_return" EntitySet="delivery_return" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_route" Association="Self.FK_delivery_route">
+      <End Role="route" EntitySet="route" />
+      <End Role="delivery" EntitySet="delivery" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_status" Association="Self.FK_delivery_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="delivery" EntitySet="delivery" />
+    </AssociationSet>
+    <AssociationSet Name="FK_do_item_do_id" Association="Self.FK_do_item_do_id">
+      <End Role="do_sales" EntitySet="do_sales" />
+      <End Role="do_sales_item" EntitySet="do_sales_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_do_item_sales" Association="Self.FK_do_item_sales">
+      <End Role="sales" EntitySet="sales" />
+      <End Role="do_sales_item" EntitySet="do_sales_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_do_route" Association="Self.FK_do_route">
+      <End Role="route" EntitySet="route" />
+      <End Role="do_sales" EntitySet="do_sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_do_sales_do_customer" Association="Self.FK_do_sales_do_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="do_sales" EntitySet="do_sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_do_status" Association="Self.FK_do_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="do_sales" EntitySet="do_sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_document_serial_status" Association="Self.FK_document_serial_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="document_serial" EntitySet="document_serial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_employee_route" Association="Self.FK_employee_route">
+      <End Role="route" EntitySet="route" />
+      <End Role="employee" EntitySet="employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_employee_salesmancreditledger" Association="Self.FK_employee_salesmancreditledger">
+      <End Role="account_ledger" EntitySet="account_ledger" />
+      <End Role="employee" EntitySet="employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_employee_status" Association="Self.FK_employee_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="employee" EntitySet="employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_damage_employee" Association="Self.FK_item_damage_employee">
+      <End Role="employee" EntitySet="employee" />
+      <End Role="item_damage" EntitySet="item_damage" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_damage_item" Association="Self.FK_item_damage_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="item_damage" EntitySet="item_damage" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_damage_status" Association="Self.FK_item_damage_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="item_damage" EntitySet="item_damage" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_purchase_ledger" Association="Self.FK_item_purchase_ledger">
+      <End Role="account_ledger" EntitySet="account_ledger" />
+      <End Role="item" EntitySet="item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_return_exception_item" Association="Self.FK_item_return_exception_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="item_return_exception" EntitySet="item_return_exception" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_return_exception_returnitem" Association="Self.FK_item_return_exception_returnitem">
+      <End Role="item" EntitySet="item" />
+      <End Role="item_return_exception" EntitySet="item_return_exception" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_return_exception_status" Association="Self.FK_item_return_exception_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="item_return_exception" EntitySet="item_return_exception" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_sale_ledger" Association="Self.FK_item_sale_ledger">
+      <End Role="account_ledger" EntitySet="account_ledger" />
+      <End Role="item" EntitySet="item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_status" Association="Self.FK_item_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="item" EntitySet="item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_tax" Association="Self.FK_item_tax">
+      <End Role="tax_setting" EntitySet="tax_setting" />
+      <End Role="item" EntitySet="item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_transaction_item" Association="Self.FK_item_transaction_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="item_transaction" EntitySet="item_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_transaction_status" Association="Self.FK_item_transaction_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="item_transaction" EntitySet="item_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_uom" Association="Self.FK_item_uom">
+      <End Role="uom_setting" EntitySet="uom_setting" />
+      <End Role="item" EntitySet="item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ledger_mapping_ledger" Association="Self.FK_ledger_mapping_ledger">
+      <End Role="account_ledger" EntitySet="account_ledger" />
+      <End Role="ledger_mapping" EntitySet="ledger_mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_loading_delivery" Association="Self.FK_loading_delivery">
+      <End Role="delivery" EntitySet="delivery" />
+      <End Role="loading" EntitySet="loading" />
+    </AssociationSet>
+    <AssociationSet Name="FK_loading_employee" Association="Self.FK_loading_employee">
+      <End Role="employee" EntitySet="employee" />
+      <End Role="loading" EntitySet="loading" />
+    </AssociationSet>
+    <AssociationSet Name="FK_loading_item" Association="Self.FK_loading_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="loading" EntitySet="loading" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Offer_Item" Association="Self.FK_Offer_Item">
+      <End Role="item" EntitySet="item" />
+      <End Role="offer" EntitySet="offer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_pdc_ledger" Association="Self.FK_pdc_ledger">
+      <End Role="account_ledger" EntitySet="account_ledger" />
+      <End Role="pdc" EntitySet="pdc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_pdc_party" Association="Self.FK_pdc_party">
+      <End Role="account_ledger" EntitySet="account_ledger" />
+      <End Role="pdc" EntitySet="pdc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_pdc_status" Association="Self.FK_pdc_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="pdc" EntitySet="pdc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_privileges_menu" Association="Self.FK_privileges_menu">
+      <End Role="privilege_menu" EntitySet="privilege_menu" />
+      <End Role="privileges" EntitySet="privileges" />
+    </AssociationSet>
+    <AssociationSet Name="FK_privileges_menu_status" Association="Self.FK_privileges_menu_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="privileges" EntitySet="privileges" />
+    </AssociationSet>
+    <AssociationSet Name="FK_privileges_user" Association="Self.FK_privileges_user">
+      <End Role="employee" EntitySet="employee" />
+      <End Role="privileges" EntitySet="privileges" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_item" Association="Self.FK_production_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="production" EntitySet="production" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_mapping_Item" Association="Self.FK_production_mapping_Item">
+      <End Role="item" EntitySet="item" />
+      <End Role="production_mapping_rowmaterial" EntitySet="production_mapping_rowmaterial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_mapping_item_id" Association="Self.FK_production_mapping_item_id">
+      <End Role="item" EntitySet="item" />
+      <End Role="production_mapping" EntitySet="production_mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_mapping_mapping_id" Association="Self.FK_production_mapping_mapping_id">
+      <End Role="production_mapping" EntitySet="production_mapping" />
+      <End Role="production_mapping_rowmaterial" EntitySet="production_mapping_rowmaterial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_mapping_rowmaterial_status" Association="Self.FK_production_mapping_rowmaterial_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="production_mapping_rowmaterial" EntitySet="production_mapping_rowmaterial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_mapping_status" Association="Self.FK_production_mapping_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="production_mapping" EntitySet="production_mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_rawmaterial_item" Association="Self.FK_production_rawmaterial_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="production_rawmaterial" EntitySet="production_rawmaterial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_rawmaterial_production" Association="Self.FK_production_rawmaterial_production">
+      <End Role="production" EntitySet="production" />
+      <End Role="production_rawmaterial" EntitySet="production_rawmaterial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_rawmaterial_status" Association="Self.FK_production_rawmaterial_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="production_rawmaterial" EntitySet="production_rawmaterial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_status" Association="Self.FK_production_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="production" EntitySet="production" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_item_item_id" Association="Self.FK_purchase_item_item_id">
+      <End Role="item" EntitySet="item" />
+      <End Role="purchase_item" EntitySet="purchase_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_item_purchase_id" Association="Self.FK_purchase_item_purchase_id">
+      <End Role="purchase" EntitySet="purchase" />
+      <End Role="purchase_item" EntitySet="purchase_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_item_status" Association="Self.FK_purchase_item_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="purchase_item" EntitySet="purchase_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_order_item_item" Association="Self.FK_purchase_order_item_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="purchase_order_item" EntitySet="purchase_order_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_order_item_purchase_id" Association="Self.FK_purchase_order_item_purchase_id">
+      <End Role="purchase_order" EntitySet="purchase_order" />
+      <End Role="purchase_order_item" EntitySet="purchase_order_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_order_item_status" Association="Self.FK_purchase_order_item_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="purchase_order_item" EntitySet="purchase_order_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_order_org_purchase_id" Association="Self.FK_purchase_order_org_purchase_id">
+      <End Role="purchase" EntitySet="purchase" />
+      <End Role="purchase_order_item" EntitySet="purchase_order_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_order_status" Association="Self.FK_purchase_order_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="purchase_order" EntitySet="purchase_order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_order_vendor" Association="Self.FK_purchase_order_vendor">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="purchase_order" EntitySet="purchase_order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_status" Association="Self.FK_purchase_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="purchase" EntitySet="purchase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_vendor" Association="Self.FK_purchase_vendor">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="purchase" EntitySet="purchase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchaseret_item_item_id" Association="Self.FK_purchaseret_item_item_id">
+      <End Role="item" EntitySet="item" />
+      <End Role="purchase_return_item" EntitySet="purchase_return_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchaseret_item_purchase_id" Association="Self.FK_purchaseret_item_purchase_id">
+      <End Role="purchase_return" EntitySet="purchase_return" />
+      <End Role="purchase_return_item" EntitySet="purchase_return_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchaseret_item_status" Association="Self.FK_purchaseret_item_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="purchase_return_item" EntitySet="purchase_return_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchaseret_status" Association="Self.FK_purchaseret_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="purchase_return" EntitySet="purchase_return" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchaseret_vendor" Association="Self.FK_purchaseret_vendor">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="purchase_return" EntitySet="purchase_return" />
+    </AssociationSet>
+    <AssociationSet Name="FK_route_group_mainRoute" Association="Self.FK_route_group_mainRoute">
+      <End Role="route" EntitySet="route" />
+      <End Role="route_group" EntitySet="route_group" />
+    </AssociationSet>
+    <AssociationSet Name="FK_route_status" Association="Self.FK_route_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="route" EntitySet="route" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_customer" Association="Self.FK_sales_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="sales" EntitySet="sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_customer_division" Association="Self.FK_sales_customer_division">
+      <End Role="customer_division" EntitySet="customer_division" />
+      <End Role="sales" EntitySet="sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_delivery" Association="Self.FK_sales_delivery">
+      <End Role="delivery" EntitySet="delivery" />
+      <End Role="sales" EntitySet="sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_do_invoice" Association="Self.FK_sales_do_invoice">
+      <End Role="do_sales" EntitySet="do_sales" />
+      <End Role="sales" EntitySet="sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_item_Item" Association="Self.FK_sales_item_Item">
+      <End Role="item" EntitySet="item" />
+      <End Role="sales_item" EntitySet="sales_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_item_sales" Association="Self.FK_sales_item_sales">
+      <End Role="sales" EntitySet="sales" />
+      <End Role="sales_item" EntitySet="sales_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_item_status" Association="Self.FK_sales_item_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="sales_item" EntitySet="sales_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_return_item_Item" Association="Self.FK_sales_return_item_Item">
+      <End Role="item" EntitySet="item" />
+      <End Role="sales_return_item" EntitySet="sales_return_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_route" Association="Self.FK_sales_route">
+      <End Role="route" EntitySet="route" />
+      <End Role="sales" EntitySet="sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_status" Association="Self.FK_sales_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="sales" EntitySet="sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_salesret_customer" Association="Self.FK_salesret_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="sales_return" EntitySet="sales_return" />
+    </AssociationSet>
+    <AssociationSet Name="FK_salesret_item_sales" Association="Self.FK_salesret_item_sales">
+      <End Role="sales_return" EntitySet="sales_return" />
+      <End Role="sales_return_item" EntitySet="sales_return_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_salesret_item_status" Association="Self.FK_salesret_item_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="sales_return_item" EntitySet="sales_return_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_salesret_status" Association="Self.FK_salesret_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="sales_return" EntitySet="sales_return" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tax_setting_status" Association="Self.FK_tax_setting_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="tax_setting" EntitySet="tax_setting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_transfer_item_employee" Association="Self.FK_transfer_item_employee">
+      <End Role="employee" EntitySet="employee" />
+      <End Role="transfer_item" EntitySet="transfer_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_transfer_item_item" Association="Self.FK_transfer_item_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="transfer_item" EntitySet="transfer_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_transfer_item_status" Association="Self.FK_transfer_item_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="transfer_item" EntitySet="transfer_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_uom_setting_status" Association="Self.FK_uom_setting_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="uom_setting" EntitySet="uom_setting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_wallet_history_customer" Association="Self.FK_wallet_history_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="wallet_history" EntitySet="wallet_history" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

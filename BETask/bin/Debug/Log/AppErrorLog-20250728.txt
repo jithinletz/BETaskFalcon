@@ -1,0 +1,48 @@
+
+28/07/2025 8:10:04 PM{LETZ} - System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BETask.DAL.DAL.ProfitAndLossDAL.GetAccountTransactionTypeListLedgers(Int32 groupId, betaskdbEntities context, DateTime dateFrom, DateTime dateTo) in C:\Projects\BETask Falcon\Cloud\BETask.DAL\DAL\ProfitAndLossDAL.cs:line 847
+   at BETask.DAL.DAL.ProfitAndLossDAL.DirectExpense(betaskdbEntities context, DateTime dateFrom, DateTime dateTo) in C:\Projects\BETask Falcon\Cloud\BETask.DAL\DAL\ProfitAndLossDAL.cs:line 587
+   at BETask.DAL.DAL.ProfitAndLossDAL.GetAccountTransactionTypeList(Enum transactionType, betaskdbEntities context, DateTime dateFrom, DateTime dateTo) in C:\Projects\BETask Falcon\Cloud\BETask.DAL\DAL\ProfitAndLossDAL.cs:line 536
+   at BETask.DAL.DAL.ProfitAndLossDAL.GenerateProfitandLossNew(DateTime dateFrom, DateTime dateTo) in C:\Projects\BETask Falcon\Cloud\BETask.DAL\DAL\ProfitAndLossDAL.cs:line 298
+   at BETask.BAL.ProfitandLossBAL.GenerateProfitandLossNew(DateTime dateFrom, DateTime dateTo) in C:\Projects\BETask Falcon\Cloud\BETask\BAL\ProfitandLossBAL.cs:line 40
+   at BETask.Views.ProfitandLossForm.SearchNew() in C:\Projects\BETask Falcon\Cloud\BETask\Views\ProfitandLossForm.cs:line 121
+
+28/07/2025 8:17:04 PM{LETZ} - System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'usp_GetSalesTotal'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryInternal[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__68()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__67()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryReliably[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQuery[TElement](String commandText, ExecutionOptions executionOptions, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClass14`1.<ExecuteSqlQuery>b__13()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at BETask.DAL.DAL.ProfitAndLossDAL.Sale(betaskdbEntities context, DateTime dateFrom, DateTime dateTo, List`1& listAccountReUse) in C:\Projects\BETask Falcon\Cloud\BETask.DAL\DAL\ProfitAndLossDAL.cs:line 348
+   at BETask.DAL.DAL.ProfitAndLossDAL.GenerateProfitandLossNew(DateTime dateFrom, DateTime dateTo) in C:\Projects\BETask Falcon\Cloud\BETask.DAL\DAL\ProfitAndLossDAL.cs:line 301
+   at BETask.BAL.ProfitandLossBAL.GenerateProfitandLossNew(DateTime dateFrom, DateTime dateTo) in C:\Projects\BETask Falcon\Cloud\BETask\BAL\ProfitandLossBAL.cs:line 40
+   at BETask.Views.ProfitandLossForm.SearchNew() in C:\Projects\BETask Falcon\Cloud\BETask\Views\ProfitandLossForm.cs:line 121
+ClientConnectionId:74631dfe-8699-46b3-8db7-693321ab4f49
+Error Number:2812,State:62,Class:16
+
+28/07/2025 9:48:49 PM{LETZ} - invalid try to login LETZ

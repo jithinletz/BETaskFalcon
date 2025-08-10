@@ -1,0 +1,64 @@
+
+28/Mar/2024 08:27:58 PM{LETZ} - 
+5707 - Started DeliveryFromApp 
+
+28/Mar/2024 08:27:59 PM{LETZ} - 
+5707 - Delievery APP  Sync completed synced=0
+
+28/Mar/2024 08:27:59 PM{LETZ} - 
+5707 - Started RedeemedCoupon 
+
+28/Mar/2024 08:27:59 PM{LETZ} - 
+5707 - Completed RedeemedCoupon Count 0
+
+28/Mar/2024 08:27:59 PM{LETZ} - 
+5707 - OutstandingDailyCollection
+
+28/Mar/2024 08:27:59 PM{LETZ} - 0 to be updated
+
+28/Mar/2024 08:27:59 PM{LETZ} - 
+5707 - Completed OutstandingDailyCollection 0
+
+28/Mar/2024 08:27:59 PM{LETZ} - 
+5707 - Started Delivery 
+
+28/Mar/2024 08:28:00 PM{LETZ} - 
+5707 - Completed Delivery count 0 
+
+28/Mar/2024 08:28:00 PM{LETZ} - 
+5707 - UpdateRouteInTransaction
+
+28/Mar/2024 08:28:01 PM{LETZ} - 
+5707 - completed UpdateRouteInTransaction
+
+28/Mar/2024 11:04:30 PM{LETZ} - 
+3919 - Started DeliveryFromApp 
+
+28/Mar/2024 11:04:31 PM{LETZ} - 
+3919 - Delievery APP  Sync completed synced=0
+
+28/Mar/2024 11:04:31 PM{LETZ} - 
+3919 - Started RedeemedCoupon 
+
+28/Mar/2024 11:04:31 PM{LETZ} - 
+3919 - Completed RedeemedCoupon Count 0
+
+28/Mar/2024 11:04:31 PM{LETZ} - 
+3919 - OutstandingDailyCollection
+
+28/Mar/2024 11:04:31 PM{LETZ} - 0 to be updated
+
+28/Mar/2024 11:04:31 PM{LETZ} - 
+3919 - Completed OutstandingDailyCollection 0
+
+28/Mar/2024 11:04:31 PM{LETZ} - 
+3919 - Started Delivery 
+
+28/Mar/2024 11:04:32 PM{LETZ} - 
+3919 - Completed Delivery count 0 
+
+28/Mar/2024 11:04:32 PM{LETZ} - 
+3919 - UpdateRouteInTransaction
+
+28/Mar/2024 11:04:33 PM{LETZ} - 
+3919 - completed UpdateRouteInTransaction

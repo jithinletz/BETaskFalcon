@@ -1,0 +1,8 @@
+
+29/07/2025 11:01:06 PM{LETZ} - invalid try to login LETZ
+
+29/07/2025 11:57:49 PM{LETZ} - 
+0 - CustomerOutstandingRoutewise 15 minues
+
+29/07/2025 11:57:50 PM{LETZ} - 
+0 - completed CustomerOutstandingRoutewise 15 minues

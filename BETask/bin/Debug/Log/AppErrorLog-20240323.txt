@@ -1,0 +1,394 @@
+
+23/Mar/2024 08:16:45 AM{LETZ} - System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: Cannot open database "temp_falcon_cloud" requested by the login. The login failed.
+Login failed for user 'usr_betask'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<Open>b__36(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__2()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   at System.Data.Entity.DbContextTransaction.EnsureOpenConnection()
+   at System.Data.Entity.DbContextTransaction..ctor(EntityConnection connection)
+   at System.Data.Entity.Database.BeginTransaction()
+   at BETask.APP.DAL.DeliveryAppDAL.GenerateDeliveryId(delivery delivery) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.APP\DAL\DeliveryAppDAL.cs:line 197
+   at BETask.BAL.DeliveryBAL.GenerateDeliveryApp(Int32 deliveryId) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\DeliveryBAL.cs:line 277
+
+23/Mar/2024 08:18:30 AM{LETZ} - 
+3180 - Started DeliveryFromApp 
+
+23/Mar/2024 08:18:36 AM{LETZ} - 
+3180 - Delievery APP  Sync completed synced=0
+
+23/Mar/2024 08:18:36 AM{LETZ} - 
+3180 - Started RedeemedCoupon 
+
+23/Mar/2024 08:18:36 AM{LETZ} - 
+3180 - Completed RedeemedCoupon Count 0
+
+23/Mar/2024 08:18:36 AM{LETZ} - 
+3180 - Started Delivery 
+
+23/Mar/2024 08:19:04 AM{LETZ} - 
+3180 - Completed Delivery count 1 
+
+23/Mar/2024 08:19:04 AM{LETZ} - 
+3180 - OutstandingDailyCollection
+
+23/Mar/2024 08:19:07 AM{LETZ} - 0 to be updated
+
+23/Mar/2024 08:19:07 AM{LETZ} - 
+3180 - Completed OutstandingDailyCollection 0
+
+23/Mar/2024 08:19:07 AM{LETZ} - 
+3180 - UpdateRouteInTransaction
+
+23/Mar/2024 08:19:37 AM{LETZ} - 
+3180 - completed UpdateRouteInTransaction
+
+23/Mar/2024 08:25:03 AM{LETZ} - 
+225 - Started DeliveryFromApp 
+
+23/Mar/2024 08:25:03 AM{LETZ} - 
+225 - Delievery APP  Sync completed synced=0
+
+23/Mar/2024 08:25:11 AM{LETZ} - 
+225 - Started RedeemedCoupon 
+
+23/Mar/2024 08:25:11 AM{LETZ} - 
+225 - Completed RedeemedCoupon Count 0
+
+23/Mar/2024 08:25:22 AM{LETZ} - 
+225 - OutstandingDailyCollection
+
+23/Mar/2024 08:25:22 AM{LETZ} - 1 to be updated
+
+23/Mar/2024 08:25:27 AM{LETZ} - Recharge synced :1028220 - JITHINLETZ - 100.00
+
+23/Mar/2024 08:25:27 AM{LETZ} - 
+225 - Completed OutstandingDailyCollection 1
+
+23/Mar/2024 08:27:30 AM{LETZ} - 
+225 - UpdateRouteInTransaction
+
+23/Mar/2024 08:27:31 AM{LETZ} - 
+225 - completed UpdateRouteInTransaction
+
+23/Mar/2024 08:29:55 AM{LETZ} - 
+7934 - Started DeliveryFromApp 
+
+23/Mar/2024 08:29:55 AM{LETZ} - 
+7934 - Delievery APP  Sync completed synced=0
+
+23/Mar/2024 08:29:55 AM{LETZ} - 
+7934 - Started RedeemedCoupon 
+
+23/Mar/2024 08:29:55 AM{LETZ} - 
+7934 - Completed RedeemedCoupon Count 0
+
+23/Mar/2024 08:30:03 AM{LETZ} - 
+7934 - Started Delivery 
+
+23/Mar/2024 08:30:19 AM{LETZ} - 
+7934 - Completed Delivery count 1 
+
+23/Mar/2024 08:30:36 AM{LETZ} - 
+7934 - OutstandingDailyCollection
+
+23/Mar/2024 08:30:37 AM{LETZ} - 1 to be updated
+
+23/Mar/2024 08:32:01 AM{LETZ} - Recharge synced :1028220 - JITHINLETZ - 150.00
+
+23/Mar/2024 08:39:42 AM{LETZ} - 
+7158 - Completed OutstandingDailyCollection 1
+
+23/Mar/2024 08:39:42 AM{LETZ} - 
+7158 - UpdateRouteInTransaction
+
+23/Mar/2024 08:39:42 AM{LETZ} - 
+7158 - completed UpdateRouteInTransaction
+
+23/Mar/2024 08:39:45 AM{LETZ} - System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at BETask.BAL.HelpBAL.EmailError(String message, String error, Boolean MessageEmail) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\HelpBAL.cs:line 205
+
+23/Mar/2024 08:39:45 AM{LETZ} - Sync errorSystem.InvalidOperationException: This BackgroundWorker is currently busy and cannot run multiple tasks concurrently.
+   at System.ComponentModel.BackgroundWorker.RunWorkerAsync(Object argument)
+   at BETask.Views.MDIBETask.Synchronisation() in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\MDIBETask.cs:line 1531
+
+23/Mar/2024 08:48:41 AM{LETZ} - 
+1704 - Started DeliveryFromApp 
+
+23/Mar/2024 08:48:44 AM{LETZ} - 
+1704 - Delievery APP  Sync completed synced=1
+
+23/Mar/2024 08:48:46 AM{LETZ} - 
+1704 - Started RedeemedCoupon 
+
+23/Mar/2024 08:48:46 AM{LETZ} - 
+1704 - Completed RedeemedCoupon Count 0
+
+23/Mar/2024 08:48:55 AM{LETZ} - 
+1704 - Started Delivery 
+
+23/Mar/2024 08:50:33 AM{LETZ} - 
+1704 - Completed Delivery count 1 
+
+23/Mar/2024 08:50:33 AM{LETZ} - 
+1704 - OutstandingDailyCollection
+
+23/Mar/2024 08:50:33 AM{LETZ} - 1 to be updated
+
+23/Mar/2024 08:50:38 AM{LETZ} - Recharge synced :1028220 - JITHINLETZ - 185.52
+
+23/Mar/2024 08:50:38 AM{LETZ} - 
+1704 - Completed OutstandingDailyCollection 1
+
+23/Mar/2024 08:50:38 AM{LETZ} - 
+1704 - UpdateRouteInTransaction
+
+23/Mar/2024 08:50:38 AM{LETZ} - 
+1704 - completed UpdateRouteInTransaction
+
+23/Mar/2024 07:33:42 PM{LETZ} - 
+5154 - Started DeliveryFromApp 
+
+23/Mar/2024 07:33:44 PM{LETZ} - 
+5154 - Delievery APP  Sync completed synced=0
+
+23/Mar/2024 07:33:44 PM{LETZ} - 
+5154 - Started RedeemedCoupon 
+
+23/Mar/2024 07:33:44 PM{LETZ} - 
+5154 - Completed RedeemedCoupon Count 0
+
+23/Mar/2024 07:33:44 PM{LETZ} - 
+5154 - OutstandingDailyCollection
+
+23/Mar/2024 07:33:46 PM{LETZ} - 0 to be updated
+
+23/Mar/2024 07:33:46 PM{LETZ} - 
+5154 - Completed OutstandingDailyCollection 0
+
+23/Mar/2024 07:33:46 PM{LETZ} - 
+5154 - Started Delivery 
+
+23/Mar/2024 07:34:20 PM{LETZ} - 
+5154 - Completed Delivery count 1 
+
+23/Mar/2024 07:34:20 PM{LETZ} - 
+5154 - UpdateRouteInTransaction
+
+23/Mar/2024 07:34:33 PM{LETZ} - 
+5154 - completed UpdateRouteInTransaction
+
+23/Mar/2024 07:43:29 PM{LETZ} - 
+9340 - Started DeliveryFromApp 
+
+23/Mar/2024 07:43:30 PM{LETZ} - 
+9340 - Delievery APP  Sync completed synced=0
+
+23/Mar/2024 07:43:30 PM{LETZ} - 
+9340 - Started RedeemedCoupon 
+
+23/Mar/2024 07:43:30 PM{LETZ} - 
+9340 - Completed RedeemedCoupon Count 0
+
+23/Mar/2024 07:43:30 PM{LETZ} - 
+9340 - OutstandingDailyCollection
+
+23/Mar/2024 07:43:30 PM{LETZ} - 0 to be updated
+
+23/Mar/2024 07:43:30 PM{LETZ} - 
+9340 - Completed OutstandingDailyCollection 0
+
+23/Mar/2024 07:43:30 PM{LETZ} - 
+9340 - Started Delivery 
+
+23/Mar/2024 07:43:47 PM{LETZ} - 
+9340 - Completed Delivery count 1 
+
+23/Mar/2024 07:43:47 PM{LETZ} - 
+9340 - UpdateRouteInTransaction
+
+23/Mar/2024 07:43:48 PM{LETZ} - 
+9340 - completed UpdateRouteInTransaction
+
+23/Mar/2024 07:53:29 PM{LETZ} - 
+1226 - Started DeliveryFromApp 
+
+23/Mar/2024 07:53:31 PM{LETZ} - 
+1226 - Delievery APP  Sync completed synced=0
+
+23/Mar/2024 07:53:31 PM{LETZ} - 
+1226 - Started RedeemedCoupon 
+
+23/Mar/2024 07:53:31 PM{LETZ} - 
+1226 - Completed RedeemedCoupon Count 0
+
+23/Mar/2024 07:53:31 PM{LETZ} - 
+1226 - OutstandingDailyCollection
+
+23/Mar/2024 07:53:31 PM{LETZ} - 0 to be updated
+
+23/Mar/2024 07:53:31 PM{LETZ} - 
+1226 - Completed OutstandingDailyCollection 0
+
+23/Mar/2024 07:53:31 PM{LETZ} - 
+1226 - Started Delivery 
+
+23/Mar/2024 07:53:47 PM{LETZ} - 
+1226 - Completed Delivery count 1 
+
+23/Mar/2024 07:53:47 PM{LETZ} - 
+1226 - UpdateRouteInTransaction
+
+23/Mar/2024 07:53:47 PM{LETZ} - 
+1226 - completed UpdateRouteInTransaction
+
+23/Mar/2024 08:15:50 PM{LETZ} - 
+5594 - Started DeliveryFromApp 
+
+23/Mar/2024 08:15:52 PM{LETZ} - 
+5594 - Delievery APP  Sync completed synced=0
+
+23/Mar/2024 08:15:52 PM{LETZ} - 
+5594 - Started RedeemedCoupon 
+
+23/Mar/2024 08:15:52 PM{LETZ} - 
+5594 - Completed RedeemedCoupon Count 0
+
+23/Mar/2024 08:15:52 PM{LETZ} - 
+5594 - OutstandingDailyCollection
+
+23/Mar/2024 08:15:52 PM{LETZ} - 0 to be updated
+
+23/Mar/2024 08:15:52 PM{LETZ} - 
+5594 - Completed OutstandingDailyCollection 0
+
+23/Mar/2024 08:15:52 PM{LETZ} - 
+5594 - Started Delivery 
+
+23/Mar/2024 08:16:08 PM{LETZ} - 
+5594 - Completed Delivery count 1 
+
+23/Mar/2024 08:16:08 PM{LETZ} - 
+5594 - UpdateRouteInTransaction
+
+23/Mar/2024 08:16:08 PM{LETZ} - 
+5594 - completed UpdateRouteInTransaction
+
+23/Mar/2024 09:10:54 PM{LETZ} - 
+101 - Started DeliveryFromApp 
+
+23/Mar/2024 09:10:55 PM{LETZ} - 
+101 - Delievery APP  Sync completed synced=0
+
+23/Mar/2024 09:10:55 PM{LETZ} - 
+101 - Started RedeemedCoupon 
+
+23/Mar/2024 09:10:55 PM{LETZ} - 
+101 - Completed RedeemedCoupon Count 0
+
+23/Mar/2024 09:10:55 PM{LETZ} - 
+101 - OutstandingDailyCollection
+
+23/Mar/2024 09:10:55 PM{LETZ} - 0 to be updated
+
+23/Mar/2024 09:10:55 PM{LETZ} - 
+101 - Completed OutstandingDailyCollection 0
+
+23/Mar/2024 09:10:55 PM{LETZ} - 
+101 - Started Delivery 
+
+23/Mar/2024 09:11:13 PM{LETZ} - 
+101 - Completed Delivery count 1 
+
+23/Mar/2024 09:11:13 PM{LETZ} - 
+101 - UpdateRouteInTransaction
+
+23/Mar/2024 09:11:14 PM{LETZ} - 
+101 - completed UpdateRouteInTransaction
+
+23/Mar/2024 09:14:54 PM{LETZ} - 
+6254 - Started DeliveryFromApp 
+
+23/Mar/2024 09:14:54 PM{LETZ} - 
+6254 - Delievery APP  Sync completed synced=0
+
+23/Mar/2024 09:14:54 PM{LETZ} - 
+6254 - Started RedeemedCoupon 
+
+23/Mar/2024 09:14:54 PM{LETZ} - 
+6254 - Completed RedeemedCoupon Count 0
+
+23/Mar/2024 09:14:54 PM{LETZ} - 
+6254 - OutstandingDailyCollection
+
+23/Mar/2024 09:14:55 PM{LETZ} - 0 to be updated
+
+23/Mar/2024 09:14:55 PM{LETZ} - 
+6254 - Completed OutstandingDailyCollection 0
+
+23/Mar/2024 09:14:55 PM{LETZ} - 
+6254 - Started Delivery 
+
+23/Mar/2024 09:18:25 PM{LETZ} - 
+6254 - Completed Delivery count 1 
+
+23/Mar/2024 09:18:25 PM{LETZ} - 
+6254 - UpdateRouteInTransaction
+
+23/Mar/2024 09:18:25 PM{LETZ} - 
+6254 - completed UpdateRouteInTransaction
+
+23/Mar/2024 09:24:54 PM{LETZ} - 
+5772 - Started DeliveryFromApp 
+
+23/Mar/2024 09:24:55 PM{LETZ} - 
+5772 - Delievery APP  Sync completed synced=0
+
+23/Mar/2024 09:24:55 PM{LETZ} - 
+5772 - Started RedeemedCoupon 
+
+23/Mar/2024 09:24:55 PM{LETZ} - 
+5772 - Completed RedeemedCoupon Count 0
+
+23/Mar/2024 09:24:55 PM{LETZ} - 
+5772 - OutstandingDailyCollection
+
+23/Mar/2024 09:24:55 PM{LETZ} - 0 to be updated
+
+23/Mar/2024 09:24:55 PM{LETZ} - 
+5772 - Completed OutstandingDailyCollection 0
+
+23/Mar/2024 09:24:55 PM{LETZ} - 
+5772 - Started Delivery 
+
+23/Mar/2024 09:25:11 PM{LETZ} - 
+5772 - Completed Delivery count 1 
+
+23/Mar/2024 09:25:11 PM{LETZ} - 
+5772 - UpdateRouteInTransaction
+
+23/Mar/2024 09:25:12 PM{LETZ} - 
+5772 - completed UpdateRouteInTransaction

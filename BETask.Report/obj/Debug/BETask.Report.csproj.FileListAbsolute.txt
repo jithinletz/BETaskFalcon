@@ -1,0 +1,194 @@
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\BETask.Report.exe.config
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\BETask.Report.exe
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\BETask.Report.pdb
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\Microsoft.ReportViewer.Design.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\EnvDTE.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\stdole.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\Microsoft.MSXML.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\obj\Debug\BETask.Report.Properties.Resources.resources
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\obj\Debug\BETask.Report.ReportForm.resources
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\obj\Debug\BETask.Report.csproj.GenerateResource.Cache
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\obj\Debug\RdlCompile.cache
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\obj\Debug\RdlCompile.compiled
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\obj\Debug\BETask.Report.csproj.CoreCompileInputs.cache
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\obj\Debug\BETask.Report.exe
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\obj\Debug\BETask.Report.pdb
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\obj\Debug\BETask.Report.csprojResolveAssemblyReference.cache
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\EntityFramework.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\Reports\ItemTransferDateWiseReport.rdlc
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\BETask.DAL.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\BETask.DAL.pdb
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETask.Report\bin\Debug\BETask.DAL.dll.config
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\Reports\ItemTransferDateWiseReport.rdlc
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\BETask.Report.exe.config
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\BETask.Report.exe
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\BETask.Report.pdb
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\BETask.DAL.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\EntityFramework.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\EnvDTE.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\stdole.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.MSXML.dll
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\BETask.DAL.pdb
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\bin\Debug\BETask.DAL.dll.config
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\obj\Debug\BETask.Report.csprojResolveAssemblyReference.cache
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\obj\Debug\BETask.Report.Properties.Resources.resources
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\obj\Debug\BETask.Report.ReportForm.resources
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\obj\Debug\BETask.Report.csproj.GenerateResource.Cache
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\obj\Debug\RdlCompile.cache
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\obj\Debug\RdlCompile.compiled
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\obj\Debug\BETask.Report.csproj.CoreCompileInputs.cache
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\obj\Debug\BETask.Report.exe
+C:\Users\jithu\Desktop\BETaskFalcon\BETask.Report\obj\Debug\BETask.Report.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\Reports\ItemTransferDateWiseReport.rdlc
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\BETask.Report.exe.config
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\BETask.Report.exe
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\BETask.Report.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\BETask.DAL.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\Microsoft.ReportViewer.Design.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\EntityFramework.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\EnvDTE.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\stdole.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\Microsoft.MSXML.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\BETask.DAL.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\bin\Debug\BETask.DAL.dll.config
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\obj\Debug\BETask.Report.Properties.Resources.resources
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\obj\Debug\BETask.Report.ReportForm.resources
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\obj\Debug\BETask.Report.csproj.GenerateResource.Cache
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\obj\Debug\RdlCompile.cache
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\obj\Debug\RdlCompile.compiled
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\obj\Debug\BETask.Report.csproj.CoreCompileInputs.cache
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\obj\Debug\BETask.Report.exe
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\obj\Debug\BETask.Report.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\obj\Debug\BETask.Report.csproj.AssemblyReference.cache
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\obj\Debug\BETask.Report.csproj.CopyComplete
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\Reports\ItemTransferDateWiseReport.rdlc
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\BETask.Report.exe.config
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\BETask.Report.exe
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\BETask.Report.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\BETask.DAL.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\Microsoft.ReportViewer.Common.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\Microsoft.ReportViewer.Design.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\EntityFramework.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\EnvDTE.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\stdole.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\Microsoft.MSXML.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\BETask.DAL.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\bin\Debug\BETask.DAL.dll.config
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\obj\Debug\BETask.Report.csproj.AssemblyReference.cache
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\obj\Debug\BETask.Report.Properties.Resources.resources
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\obj\Debug\BETask.Report.ReportForm.resources
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\obj\Debug\BETask.Report.csproj.GenerateResource.cache
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\obj\Debug\RdlCompile.cache
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\obj\Debug\RdlCompile.compiled
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\obj\Debug\BETask.Report.csproj.CoreCompileInputs.cache
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\obj\Debug\BETask.Report.csproj.CopyComplete
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\obj\Debug\BETask.Report.exe
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETask.Report\obj\Debug\BETask.Report.pdb
+C:\Projects\Cloud\BETask.Report\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\Reports\ItemTransferDateWiseReport.rdlc
+C:\Projects\Cloud\BETask.Report\bin\Debug\BETask.Report.exe.config
+C:\Projects\Cloud\BETask.Report\bin\Debug\BETask.Report.exe
+C:\Projects\Cloud\BETask.Report\bin\Debug\BETask.Report.pdb
+C:\Projects\Cloud\BETask.Report\bin\Debug\BETask.DAL.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\Microsoft.ReportViewer.Design.resources.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\EntityFramework.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\EnvDTE.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\stdole.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\Microsoft.MSXML.dll
+C:\Projects\Cloud\BETask.Report\bin\Debug\BETask.DAL.pdb
+C:\Projects\Cloud\BETask.Report\bin\Debug\BETask.DAL.dll.config
+C:\Projects\Cloud\BETask.Report\obj\Debug\BETask.Report.csproj.AssemblyReference.cache
+C:\Projects\Cloud\BETask.Report\obj\Debug\BETask.Report.Properties.Resources.resources
+C:\Projects\Cloud\BETask.Report\obj\Debug\BETask.Report.ReportForm.resources
+C:\Projects\Cloud\BETask.Report\obj\Debug\BETask.Report.csproj.GenerateResource.cache
+C:\Projects\Cloud\BETask.Report\obj\Debug\BETask.Report.csproj.CoreCompileInputs.cache
+C:\Projects\Cloud\BETask.Report\obj\Debug\BETask.Report.csproj.CopyComplete
+C:\Projects\Cloud\BETask.Report\obj\Debug\BETask.Report.exe
+C:\Projects\Cloud\BETask.Report\obj\Debug\BETask.Report.pdb
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\Reports\ItemTransferDateWiseReport.rdlc
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\BETask.Report.exe.config
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\BETask.Report.exe
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\BETask.Report.pdb
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\BETask.DAL.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\Microsoft.ReportViewer.Common.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\Microsoft.ReportViewer.Design.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\EntityFramework.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\EnvDTE.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\stdole.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\Microsoft.MSXML.dll
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\BETask.DAL.pdb
+C:\Projects\BETask Falcon\Cloud\BETask.Report\bin\Debug\BETask.DAL.dll.config
+C:\Projects\BETask Falcon\Cloud\BETask.Report\obj\Debug\BETask.Report.csproj.AssemblyReference.cache
+C:\Projects\BETask Falcon\Cloud\BETask.Report\obj\Debug\BETask.Report.Properties.Resources.resources
+C:\Projects\BETask Falcon\Cloud\BETask.Report\obj\Debug\BETask.Report.ReportForm.resources
+C:\Projects\BETask Falcon\Cloud\BETask.Report\obj\Debug\BETask.Report.csproj.GenerateResource.cache
+C:\Projects\BETask Falcon\Cloud\BETask.Report\obj\Debug\RdlCompile.cache
+C:\Projects\BETask Falcon\Cloud\BETask.Report\obj\Debug\RdlCompile.compiled
+C:\Projects\BETask Falcon\Cloud\BETask.Report\obj\Debug\BETask.Report.csproj.CoreCompileInputs.cache
+C:\Projects\BETask Falcon\Cloud\BETask.Report\obj\Debug\BETask.Report.csproj.CopyComplete
+C:\Projects\BETask Falcon\Cloud\BETask.Report\obj\Debug\BETask.Report.exe
+C:\Projects\BETask Falcon\Cloud\BETask.Report\obj\Debug\BETask.Report.pdb

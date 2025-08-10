@@ -1,0 +1,66 @@
+
+29/Mar/2024 06:01:12 PM{LETZ} - The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+
+29/Mar/2024 06:04:41 PM{LETZ} - 
+5414 - Started DeliveryFromApp 
+
+29/Mar/2024 06:04:41 PM{LETZ} - 
+5414 - Delievery APP  Sync completed synced=0
+
+29/Mar/2024 06:04:41 PM{LETZ} - 
+5414 - Started RedeemedCoupon 
+
+29/Mar/2024 06:04:41 PM{LETZ} - 
+5414 - Completed RedeemedCoupon Count 0
+
+29/Mar/2024 06:04:41 PM{LETZ} - 
+5414 - OutstandingDailyCollection
+
+29/Mar/2024 06:04:42 PM{LETZ} - 0 to be updated
+
+29/Mar/2024 06:04:42 PM{LETZ} - 
+5414 - Completed OutstandingDailyCollection 0
+
+29/Mar/2024 06:04:42 PM{LETZ} - 
+5414 - Started Delivery 
+
+29/Mar/2024 06:05:24 PM{LETZ} - 
+5414 - Completed Delivery count 47 
+
+29/Mar/2024 06:05:24 PM{LETZ} - 
+5414 - UpdateRouteInTransaction
+
+29/Mar/2024 06:05:25 PM{LETZ} - 
+5414 - completed UpdateRouteInTransaction
+
+29/Mar/2024 06:14:41 PM{LETZ} - 
+2632 - Started DeliveryFromApp 
+
+29/Mar/2024 06:14:42 PM{LETZ} - 
+2632 - Delievery APP  Sync completed synced=0
+
+29/Mar/2024 06:14:42 PM{LETZ} - 
+2632 - Started RedeemedCoupon 
+
+29/Mar/2024 06:14:42 PM{LETZ} - 
+2632 - Completed RedeemedCoupon Count 0
+
+29/Mar/2024 06:14:42 PM{LETZ} - 
+2632 - OutstandingDailyCollection
+
+29/Mar/2024 06:14:42 PM{LETZ} - 0 to be updated
+
+29/Mar/2024 06:14:42 PM{LETZ} - 
+2632 - Completed OutstandingDailyCollection 0
+
+29/Mar/2024 06:14:42 PM{LETZ} - 
+2632 - Started Delivery 
+
+29/Mar/2024 06:15:07 PM{LETZ} - 
+2632 - Completed Delivery count 47 
+
+29/Mar/2024 06:15:07 PM{LETZ} - 
+2632 - UpdateRouteInTransaction
+
+29/Mar/2024 06:15:07 PM{LETZ} - 
+2632 - completed UpdateRouteInTransaction

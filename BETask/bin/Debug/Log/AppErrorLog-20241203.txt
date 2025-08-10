@@ -1,0 +1,15 @@
+
+12/3/2024 11:03:56 AM{LETZ} - invalid try to login LETZ
+
+12/3/2024 11:19:12 AM{LETZ} - invalid try to login LETZ
+
+12/3/2024 11:19:53 AM{LETZ} - System.InvalidCastException: Unable to cast object of type 'System.Data.Entity.DynamicProxies.account_group_C7A76DAABBA4B2A12CC7DC7E4BDE9418D34BBC5C46413E12794C0D57BC727055' to type 'BETask.Views.ComboboxItem'.
+   at BETask.Common.General.GetComboBoxSelectedValue(ComboBox combo) in C:\Projects\BETask Falcon\Cloud\BETask\Common\General.cs:line 665
+   at BETask.Views.AccountStatementForm.Search() in C:\Projects\BETask Falcon\Cloud\BETask\Views\AccountStatementForm.cs:line 172
+
+12/3/2024 11:20:38 AM{LETZ} - System.InvalidCastException: Unable to cast object of type 'System.Data.Entity.DynamicProxies.account_group_C7A76DAABBA4B2A12CC7DC7E4BDE9418D34BBC5C46413E12794C0D57BC727055' to type 'BETask.Views.ComboboxItem'.
+   at BETask.Common.General.GetComboBoxSelectedValue(ComboBox combo)
+   at BETask.Views.AccountStatementForm.Search()
+
+12/3/2024 3:24:34 PM{LETZ} - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BETask.Views.CustomerDeliveryReportStaffwise.LoadDeliveryDetails() in C:\Projects\BETask Falcon\Cloud\BETask\Views\CustomerDeliveryReportStaffwise.cs:line 946

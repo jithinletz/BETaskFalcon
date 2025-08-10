@@ -1,0 +1,29 @@
+2022-01-06 11:42:57,870 ERROR MonitoringLogger - Exception occured while Saving customer Collections . Please check the logs for more details
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BETaskAPI.DAL.DAL.DeliveryDAL.SaveDailyCollections(daily_collection obj, List`1 customerAgreement, String couponCode) in D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI.DAL\DAL\DeliveryDAL.cs:line 362
+   at BETaskAPI.Controllers.DeliveryController.SaveDailyCollectionsWithItems(DailyCollectionWithItem collection) in D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\Controllers\DeliveryController.cs:line 301
+2022-01-06 11:52:40,408 ERROR MonitoringLogger - Exception occured while Saving customer Collections . Please check the logs for more details
+System.Data.Entity.Core.EntityException: The underlying provider failed on Rollback. ---> System.Data.SqlClient.SqlException: A transport-level error has occurred when sending the request to the server. (provider: Session Provider, error: 19 - Physical connection is not usable)
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.SNIWritePacket(SNIHandle handle, SNIPacket packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock)
+   at System.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate)
+   at System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate)
+   at System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   at System.Data.SqlClient.SqlTransaction.Rollback()
+   at System.Data.Entity.Infrastructure.Interception.DbTransactionDispatcher.<>c.<Rollback>b__8_0(DbTransaction t, DbTransactionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbTransactionDispatcher.Rollback(DbTransaction transaction, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.EntityTransaction.Rollback()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityTransaction.Rollback()
+   at System.Data.Entity.DbContextTransaction.Rollback()
+   at BETaskAPI.DAL.DAL.DeliveryDAL.SaveDailyCollections(daily_collection obj, List`1 customerAgreement, String couponCode) in D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI.DAL\DAL\DeliveryDAL.cs:line 362
+   at BETaskAPI.Controllers.DeliveryController.SaveDailyCollectionsWithItems(DailyCollectionWithItem collection) in D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\Controllers\DeliveryController.cs:line 301

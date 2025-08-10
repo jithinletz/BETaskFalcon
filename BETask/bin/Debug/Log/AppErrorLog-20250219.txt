@@ -1,0 +1,18 @@
+
+19/02/2025 3:28:35 PM{LETZ} - System.ArgumentException: Column 'route_name' does not belong to table .
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at BETask.BAL.CustomerBAL.PrintGetCustomerListRouteWise(Int32 routeId, Int32 employeeId, Boolean isActiveCustomers, Boolean isDatewise, DateTime dateFrom, DateTime dateTo, String paymentMode, String routeName) in C:\Projects\BETask Falcon\Cloud\BETask\BAL\CustomerBAL.cs:line 438
+   at BETask.Views.CustomerListRoutewise.Print() in C:\Projects\BETask Falcon\Cloud\BETask\Views\CustomerListRoutewise.cs:line 203
+
+19/02/2025 3:28:44 PM{LETZ} - System.ArgumentException: Column 'route_name' does not belong to table .
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at BETask.BAL.CustomerBAL.PrintGetCustomerListRouteWise(Int32 routeId, Int32 employeeId, Boolean isActiveCustomers, Boolean isDatewise, DateTime dateFrom, DateTime dateTo, String paymentMode, String routeName) in C:\Projects\BETask Falcon\Cloud\BETask\BAL\CustomerBAL.cs:line 438
+   at BETask.Views.CustomerListRoutewise.Print() in C:\Projects\BETask Falcon\Cloud\BETask\Views\CustomerListRoutewise.cs:line 203
+
+19/02/2025 3:35:11 PM{LETZ} - System.ArgumentException: Column 'route_name' does not belong to table .
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at BETask.BAL.CustomerBAL.PrintGetCustomerListRouteWise(Int32 routeId, Int32 employeeId, Boolean isActiveCustomers, Boolean isDatewise, DateTime dateFrom, DateTime dateTo, String paymentMode, String routeName) in C:\Projects\BETask Falcon\Cloud\BETask\BAL\CustomerBAL.cs:line 438
+   at BETask.Views.CustomerListRoutewise.Print() in C:\Projects\BETask Falcon\Cloud\BETask\Views\CustomerListRoutewise.cs:line 203

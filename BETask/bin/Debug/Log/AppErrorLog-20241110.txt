@@ -1,0 +1,20 @@
+
+11/10/2024 7:56:02 PM{LETZ} - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDecimal(IFormatProvider provider)
+   at System.Convert.ToDecimal(Object value)
+   at BETask.Views.OnlinePaymentTransactionsForm.<SearchAsync>d__6.MoveNext() in C:\Projects\BETask Falcon\Cloud\BETask\Views\OnlinePaymentTransactionsForm.cs:line 87
+
+11/10/2024 8:00:42 PM{LETZ} - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDecimal(IFormatProvider provider)
+   at System.Convert.ToDecimal(Object value)
+   at BETask.Views.OnlinePaymentTransactionsForm.<SearchAsync>d__6.MoveNext()
+
+11/10/2024 8:00:45 PM{LETZ} - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDecimal(IFormatProvider provider)
+   at System.Convert.ToDecimal(Object value)
+   at BETask.Views.OnlinePaymentTransactionsForm.<SearchAsync>d__6.MoveNext()
+
+11/10/2024 8:00:52 PM{LETZ} - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDecimal(IFormatProvider provider)
+   at System.Convert.ToDecimal(Object value)
+   at BETask.Views.OnlinePaymentTransactionsForm.<SearchAsync>d__6.MoveNext()

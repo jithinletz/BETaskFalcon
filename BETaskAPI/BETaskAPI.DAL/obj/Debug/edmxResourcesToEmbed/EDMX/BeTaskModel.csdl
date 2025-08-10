@@ -1,0 +1,1319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="betaskdbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="betaskdbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="account_group" EntityType="betaskdbModel.account_group" />
+    <EntitySet Name="account_ledger" EntityType="betaskdbModel.account_ledger" />
+    <EntitySet Name="company" EntityType="betaskdbModel.company" />
+    <EntitySet Name="coupon" EntityType="betaskdbModel.coupon" />
+    <EntitySet Name="coupon_leaf" EntityType="betaskdbModel.coupon_leaf" />
+    <EntitySet Name="customer" EntityType="betaskdbModel.customer" />
+    <EntitySet Name="customer_aggrement" EntityType="betaskdbModel.customer_aggrement" />
+    <EntitySet Name="default_values" EntityType="betaskdbModel.default_values" />
+    <EntitySet Name="delivery" EntityType="betaskdbModel.delivery" />
+    <EntitySet Name="delivery_item_summary" EntityType="betaskdbModel.delivery_item_summary" />
+    <EntitySet Name="delivery_items" EntityType="betaskdbModel.delivery_items" />
+    <EntitySet Name="document_serial" EntityType="betaskdbModel.document_serial" />
+    <EntitySet Name="employee" EntityType="betaskdbModel.employee" />
+    <EntitySet Name="item" EntityType="betaskdbModel.item" />
+    <EntitySet Name="ledger_mapping" EntityType="betaskdbModel.ledger_mapping" />
+    <EntitySet Name="production" EntityType="betaskdbModel.production" />
+    <EntitySet Name="production_mapping" EntityType="betaskdbModel.production_mapping" />
+    <EntitySet Name="production_mapping_rowmaterial" EntityType="betaskdbModel.production_mapping_rowmaterial" />
+    <EntitySet Name="production_rawmaterial" EntityType="betaskdbModel.production_rawmaterial" />
+    <EntitySet Name="purchase" EntityType="betaskdbModel.purchase" />
+    <EntitySet Name="purchase_item" EntityType="betaskdbModel.purchase_item" />
+    <EntitySet Name="sales" EntityType="betaskdbModel.sales" />
+    <EntitySet Name="sales_item" EntityType="betaskdbModel.sales_item" />
+    <EntitySet Name="status" EntityType="betaskdbModel.status" />
+    <EntitySet Name="tax_setting" EntityType="betaskdbModel.tax_setting" />
+    <EntitySet Name="uom_setting" EntityType="betaskdbModel.uom_setting" />
+    <EntitySet Name="user_log" EntityType="betaskdbModel.user_log" />
+    <EntitySet Name="wallet_history" EntityType="betaskdbModel.wallet_history" />
+    <AssociationSet Name="FK_account_group_status" Association="betaskdbModel.FK_account_group_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="account_group" EntitySet="account_group" />
+    </AssociationSet>
+    <AssociationSet Name="FK_account_ledger_groupid" Association="betaskdbModel.FK_account_ledger_groupid">
+      <End Role="account_group" EntitySet="account_group" />
+      <End Role="account_ledger" EntitySet="account_ledger" />
+    </AssociationSet>
+    <AssociationSet Name="FK_autoledgermapping_group" Association="betaskdbModel.FK_autoledgermapping_group">
+      <End Role="account_group" EntitySet="account_group" />
+      <End Role="ledger_mapping" EntitySet="ledger_mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_account_ledger_status" Association="betaskdbModel.FK_account_ledger_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="account_ledger" EntitySet="account_ledger" />
+    </AssociationSet>
+    <AssociationSet Name="FK_company_status" Association="betaskdbModel.FK_company_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="company" EntitySet="company" />
+    </AssociationSet>
+    <AssociationSet Name="FK_coupon_leaf_coupon_Id" Association="betaskdbModel.FK_coupon_leaf_coupon_Id">
+      <End Role="coupon" EntitySet="coupon" />
+      <End Role="coupon_leaf" EntitySet="coupon_leaf" />
+    </AssociationSet>
+    <AssociationSet Name="FK_coupon_status" Association="betaskdbModel.FK_coupon_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="coupon" EntitySet="coupon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customer_aggrement_customer" Association="betaskdbModel.FK_customer_aggrement_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="customer_aggrement" EntitySet="customer_aggrement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customer_status" Association="betaskdbModel.FK_customer_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="customer" EntitySet="customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_items_customer" Association="betaskdbModel.FK_delivery_items_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="delivery_items" EntitySet="delivery_items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_vendor" Association="betaskdbModel.FK_purchase_vendor">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="purchase" EntitySet="purchase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_customer" Association="betaskdbModel.FK_sales_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="sales" EntitySet="sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_wallet_history_customer" Association="betaskdbModel.FK_wallet_history_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="wallet_history" EntitySet="wallet_history" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customer_aggrement_item" Association="betaskdbModel.FK_customer_aggrement_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="customer_aggrement" EntitySet="customer_aggrement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customer_aggrement_status" Association="betaskdbModel.FK_customer_aggrement_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="customer_aggrement" EntitySet="customer_aggrement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_employee" Association="betaskdbModel.FK_delivery_employee">
+      <End Role="employee" EntitySet="employee" />
+      <End Role="delivery" EntitySet="delivery" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_item_summary_delivery" Association="betaskdbModel.FK_delivery_item_summary_delivery">
+      <End Role="delivery" EntitySet="delivery" />
+      <End Role="delivery_item_summary" EntitySet="delivery_item_summary" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_items_delivery" Association="betaskdbModel.FK_delivery_items_delivery">
+      <End Role="delivery" EntitySet="delivery" />
+      <End Role="delivery_items" EntitySet="delivery_items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_status" Association="betaskdbModel.FK_delivery_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="delivery" EntitySet="delivery" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_item_summary_item" Association="betaskdbModel.FK_delivery_item_summary_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="delivery_item_summary" EntitySet="delivery_item_summary" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_item_summary_status" Association="betaskdbModel.FK_delivery_item_summary_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="delivery_item_summary" EntitySet="delivery_item_summary" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_items_item" Association="betaskdbModel.FK_delivery_items_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="delivery_items" EntitySet="delivery_items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_delivery_items_status" Association="betaskdbModel.FK_delivery_items_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="delivery_items" EntitySet="delivery_items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_document_serial_status" Association="betaskdbModel.FK_document_serial_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="document_serial" EntitySet="document_serial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_employee_status" Association="betaskdbModel.FK_employee_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="employee" EntitySet="employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_status" Association="betaskdbModel.FK_item_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="item" EntitySet="item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_tax" Association="betaskdbModel.FK_item_tax">
+      <End Role="tax_setting" EntitySet="tax_setting" />
+      <End Role="item" EntitySet="item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_item_uom" Association="betaskdbModel.FK_item_uom">
+      <End Role="uom_setting" EntitySet="uom_setting" />
+      <End Role="item" EntitySet="item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_item" Association="betaskdbModel.FK_production_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="production" EntitySet="production" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_mapping_Item" Association="betaskdbModel.FK_production_mapping_Item">
+      <End Role="item" EntitySet="item" />
+      <End Role="production_mapping_rowmaterial" EntitySet="production_mapping_rowmaterial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_mapping_item_id" Association="betaskdbModel.FK_production_mapping_item_id">
+      <End Role="item" EntitySet="item" />
+      <End Role="production_mapping" EntitySet="production_mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_rawmaterial_item" Association="betaskdbModel.FK_production_rawmaterial_item">
+      <End Role="item" EntitySet="item" />
+      <End Role="production_rawmaterial" EntitySet="production_rawmaterial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_item_item_id" Association="betaskdbModel.FK_purchase_item_item_id">
+      <End Role="item" EntitySet="item" />
+      <End Role="purchase_item" EntitySet="purchase_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_item_Item" Association="betaskdbModel.FK_sales_item_Item">
+      <End Role="item" EntitySet="item" />
+      <End Role="sales_item" EntitySet="sales_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_autoledgermapping_status" Association="betaskdbModel.FK_autoledgermapping_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="ledger_mapping" EntitySet="ledger_mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_rawmaterial_production" Association="betaskdbModel.FK_production_rawmaterial_production">
+      <End Role="production" EntitySet="production" />
+      <End Role="production_rawmaterial" EntitySet="production_rawmaterial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_status" Association="betaskdbModel.FK_production_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="production" EntitySet="production" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_mapping_mapping_id" Association="betaskdbModel.FK_production_mapping_mapping_id">
+      <End Role="production_mapping" EntitySet="production_mapping" />
+      <End Role="production_mapping_rowmaterial" EntitySet="production_mapping_rowmaterial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_mapping_status" Association="betaskdbModel.FK_production_mapping_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="production_mapping" EntitySet="production_mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_mapping_rowmaterial_status" Association="betaskdbModel.FK_production_mapping_rowmaterial_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="production_mapping_rowmaterial" EntitySet="production_mapping_rowmaterial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_production_rawmaterial_status" Association="betaskdbModel.FK_production_rawmaterial_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="production_rawmaterial" EntitySet="production_rawmaterial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_item_purchase_id" Association="betaskdbModel.FK_purchase_item_purchase_id">
+      <End Role="purchase" EntitySet="purchase" />
+      <End Role="purchase_item" EntitySet="purchase_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_status" Association="betaskdbModel.FK_purchase_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="purchase" EntitySet="purchase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_purchase_item_status" Association="betaskdbModel.FK_purchase_item_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="purchase_item" EntitySet="purchase_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_item_sales" Association="betaskdbModel.FK_sales_item_sales">
+      <End Role="sales" EntitySet="sales" />
+      <End Role="sales_item" EntitySet="sales_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_status" Association="betaskdbModel.FK_sales_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="sales" EntitySet="sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_item_status" Association="betaskdbModel.FK_sales_item_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="sales_item" EntitySet="sales_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tax_setting_status" Association="betaskdbModel.FK_tax_setting_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="tax_setting" EntitySet="tax_setting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_uom_setting_status" Association="betaskdbModel.FK_uom_setting_status">
+      <End Role="status" EntitySet="status" />
+      <End Role="uom_setting" EntitySet="uom_setting" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="account_group">
+    <Key>
+      <PropertyRef Name="group_id" />
+    </Key>
+    <Property Name="company_id" Type="Int32" Nullable="false" />
+    <Property Name="location_id" Type="Int32" Nullable="false" />
+    <Property Name="group_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="group_name" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="parent_id" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_account_group_status" FromRole="account_group" ToRole="status" />
+    <NavigationProperty Name="account_ledger" Relationship="betaskdbModel.FK_account_ledger_groupid" FromRole="account_group" ToRole="account_ledger" />
+    <NavigationProperty Name="ledger_mapping" Relationship="betaskdbModel.FK_autoledgermapping_group" FromRole="account_group" ToRole="ledger_mapping" />
+  </EntityType>
+  <EntityType Name="account_ledger">
+    <Key>
+      <PropertyRef Name="ledger_id" />
+    </Key>
+    <Property Name="ledger_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ledger_name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="group_id" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="account_group" Relationship="betaskdbModel.FK_account_ledger_groupid" FromRole="account_ledger" ToRole="account_group" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_account_ledger_status" FromRole="account_ledger" ToRole="status" />
+  </EntityType>
+  <EntityType Name="company">
+    <Key>
+      <PropertyRef Name="company_id" />
+    </Key>
+    <Property Name="company_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="company_name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="tin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="address2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="street" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pobox" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="web" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="Int32" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_company_status" FromRole="company" ToRole="status" />
+  </EntityType>
+  <EntityType Name="coupon">
+    <Key>
+      <PropertyRef Name="coupon_id" />
+    </Key>
+    <Property Name="coupon_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="book_number" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="leaf_from" Type="Int32" Nullable="false" />
+    <Property Name="leaf_end" Type="Int32" Nullable="false" />
+    <Property Name="leaf_rate" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="book_rate" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="leaf_count" Type="Int32" Nullable="false" />
+    <Property Name="remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="coupon_leaf" Relationship="betaskdbModel.FK_coupon_leaf_coupon_Id" FromRole="coupon" ToRole="coupon_leaf" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_coupon_status" FromRole="coupon" ToRole="status" />
+  </EntityType>
+  <EntityType Name="coupon_leaf">
+    <Key>
+      <PropertyRef Name="leaf_id" />
+    </Key>
+    <Property Name="leaf_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="coupon_id" Type="Int32" Nullable="false" />
+    <Property Name="leaf_number" Type="Int32" Nullable="false" />
+    <Property Name="leaf_rate" Type="Int32" Nullable="false" />
+    <Property Name="remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="issue_date" Type="DateTime" Precision="0" />
+    <Property Name="redeem_date" Type="DateTime" Precision="0" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="coupon" Relationship="betaskdbModel.FK_coupon_leaf_coupon_Id" FromRole="coupon_leaf" ToRole="coupon" />
+  </EntityType>
+  <EntityType Name="customer">
+    <Key>
+      <PropertyRef Name="customer_id" />
+    </Key>
+    <Property Name="customer_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="customer_name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="address2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="street" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="pobox" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="customer_type" Type="Int32" Nullable="false" />
+    <Property Name="remarks" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="contact_person" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="trn" Type="String" MaxLength="75" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="wallet_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="wallet_balance" Type="Decimal" Precision="11" Scale="2" />
+    <NavigationProperty Name="customer_aggrement" Relationship="betaskdbModel.FK_customer_aggrement_customer" FromRole="customer" ToRole="customer_aggrement" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_customer_status" FromRole="customer" ToRole="status" />
+    <NavigationProperty Name="delivery_items" Relationship="betaskdbModel.FK_delivery_items_customer" FromRole="customer" ToRole="delivery_items" />
+    <NavigationProperty Name="purchase" Relationship="betaskdbModel.FK_purchase_vendor" FromRole="customer" ToRole="purchase" />
+    <NavigationProperty Name="sales" Relationship="betaskdbModel.FK_sales_customer" FromRole="customer" ToRole="sales" />
+    <NavigationProperty Name="wallet_history" Relationship="betaskdbModel.FK_wallet_history_customer" FromRole="customer" ToRole="wallet_history" />
+  </EntityType>
+  <EntityType Name="customer_aggrement">
+    <Key>
+      <PropertyRef Name="customer_aggrement_id" />
+    </Key>
+    <Property Name="customer_aggrement_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="customer_id" Type="Int32" Nullable="false" />
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="max_qty" Type="Int32" Nullable="false" />
+    <Property Name="unit_price" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="customer" Relationship="betaskdbModel.FK_customer_aggrement_customer" FromRole="customer_aggrement" ToRole="customer" />
+    <NavigationProperty Name="item" Relationship="betaskdbModel.FK_customer_aggrement_item" FromRole="customer_aggrement" ToRole="item" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_customer_aggrement_status" FromRole="customer_aggrement" ToRole="status" />
+  </EntityType>
+  <EntityType Name="default_values">
+    <Key>
+      <PropertyRef Name="type_id" />
+    </Key>
+    <Property Name="type_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="type_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="type_value" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+  </EntityType>
+  <EntityType Name="delivery">
+    <Key>
+      <PropertyRef Name="delivery_id" />
+    </Key>
+    <Property Name="delivery_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="delivery_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="employee_id" Type="Int32" Nullable="false" />
+    <Property Name="vehicle_no" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_route" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="customer_count" Type="Int32" Nullable="false" />
+    <Property Name="gross_amount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="total_discount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="total_beforevat" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="total_vat" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="net_amount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="remarks" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="employee" Relationship="betaskdbModel.FK_delivery_employee" FromRole="delivery" ToRole="employee" />
+    <NavigationProperty Name="delivery_item_summary" Relationship="betaskdbModel.FK_delivery_item_summary_delivery" FromRole="delivery" ToRole="delivery_item_summary" />
+    <NavigationProperty Name="delivery_items" Relationship="betaskdbModel.FK_delivery_items_delivery" FromRole="delivery" ToRole="delivery_items" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_delivery_status" FromRole="delivery" ToRole="status" />
+  </EntityType>
+  <EntityType Name="delivery_item_summary">
+    <Key>
+      <PropertyRef Name="delivery_summary_id" />
+    </Key>
+    <Property Name="delivery_summary_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="delivery_id" Type="Int32" Nullable="false" />
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="qty" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="used_qty" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="balance_qty" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="delivery" Relationship="betaskdbModel.FK_delivery_item_summary_delivery" FromRole="delivery_item_summary" ToRole="delivery" />
+    <NavigationProperty Name="item" Relationship="betaskdbModel.FK_delivery_item_summary_item" FromRole="delivery_item_summary" ToRole="item" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_delivery_item_summary_status" FromRole="delivery_item_summary" ToRole="status" />
+  </EntityType>
+  <EntityType Name="delivery_items">
+    <Key>
+      <PropertyRef Name="delivery_item_id" />
+    </Key>
+    <Property Name="delivery_item_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="delivery_id" Type="Int32" Nullable="false" />
+    <Property Name="customer_id" Type="Int32" Nullable="false" />
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="qty" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="rate" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="gross_amount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="discount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="total_beforvat" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="vat_amount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="net_amount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="delivery_time" Type="DateTime" Precision="3" />
+    <Property Name="sales_id" Type="Int32" />
+    <Property Name="sales_date" Type="DateTime" Precision="3" />
+    <Property Name="delivered_qty" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <NavigationProperty Name="customer" Relationship="betaskdbModel.FK_delivery_items_customer" FromRole="delivery_items" ToRole="customer" />
+    <NavigationProperty Name="delivery" Relationship="betaskdbModel.FK_delivery_items_delivery" FromRole="delivery_items" ToRole="delivery" />
+    <NavigationProperty Name="item" Relationship="betaskdbModel.FK_delivery_items_item" FromRole="delivery_items" ToRole="item" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_delivery_items_status" FromRole="delivery_items" ToRole="status" />
+  </EntityType>
+  <EntityType Name="document_serial">
+    <Key>
+      <PropertyRef Name="document_id" />
+    </Key>
+    <Property Name="document_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="document_type" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="prefix" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="next_number" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_document_serial_status" FromRole="document_serial" ToRole="status" />
+  </EntityType>
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="employee_id" />
+    </Key>
+    <Property Name="employee_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="employee_code" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="first_name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="last_name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="username" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="join_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="resign_date" Type="DateTime" Precision="0" />
+    <Property Name="national_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="passport" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="visa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="department" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="salary" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="nationality" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="state" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="address1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="address2" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="dob" Type="DateTime" Precision="0" />
+    <Property Name="gender" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="other_details" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="delivery" Relationship="betaskdbModel.FK_delivery_employee" FromRole="employee" ToRole="delivery" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_employee_status" FromRole="employee" ToRole="status" />
+  </EntityType>
+  <EntityType Name="item">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="item_name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="barcode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="brand" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="uom" Type="Int32" Nullable="false" />
+    <Property Name="tax" Type="Int32" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="cost" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="purchase_rate" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="sale_rate" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="opening_stock" Type="Decimal" Nullable="false" Precision="9" Scale="2" />
+    <Property Name="rawmeterial" Type="Int32" Nullable="false" />
+    <Property Name="sellable" Type="Int32" Nullable="false" />
+    <Property Name="stockable" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="customer_aggrement" Relationship="betaskdbModel.FK_customer_aggrement_item" FromRole="item" ToRole="customer_aggrement" />
+    <NavigationProperty Name="delivery_item_summary" Relationship="betaskdbModel.FK_delivery_item_summary_item" FromRole="item" ToRole="delivery_item_summary" />
+    <NavigationProperty Name="delivery_items" Relationship="betaskdbModel.FK_delivery_items_item" FromRole="item" ToRole="delivery_items" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_item_status" FromRole="item" ToRole="status" />
+    <NavigationProperty Name="tax_setting" Relationship="betaskdbModel.FK_item_tax" FromRole="item" ToRole="tax_setting" />
+    <NavigationProperty Name="uom_setting" Relationship="betaskdbModel.FK_item_uom" FromRole="item" ToRole="uom_setting" />
+    <NavigationProperty Name="production" Relationship="betaskdbModel.FK_production_item" FromRole="item" ToRole="production" />
+    <NavigationProperty Name="production_mapping_rowmaterial" Relationship="betaskdbModel.FK_production_mapping_Item" FromRole="item" ToRole="production_mapping_rowmaterial" />
+    <NavigationProperty Name="production_mapping" Relationship="betaskdbModel.FK_production_mapping_item_id" FromRole="item" ToRole="production_mapping" />
+    <NavigationProperty Name="production_rawmaterial" Relationship="betaskdbModel.FK_production_rawmaterial_item" FromRole="item" ToRole="production_rawmaterial" />
+    <NavigationProperty Name="purchase_item" Relationship="betaskdbModel.FK_purchase_item_item_id" FromRole="item" ToRole="purchase_item" />
+    <NavigationProperty Name="sales_item" Relationship="betaskdbModel.FK_sales_item_Item" FromRole="item" ToRole="sales_item" />
+  </EntityType>
+  <EntityType Name="ledger_mapping">
+    <Key>
+      <PropertyRef Name="ledger_id" />
+    </Key>
+    <Property Name="ledger_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ledger_type" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="group_id" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="account_group" Relationship="betaskdbModel.FK_autoledgermapping_group" FromRole="ledger_mapping" ToRole="account_group" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_autoledgermapping_status" FromRole="ledger_mapping" ToRole="status" />
+  </EntityType>
+  <EntityType Name="production">
+    <Key>
+      <PropertyRef Name="production_id" />
+    </Key>
+    <Property Name="production_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="production_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="qty" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="cost" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="remarks" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="item" Relationship="betaskdbModel.FK_production_item" FromRole="production" ToRole="item" />
+    <NavigationProperty Name="production_rawmaterial" Relationship="betaskdbModel.FK_production_rawmaterial_production" FromRole="production" ToRole="production_rawmaterial" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_production_status" FromRole="production" ToRole="status" />
+  </EntityType>
+  <EntityType Name="production_mapping">
+    <Key>
+      <PropertyRef Name="mapping_id" />
+    </Key>
+    <Property Name="mapping_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="qty" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="total_rawmaterial" Type="Int32" Nullable="false" />
+    <Property Name="total_value" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="item" Relationship="betaskdbModel.FK_production_mapping_item_id" FromRole="production_mapping" ToRole="item" />
+    <NavigationProperty Name="production_mapping_rowmaterial" Relationship="betaskdbModel.FK_production_mapping_mapping_id" FromRole="production_mapping" ToRole="production_mapping_rowmaterial" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_production_mapping_status" FromRole="production_mapping" ToRole="status" />
+  </EntityType>
+  <EntityType Name="production_mapping_rowmaterial">
+    <Key>
+      <PropertyRef Name="mapping_rowmaterial_id" />
+    </Key>
+    <Property Name="mapping_rowmaterial_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="mapping_id" Type="Int32" Nullable="false" />
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="qty" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="item_value" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="item" Relationship="betaskdbModel.FK_production_mapping_Item" FromRole="production_mapping_rowmaterial" ToRole="item" />
+    <NavigationProperty Name="production_mapping" Relationship="betaskdbModel.FK_production_mapping_mapping_id" FromRole="production_mapping_rowmaterial" ToRole="production_mapping" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_production_mapping_rowmaterial_status" FromRole="production_mapping_rowmaterial" ToRole="status" />
+  </EntityType>
+  <EntityType Name="production_rawmaterial">
+    <Key>
+      <PropertyRef Name="production_rawmaterial_id" />
+    </Key>
+    <Property Name="production_rawmaterial_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="production_id" Type="Int32" />
+    <Property Name="item_id" Type="Int32" />
+    <Property Name="qty" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="item_value" Type="Decimal" Precision="11" Scale="2" />
+    <Property Name="status" Type="Int32" />
+    <NavigationProperty Name="item" Relationship="betaskdbModel.FK_production_rawmaterial_item" FromRole="production_rawmaterial" ToRole="item" />
+    <NavigationProperty Name="production" Relationship="betaskdbModel.FK_production_rawmaterial_production" FromRole="production_rawmaterial" ToRole="production" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_production_rawmaterial_status" FromRole="production_rawmaterial" ToRole="status" />
+  </EntityType>
+  <EntityType Name="purchase">
+    <Key>
+      <PropertyRef Name="purchase_id" />
+    </Key>
+    <Property Name="purchase_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="purchase_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="invoice_number" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="invoice_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="vendor_id" Type="Int32" Nullable="false" />
+    <Property Name="purchase_order" Type="Int32" />
+    <Property Name="payment_mode" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="bank_id" Type="Int32" />
+    <Property Name="cheque_no" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="gross_amount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="total_discount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="total_beforevat" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="total_vat" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="roundup" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="net_amount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="cash_paid" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="balance_amount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="remarks" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="customer" Relationship="betaskdbModel.FK_purchase_vendor" FromRole="purchase" ToRole="customer" />
+    <NavigationProperty Name="purchase_item" Relationship="betaskdbModel.FK_purchase_item_purchase_id" FromRole="purchase" ToRole="purchase_item" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_purchase_status" FromRole="purchase" ToRole="status" />
+  </EntityType>
+  <EntityType Name="purchase_item">
+    <Key>
+      <PropertyRef Name="purchase_item_id" />
+    </Key>
+    <Property Name="purchase_item_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="purchase_id" Type="Int32" Nullable="false" />
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="qty" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="rate" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="gross_amount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="discount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="total_beforevat" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="vat_amount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="net_amount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="item" Relationship="betaskdbModel.FK_purchase_item_item_id" FromRole="purchase_item" ToRole="item" />
+    <NavigationProperty Name="purchase" Relationship="betaskdbModel.FK_purchase_item_purchase_id" FromRole="purchase_item" ToRole="purchase" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_purchase_item_status" FromRole="purchase_item" ToRole="status" />
+  </EntityType>
+  <EntityType Name="sales">
+    <Key>
+      <PropertyRef Name="sales_id" />
+    </Key>
+    <Property Name="sales_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sales_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="sales_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="customer_id" Type="Int32" Nullable="false" />
+    <Property Name="sales_order" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="payment_mode" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="bank_id" Type="Int32" />
+    <Property Name="cheque_no" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="gross_amount" Type="Decimal" Precision="11" Scale="2" />
+    <Property Name="total_discount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="total_beforevat" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="total_vat" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="roundup" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="net_amount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="cash_paid" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="balance_amount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="remarks" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="customer" Relationship="betaskdbModel.FK_sales_customer" FromRole="sales" ToRole="customer" />
+    <NavigationProperty Name="sales_item" Relationship="betaskdbModel.FK_sales_item_sales" FromRole="sales" ToRole="sales_item" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_sales_status" FromRole="sales" ToRole="status" />
+  </EntityType>
+  <EntityType Name="sales_item">
+    <Key>
+      <PropertyRef Name="sales_item_id" />
+    </Key>
+    <Property Name="sales_item_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sales_id" Type="Int32" />
+    <Property Name="item_id" Type="Int32" />
+    <Property Name="qty" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="rate" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="gross_amount" Type="Decimal" Precision="11" Scale="2" />
+    <Property Name="discount" Type="Decimal" Precision="11" Scale="2" />
+    <Property Name="total_beforvat" Type="Decimal" Precision="11" Scale="2" />
+    <Property Name="vat_amount" Type="Decimal" Precision="11" Scale="2" />
+    <Property Name="net_amount" Type="Decimal" Precision="11" Scale="2" />
+    <Property Name="status" Type="Int32" />
+    <NavigationProperty Name="item" Relationship="betaskdbModel.FK_sales_item_Item" FromRole="sales_item" ToRole="item" />
+    <NavigationProperty Name="sales" Relationship="betaskdbModel.FK_sales_item_sales" FromRole="sales_item" ToRole="sales" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_sales_item_status" FromRole="sales_item" ToRole="status" />
+  </EntityType>
+  <EntityType Name="status">
+    <Key>
+      <PropertyRef Name="status_id" />
+    </Key>
+    <Property Name="status_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="status_name" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="account_group" Relationship="betaskdbModel.FK_account_group_status" FromRole="status" ToRole="account_group" />
+    <NavigationProperty Name="account_ledger" Relationship="betaskdbModel.FK_account_ledger_status" FromRole="status" ToRole="account_ledger" />
+    <NavigationProperty Name="company" Relationship="betaskdbModel.FK_company_status" FromRole="status" ToRole="company" />
+    <NavigationProperty Name="coupon" Relationship="betaskdbModel.FK_coupon_status" FromRole="status" ToRole="coupon" />
+    <NavigationProperty Name="customer" Relationship="betaskdbModel.FK_customer_status" FromRole="status" ToRole="customer" />
+    <NavigationProperty Name="customer_aggrement" Relationship="betaskdbModel.FK_customer_aggrement_status" FromRole="status" ToRole="customer_aggrement" />
+    <NavigationProperty Name="delivery" Relationship="betaskdbModel.FK_delivery_status" FromRole="status" ToRole="delivery" />
+    <NavigationProperty Name="delivery_item_summary" Relationship="betaskdbModel.FK_delivery_item_summary_status" FromRole="status" ToRole="delivery_item_summary" />
+    <NavigationProperty Name="delivery_items" Relationship="betaskdbModel.FK_delivery_items_status" FromRole="status" ToRole="delivery_items" />
+    <NavigationProperty Name="document_serial" Relationship="betaskdbModel.FK_document_serial_status" FromRole="status" ToRole="document_serial" />
+    <NavigationProperty Name="employee" Relationship="betaskdbModel.FK_employee_status" FromRole="status" ToRole="employee" />
+    <NavigationProperty Name="item" Relationship="betaskdbModel.FK_item_status" FromRole="status" ToRole="item" />
+    <NavigationProperty Name="ledger_mapping" Relationship="betaskdbModel.FK_autoledgermapping_status" FromRole="status" ToRole="ledger_mapping" />
+    <NavigationProperty Name="production" Relationship="betaskdbModel.FK_production_status" FromRole="status" ToRole="production" />
+    <NavigationProperty Name="production_mapping" Relationship="betaskdbModel.FK_production_mapping_status" FromRole="status" ToRole="production_mapping" />
+    <NavigationProperty Name="production_mapping_rowmaterial" Relationship="betaskdbModel.FK_production_mapping_rowmaterial_status" FromRole="status" ToRole="production_mapping_rowmaterial" />
+    <NavigationProperty Name="production_rawmaterial" Relationship="betaskdbModel.FK_production_rawmaterial_status" FromRole="status" ToRole="production_rawmaterial" />
+    <NavigationProperty Name="purchase" Relationship="betaskdbModel.FK_purchase_status" FromRole="status" ToRole="purchase" />
+    <NavigationProperty Name="purchase_item" Relationship="betaskdbModel.FK_purchase_item_status" FromRole="status" ToRole="purchase_item" />
+    <NavigationProperty Name="sales" Relationship="betaskdbModel.FK_sales_status" FromRole="status" ToRole="sales" />
+    <NavigationProperty Name="sales_item" Relationship="betaskdbModel.FK_sales_item_status" FromRole="status" ToRole="sales_item" />
+    <NavigationProperty Name="tax_setting" Relationship="betaskdbModel.FK_tax_setting_status" FromRole="status" ToRole="tax_setting" />
+    <NavigationProperty Name="uom_setting" Relationship="betaskdbModel.FK_uom_setting_status" FromRole="status" ToRole="uom_setting" />
+  </EntityType>
+  <EntityType Name="tax_setting">
+    <Key>
+      <PropertyRef Name="tax_id" />
+    </Key>
+    <Property Name="tax_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tax_name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="description" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="tax_value" Type="Decimal" Precision="4" Scale="2" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="item" Relationship="betaskdbModel.FK_item_tax" FromRole="tax_setting" ToRole="item" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_tax_setting_status" FromRole="tax_setting" ToRole="status" />
+  </EntityType>
+  <EntityType Name="uom_setting">
+    <Key>
+      <PropertyRef Name="uom_id" />
+    </Key>
+    <Property Name="uom_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uom_name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="item" Relationship="betaskdbModel.FK_item_uom" FromRole="uom_setting" ToRole="item" />
+    <NavigationProperty Name="status1" Relationship="betaskdbModel.FK_uom_setting_status" FromRole="uom_setting" ToRole="status" />
+  </EntityType>
+  <EntityType Name="user_log">
+    <Key>
+      <PropertyRef Name="log_id" />
+    </Key>
+    <Property Name="log_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="module" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="module_action" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="server_time" Type="DateTime" Precision="3" />
+    <Property Name="reference_id" Type="Int32" />
+    <Property Name="summary" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="wallet_history">
+    <Key>
+      <PropertyRef Name="wallet_history_id" />
+    </Key>
+    <Property Name="wallet_history_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="wallet_number" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="customer_id" Type="Int32" Nullable="false" />
+    <Property Name="amount" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="recharge_by" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="payment_mode" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="remarks" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="customer" Relationship="betaskdbModel.FK_wallet_history_customer" FromRole="wallet_history" ToRole="customer" />
+  </EntityType>
+  <Association Name="FK_account_group_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.account_group" Role="account_group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="account_group">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_account_ledger_groupid">
+    <End Type="betaskdbModel.account_group" Role="account_group" Multiplicity="1" />
+    <End Type="betaskdbModel.account_ledger" Role="account_ledger" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account_group">
+        <PropertyRef Name="group_id" />
+      </Principal>
+      <Dependent Role="account_ledger">
+        <PropertyRef Name="group_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_autoledgermapping_group">
+    <End Type="betaskdbModel.account_group" Role="account_group" Multiplicity="1" />
+    <End Type="betaskdbModel.ledger_mapping" Role="ledger_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="account_group">
+        <PropertyRef Name="group_id" />
+      </Principal>
+      <Dependent Role="ledger_mapping">
+        <PropertyRef Name="group_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_account_ledger_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.account_ledger" Role="account_ledger" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="account_ledger">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_company_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="0..1" />
+    <End Type="betaskdbModel.company" Role="company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="company">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_coupon_leaf_coupon_Id">
+    <End Type="betaskdbModel.coupon" Role="coupon" Multiplicity="1" />
+    <End Type="betaskdbModel.coupon_leaf" Role="coupon_leaf" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="coupon">
+        <PropertyRef Name="coupon_id" />
+      </Principal>
+      <Dependent Role="coupon_leaf">
+        <PropertyRef Name="coupon_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_coupon_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.coupon" Role="coupon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="coupon">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customer_aggrement_customer">
+    <End Type="betaskdbModel.customer" Role="customer" Multiplicity="1" />
+    <End Type="betaskdbModel.customer_aggrement" Role="customer_aggrement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="customer_aggrement">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customer_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.customer" Role="customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="customer">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_items_customer">
+    <End Type="betaskdbModel.customer" Role="customer" Multiplicity="1" />
+    <End Type="betaskdbModel.delivery_items" Role="delivery_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="delivery_items">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_vendor">
+    <End Type="betaskdbModel.customer" Role="customer" Multiplicity="1" />
+    <End Type="betaskdbModel.purchase" Role="purchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="purchase">
+        <PropertyRef Name="vendor_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_customer">
+    <End Type="betaskdbModel.customer" Role="customer" Multiplicity="1" />
+    <End Type="betaskdbModel.sales" Role="sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="sales">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_wallet_history_customer">
+    <End Type="betaskdbModel.customer" Role="customer" Multiplicity="1" />
+    <End Type="betaskdbModel.wallet_history" Role="wallet_history" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="wallet_history">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customer_aggrement_item">
+    <End Type="betaskdbModel.item" Role="item" Multiplicity="1" />
+    <End Type="betaskdbModel.customer_aggrement" Role="customer_aggrement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="customer_aggrement">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customer_aggrement_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.customer_aggrement" Role="customer_aggrement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="customer_aggrement">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_employee">
+    <End Type="betaskdbModel.employee" Role="employee" Multiplicity="1" />
+    <End Type="betaskdbModel.delivery" Role="delivery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee">
+        <PropertyRef Name="employee_id" />
+      </Principal>
+      <Dependent Role="delivery">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_item_summary_delivery">
+    <End Type="betaskdbModel.delivery" Role="delivery" Multiplicity="1" />
+    <End Type="betaskdbModel.delivery_item_summary" Role="delivery_item_summary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="delivery">
+        <PropertyRef Name="delivery_id" />
+      </Principal>
+      <Dependent Role="delivery_item_summary">
+        <PropertyRef Name="delivery_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_items_delivery">
+    <End Type="betaskdbModel.delivery" Role="delivery" Multiplicity="1" />
+    <End Type="betaskdbModel.delivery_items" Role="delivery_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="delivery">
+        <PropertyRef Name="delivery_id" />
+      </Principal>
+      <Dependent Role="delivery_items">
+        <PropertyRef Name="delivery_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.delivery" Role="delivery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="delivery">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_item_summary_item">
+    <End Type="betaskdbModel.item" Role="item" Multiplicity="1" />
+    <End Type="betaskdbModel.delivery_item_summary" Role="delivery_item_summary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="delivery_item_summary">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_item_summary_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.delivery_item_summary" Role="delivery_item_summary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="delivery_item_summary">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_items_item">
+    <End Type="betaskdbModel.item" Role="item" Multiplicity="1" />
+    <End Type="betaskdbModel.delivery_items" Role="delivery_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="delivery_items">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_delivery_items_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.delivery_items" Role="delivery_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="delivery_items">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_document_serial_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.document_serial" Role="document_serial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="document_serial">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_employee_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.employee" Role="employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="employee">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.item" Role="item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="item">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_tax">
+    <End Type="betaskdbModel.tax_setting" Role="tax_setting" Multiplicity="1" />
+    <End Type="betaskdbModel.item" Role="item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tax_setting">
+        <PropertyRef Name="tax_id" />
+      </Principal>
+      <Dependent Role="item">
+        <PropertyRef Name="tax" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_item_uom">
+    <End Type="betaskdbModel.uom_setting" Role="uom_setting" Multiplicity="1" />
+    <End Type="betaskdbModel.item" Role="item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="uom_setting">
+        <PropertyRef Name="uom_id" />
+      </Principal>
+      <Dependent Role="item">
+        <PropertyRef Name="uom" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_item">
+    <End Type="betaskdbModel.item" Role="item" Multiplicity="1" />
+    <End Type="betaskdbModel.production" Role="production" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="production">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_mapping_Item">
+    <End Type="betaskdbModel.item" Role="item" Multiplicity="1" />
+    <End Type="betaskdbModel.production_mapping_rowmaterial" Role="production_mapping_rowmaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="production_mapping_rowmaterial">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_mapping_item_id">
+    <End Type="betaskdbModel.item" Role="item" Multiplicity="1" />
+    <End Type="betaskdbModel.production_mapping" Role="production_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="production_mapping">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_rawmaterial_item">
+    <End Type="betaskdbModel.item" Role="item" Multiplicity="0..1" />
+    <End Type="betaskdbModel.production_rawmaterial" Role="production_rawmaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="production_rawmaterial">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_item_item_id">
+    <End Type="betaskdbModel.item" Role="item" Multiplicity="1" />
+    <End Type="betaskdbModel.purchase_item" Role="purchase_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="purchase_item">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_item_Item">
+    <End Type="betaskdbModel.item" Role="item" Multiplicity="0..1" />
+    <End Type="betaskdbModel.sales_item" Role="sales_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="item">
+        <PropertyRef Name="item_id" />
+      </Principal>
+      <Dependent Role="sales_item">
+        <PropertyRef Name="item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_autoledgermapping_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.ledger_mapping" Role="ledger_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="ledger_mapping">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_rawmaterial_production">
+    <End Type="betaskdbModel.production" Role="production" Multiplicity="0..1" />
+    <End Type="betaskdbModel.production_rawmaterial" Role="production_rawmaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="production">
+        <PropertyRef Name="production_id" />
+      </Principal>
+      <Dependent Role="production_rawmaterial">
+        <PropertyRef Name="production_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.production" Role="production" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="production">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_mapping_mapping_id">
+    <End Type="betaskdbModel.production_mapping" Role="production_mapping" Multiplicity="1" />
+    <End Type="betaskdbModel.production_mapping_rowmaterial" Role="production_mapping_rowmaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="production_mapping">
+        <PropertyRef Name="mapping_id" />
+      </Principal>
+      <Dependent Role="production_mapping_rowmaterial">
+        <PropertyRef Name="mapping_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_mapping_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.production_mapping" Role="production_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="production_mapping">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_mapping_rowmaterial_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.production_mapping_rowmaterial" Role="production_mapping_rowmaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="production_mapping_rowmaterial">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_production_rawmaterial_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="0..1" />
+    <End Type="betaskdbModel.production_rawmaterial" Role="production_rawmaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="production_rawmaterial">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_item_purchase_id">
+    <End Type="betaskdbModel.purchase" Role="purchase" Multiplicity="1" />
+    <End Type="betaskdbModel.purchase_item" Role="purchase_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="purchase">
+        <PropertyRef Name="purchase_id" />
+      </Principal>
+      <Dependent Role="purchase_item">
+        <PropertyRef Name="purchase_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.purchase" Role="purchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="purchase">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_purchase_item_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.purchase_item" Role="purchase_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="purchase_item">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_item_sales">
+    <End Type="betaskdbModel.sales" Role="sales" Multiplicity="0..1" />
+    <End Type="betaskdbModel.sales_item" Role="sales_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sales">
+        <PropertyRef Name="sales_id" />
+      </Principal>
+      <Dependent Role="sales_item">
+        <PropertyRef Name="sales_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.sales" Role="sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="sales">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_item_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="0..1" />
+    <End Type="betaskdbModel.sales_item" Role="sales_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="sales_item">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tax_setting_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.tax_setting" Role="tax_setting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="tax_setting">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_uom_setting_status">
+    <End Type="betaskdbModel.status" Role="status" Multiplicity="1" />
+    <End Type="betaskdbModel.uom_setting" Role="uom_setting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="status_id" />
+      </Principal>
+      <Dependent Role="uom_setting">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,6 @@
+
+11/13/2024 11:22:39 AM{JISHNU} - Unable to cast object of type 'System.Windows.Forms.ToolStripSeparator' to type 'System.Windows.Forms.ToolStripMenuItem'.
+
+11/13/2024 11:26:17 AM{LETZ} - invalid try to login JISHNU
+
+11/13/2024 11:26:28 AM{JISHNU} - Unable to cast object of type 'System.Windows.Forms.ToolStripSeparator' to type 'System.Windows.Forms.ToolStripMenuItem'.

@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F299F93-C0F0-4A2E-A348-53368F69E39F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BETask.Report</RootNamespace>
+    <AssemblyName>BETask.Report</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common.resources, Version=11.0.0.0, Culture=de, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design.resources, Version=11.0.0.0, Culture=de, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.2.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms.resources, Version=11.0.0.0, Culture=de, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataConversion.cs" />
+    <Compile Include="DSReports.cs">
+      <DependentUpon>DSReports.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSReports.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSReports.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AccountStatement.rdlc" />
+    <EmbeddedResource Include="Reports\Balancesheet.rdlc" />
+    <EmbeddedResource Include="Reports\CollectionReport.rdlc" />
+    <EmbeddedResource Include="Reports\CostCenterDetailedReport.rdlc" />
+    <EmbeddedResource Include="Reports\CostCenterSummaryReport.rdlc" />
+    <EmbeddedResource Include="Reports\CouponBook.rdlc" />
+    <EmbeddedResource Include="Reports\CouponRedeemed.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerAssetAgreementReport.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerAssetAllReport.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerAssetReport.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerDeliveryDaybook.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerDeliveryDaybookDo.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerDeliveryDaybook1.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerDeliveryDaybook_NotinUse.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerList.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerMonthlyOutstandingReport.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerPerformance.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerStatementAdvanced.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerStatementDetailed.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerStatementSummary.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerStock.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerSummary.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerWalletMiscReport.rdlc" />
+    <EmbeddedResource Include="Reports\DailyCollection.rdlc" />
+    <EmbeddedResource Include="Reports\DamageReport.rdlc" />
+    <EmbeddedResource Include="Reports\DaybookDetailed.rdlc" />
+    <EmbeddedResource Include="Reports\DaybookSummary.rdlc" />
+    <EmbeddedResource Include="Reports\DeliveryInvoice.rdlc" />
+    <EmbeddedResource Include="Reports\DeliveryInvoiceOcean.rdlc" />
+    <EmbeddedResource Include="Reports\DeliveryLoadReport.rdlc" />
+    <EmbeddedResource Include="Reports\DeliveryReportItemWise.rdlc" />
+    <EmbeddedResource Include="Reports\DeliveryReportStaffWise.rdlc" />
+    <EmbeddedResource Include="Reports\DeliveryReturnReport.rdlc" />
+    <EmbeddedResource Include="Reports\DeliverySummaryReport.rdlc" />
+    <EmbeddedResource Include="Reports\DepositCollection.rdlc" />
+    <EmbeddedResource Include="Reports\DoDeliveryItemsReport.rdlc" />
+    <EmbeddedResource Include="Reports\DODueInvoiceReport.rdlc" />
+    <EmbeddedResource Include="Reports\DOSalesInvoice.rdlc" />
+    <EmbeddedResource Include="Reports\DOSalesInvoiceOrg.rdlc" />
+    <EmbeddedResource Include="Reports\DOSalesList.rdlc" />
+    <EmbeddedResource Include="Reports\DSRCollectionOnly.rdlc" />
+    <EmbeddedResource Include="Reports\EmployeeReport.rdlc" />
+    <EmbeddedResource Include="Reports\FOCSaleReport.rdlc" />
+    <EmbeddedResource Include="Reports\ItemDeliveryProductionReport.rdlc" />
+    <EmbeddedResource Include="Reports\ItemStockReport.rdlc" />
+    <EmbeddedResource Include="Reports\ItemTransferDateWiseReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ItemList.rdlc" />
+    <EmbeddedResource Include="Reports\ItemTransaction.rdlc" />
+    <EmbeddedResource Include="Reports\ItemValue.rdlc" />
+    <EmbeddedResource Include="Reports\JournalVoucher.rdlc" />
+    <EmbeddedResource Include="Reports\LoadingReport.rdlc" />
+    <EmbeddedResource Include="Reports\LoadingSlip.rdlc" />
+    <EmbeddedResource Include="Reports\OnlineReport.rdlc" />
+    <EmbeddedResource Include="Reports\PaymentReport.rdlc" />
+    <EmbeddedResource Include="Reports\PunchReport.rdlc" />
+    <EmbeddedResource Include="Reports\PurchaseSupplierDueReport.rdlc" />
+    <EmbeddedResource Include="Reports\PaymentVoucher.rdlc" />
+    <EmbeddedResource Include="Reports\PDCReport.rdlc" />
+    <EmbeddedResource Include="Reports\PDCInvoice.rdlc" />
+    <EmbeddedResource Include="Reports\ProductionRawmaterialReport.rdlc" />
+    <EmbeddedResource Include="Reports\ProductionReport.rdlc" />
+    <EmbeddedResource Include="Reports\ProfitandLossReport.rdlc" />
+    <EmbeddedResource Include="Reports\PurchaseOrderInvoice.rdlc" />
+    <EmbeddedResource Include="Reports\PurchaseOrderReportSupplierwise.rdlc" />
+    <EmbeddedResource Include="Reports\RoutewiseCashbook.rdlc" />
+    <EmbeddedResource Include="Reports\RoutewiseItem.rdlc" />
+    <EmbeddedResource Include="Reports\RoutewisesaleReport1.rdlc" />
+    <EmbeddedResource Include="Reports\RoutewisesaleReport.rdlc" />
+    <EmbeddedResource Include="Reports\SaleMonthlyAnalyse.rdlc" />
+    <EmbeddedResource Include="Reports\SalesInvoiceDOdubai.rdlc" />
+    <EmbeddedResource Include="Reports\SalesInvoiceDOdubai2.rdlc" />
+    <EmbeddedResource Include="Reports\SalesInvoiceDOabudhabi.rdlc" />
+    <EmbeddedResource Include="Reports\SalesInvoice.rdlc" />
+    <EmbeddedResource Include="Reports\PurchaseInvoice.rdlc" />
+    <EmbeddedResource Include="Reports\PurchaseReportSupplierwise.rdlc" />
+    <EmbeddedResource Include="Reports\SalesReportCustomerwise.rdlc" />
+    <EmbeddedResource Include="Reports\SalesReportItemwise.rdlc" />
+    <EmbeddedResource Include="Reports\TrailBalanceSummaryDatewiseReport.rdlc" />
+    <EmbeddedResource Include="Reports\TrailBalanceSummaryReport.rdlc" />
+    <EmbeddedResource Include="Reports\TransferItem.rdlc" />
+    <EmbeddedResource Include="Reports\TrialBalanceDatewise.rdlc" />
+    <EmbeddedResource Include="Reports\TrialBalance.rdlc" />
+    <None Include="bin\Debug\BETask.DAL.dll.config" />
+    <None Include="bin\Debug\BETask.Report.exe.config" />
+    <None Include="bin\Release\BETask.DAL.dll.config" />
+    <None Include="bin\Release\BETask.Report.exe.config" />
+    <None Include="DSReports.xsc">
+      <DependentUpon>DSReports.xsd</DependentUpon>
+    </None>
+    <None Include="DSReports.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSReports.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSReports.xss">
+      <DependentUpon>DSReports.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\BETask.DAL.dll" />
+    <Content Include="bin\Debug\BETask.DAL.pdb" />
+    <Content Include="bin\Debug\BETask.Report.exe" />
+    <Content Include="bin\Debug\BETask.Report.pdb" />
+    <Content Include="bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\EnvDTE.dll" />
+    <Content Include="bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\logo-footer.png" />
+    <Content Include="bin\Debug\Microsoft.MSXML.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.DataVisualization.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.Design.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.Types.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll" />
+    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\SqlServerTypes\x64\msvcr120.dll" />
+    <Content Include="bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll" />
+    <Content Include="bin\Debug\SqlServerTypes\x86\msvcr120.dll" />
+    <Content Include="bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll" />
+    <Content Include="bin\Debug\stdole.dll" />
+    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\BETask.DAL.dll" />
+    <Content Include="bin\Release\BETask.DAL.pdb" />
+    <Content Include="bin\Release\BETask.Report.exe" />
+    <Content Include="bin\Release\BETask.Report.pdb" />
+    <Content Include="bin\Release\de\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\de\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\de\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\EntityFramework.dll" />
+    <Content Include="bin\Release\EntityFramework.xml" />
+    <Content Include="bin\Release\EnvDTE.dll" />
+    <Content Include="bin\Release\es\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\es\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\es\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\fr\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\fr\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\fr\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\it\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\it\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\it\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\ja\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\ja\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\ja\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\ko\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\ko\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\ko\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\Microsoft.MSXML.dll" />
+    <Content Include="bin\Release\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="bin\Release\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\Microsoft.ReportViewer.DataVisualization.dll" />
+    <Content Include="bin\Release\Microsoft.ReportViewer.Design.dll" />
+    <Content Include="bin\Release\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+    <Content Include="bin\Release\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="bin\Release\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\Microsoft.SqlServer.Types.dll" />
+    <Content Include="bin\Release\Microsoft.VisualStudio.OLE.Interop.dll" />
+    <Content Include="bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll" />
+    <Content Include="bin\Release\Microsoft.VisualStudio.Shell.Interop.dll" />
+    <Content Include="bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll" />
+    <Content Include="bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll" />
+    <Content Include="bin\Release\pt\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\pt\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\pt\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\ru\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\ru\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\ru\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\SqlServerTypes\x64\msvcr120.dll" />
+    <Content Include="bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll" />
+    <Content Include="bin\Release\SqlServerTypes\x86\msvcr120.dll" />
+    <Content Include="bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll" />
+    <Content Include="bin\Release\stdole.dll" />
+    <Content Include="bin\Release\zh-CHS\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\zh-CHS\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Release\zh-CHT\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Release\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Release\zh-CHT\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BETask.DAL\BETask.DAL.csproj">
+      <Project>{3915b802-cc06-49c7-9bec-34526c8922b6}</Project>
+      <Name>BETask.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

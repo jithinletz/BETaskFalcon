@@ -1,0 +1,32 @@
+
+07/Apr/2024 10:14:38 PM{LETZ} - 
+4444 - Started DeliveryFromApp 
+
+07/Apr/2024 10:14:38 PM{LETZ} - 
+4444 - Delievery APP  Sync completed synced=0
+
+07/Apr/2024 10:14:38 PM{LETZ} - 
+4444 - Started RedeemedCoupon 
+
+07/Apr/2024 10:14:38 PM{LETZ} - 
+4444 - Completed RedeemedCoupon Count 0
+
+07/Apr/2024 10:14:38 PM{LETZ} - 
+4444 - OutstandingDailyCollection
+
+07/Apr/2024 10:14:39 PM{LETZ} - 0 to be updated
+
+07/Apr/2024 10:14:39 PM{LETZ} - 
+4444 - Completed OutstandingDailyCollection 0
+
+07/Apr/2024 10:14:39 PM{LETZ} - 
+4444 - Started Delivery 
+
+07/Apr/2024 10:14:39 PM{LETZ} - 
+4444 - Completed Delivery count 0 
+
+07/Apr/2024 10:14:39 PM{LETZ} - 
+4444 - UpdateRouteInTransaction
+
+07/Apr/2024 10:14:39 PM{LETZ} - 
+4444 - completed UpdateRouteInTransaction

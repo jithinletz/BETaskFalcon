@@ -1,0 +1,19 @@
+2022-02-11 15:56:59,881 ERROR MonitoringLogger - Exception occured while fetching Customer . Please check the logs for more details
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToDecimal(String value, IFormatProvider provider)
+   at System.String.System.IConvertible.ToDecimal(IFormatProvider provider)
+   at System.Convert.ToDecimal(Object value)
+   at BETaskAPI.DAL.LogInDAL.UserLogin(LogIn objLogIn) in D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskCustomerAPI\BETaskCustomerAPI\DAL\LoginDAL.cs:line 88
+   at BETaskAPI.Controllers.LogInController.UserLogin(LogIn objLogIn) in D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskCustomerAPI\BETaskCustomerAPI\Controllers\LogInController.cs:line 29
+2022-02-11 15:57:47,570 ERROR MonitoringLogger - Exception occured while fetching Customer . Please check the logs for more details
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToDecimal(String value, IFormatProvider provider)
+   at System.String.System.IConvertible.ToDecimal(IFormatProvider provider)
+   at System.Convert.ToDecimal(Object value)
+   at BETaskAPI.DAL.LogInDAL.UserLogin(LogIn objLogIn) in D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskCustomerAPI\BETaskCustomerAPI\DAL\LoginDAL.cs:line 88
+   at BETaskAPI.Controllers.LogInController.UserLogin(LogIn objLogIn) in D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskCustomerAPI\BETaskCustomerAPI\Controllers\LogInController.cs:line 29
+2022-02-11 16:23:00,781 ERROR MonitoringLogger - System.Data.SqlClient.SqlConnection--FALCON--DUBAI

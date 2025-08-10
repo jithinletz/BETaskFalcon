@@ -1,0 +1,40 @@
+
+18/Mar/2024 12:26:00 AM{LETZ} - System.InvalidOperationException: The cast to value type 'System.Decimal' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type.
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__3[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Sum[TSource](IQueryable`1 source, Expression`1 selector)
+   at BETask.DAL.DAL.AccountTransactionDAL.GetReconciledBalance(Int32 ledgerId, DateTime dateFrom, DateTime dateTo) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\DAL\AccountTransactionDAL.cs:line 2830
+   at BETask.BAL.AccountTransactionBAL.GetReconciledBalance(Int32 ledgerId, DateTime dateFrom, DateTime dateTo) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\AccountTransactionBAL.cs:line 304
+   at BETask.Views.ReconsiliationForm.Search() in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\ReconsiliationForm.cs:line 147
+
+18/Mar/2024 12:28:22 AM{LETZ} - System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BETask.DAL.DAL.AccountTransactionDAL.GetReconciledBalance(Int32 ledgerId, DateTime dateFrom, DateTime dateTo) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\DAL\AccountTransactionDAL.cs:line 2830
+   at BETask.BAL.AccountTransactionBAL.GetReconciledBalance(Int32 ledgerId, DateTime dateFrom, DateTime dateTo) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\AccountTransactionBAL.cs:line 304
+   at BETask.Views.ReconsiliationForm.Search() in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\ReconsiliationForm.cs:line 147
+
+18/Mar/2024 12:35:23 AM{LETZ} - System.InvalidOperationException: The cast to value type 'System.Decimal' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type.
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__3[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Sum[TSource](IQueryable`1 source, Expression`1 selector)
+   at BETask.DAL.DAL.AccountTransactionDAL.GetReconciledBalance(Int32 ledgerId, DateTime dateFrom, DateTime dateTo)
+   at BETask.BAL.AccountTransactionBAL.GetReconciledBalance(Int32 ledgerId, DateTime dateFrom, DateTime dateTo) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\AccountTransactionBAL.cs:line 304
+   at BETask.Views.ReconsiliationForm.Search() in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\ReconsiliationForm.cs:line 147

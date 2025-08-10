@@ -1,0 +1,421 @@
+
+01/Apr/2024 08:44:00 PM{LETZ} - invalid try to login LETZ
+
+01/Apr/2024 08:44:12 PM{LETZ} - 
+7376 - Started DeliveryFromApp 
+
+01/Apr/2024 08:44:13 PM{LETZ} - 
+7376 - Delievery APP  Sync completed synced=0
+
+01/Apr/2024 08:44:13 PM{LETZ} - 
+7376 - Started RedeemedCoupon 
+
+01/Apr/2024 08:44:13 PM{LETZ} - 
+7376 - Completed RedeemedCoupon Count 0
+
+01/Apr/2024 08:44:13 PM{LETZ} - 
+7376 - OutstandingDailyCollection
+
+01/Apr/2024 08:44:13 PM{LETZ} - 0 to be updated
+
+01/Apr/2024 08:44:13 PM{LETZ} - 
+7376 - Completed OutstandingDailyCollection 0
+
+01/Apr/2024 08:44:13 PM{LETZ} - 
+7376 - Started Delivery 
+
+01/Apr/2024 08:44:14 PM{LETZ} - 
+7376 - Completed Delivery count 0 
+
+01/Apr/2024 08:44:14 PM{LETZ} - 
+7376 - UpdateRouteInTransaction
+
+01/Apr/2024 08:44:14 PM{LETZ} - 
+7376 - completed UpdateRouteInTransaction
+
+01/Apr/2024 09:56:43 PM{LETZ} - 
+4018 - Started DeliveryFromApp 
+
+01/Apr/2024 09:56:44 PM{LETZ} - 
+4018 - Delievery APP  Sync completed synced=0
+
+01/Apr/2024 09:56:44 PM{LETZ} - 
+4018 - Started RedeemedCoupon 
+
+01/Apr/2024 09:56:45 PM{LETZ} - 
+4018 - Completed RedeemedCoupon Count 0
+
+01/Apr/2024 09:56:45 PM{LETZ} - 
+4018 - OutstandingDailyCollection
+
+01/Apr/2024 09:56:45 PM{LETZ} - 0 to be updated
+
+01/Apr/2024 09:56:45 PM{LETZ} - 
+4018 - Completed OutstandingDailyCollection 0
+
+01/Apr/2024 09:56:45 PM{LETZ} - 
+4018 - Started Delivery 
+
+01/Apr/2024 09:56:45 PM{LETZ} - 
+4018 - Completed Delivery count 0 
+
+01/Apr/2024 09:56:45 PM{LETZ} - 
+4018 - UpdateRouteInTransaction
+
+01/Apr/2024 09:56:46 PM{LETZ} - 
+4018 - completed UpdateRouteInTransaction
+
+01/Apr/2024 10:00:29 PM{LETZ} - invalid try to login LETZ
+
+01/Apr/2024 10:00:37 PM{LETZ} - 
+5665 - Started DeliveryFromApp 
+
+01/Apr/2024 10:00:38 PM{LETZ} - 
+5665 - Delievery APP  Sync completed synced=0
+
+01/Apr/2024 10:00:38 PM{LETZ} - 
+5665 - Started RedeemedCoupon 
+
+01/Apr/2024 10:00:38 PM{LETZ} - 
+5665 - Completed RedeemedCoupon Count 0
+
+01/Apr/2024 10:00:38 PM{LETZ} - 
+5665 - OutstandingDailyCollection
+
+01/Apr/2024 10:00:38 PM{LETZ} - 0 to be updated
+
+01/Apr/2024 10:00:38 PM{LETZ} - 
+5665 - Completed OutstandingDailyCollection 0
+
+01/Apr/2024 10:00:38 PM{LETZ} - 
+5665 - Started Delivery 
+
+01/Apr/2024 10:00:38 PM{LETZ} - 
+5665 - Completed Delivery count 0 
+
+01/Apr/2024 10:00:38 PM{LETZ} - 
+5665 - UpdateRouteInTransaction
+
+01/Apr/2024 10:00:39 PM{LETZ} - 
+5665 - completed UpdateRouteInTransaction
+
+01/Apr/2024 10:06:03 PM{LETZ} - 
+9191 - Started DeliveryFromApp 
+
+01/Apr/2024 10:06:03 PM{LETZ} - 
+9191 - Delievery APP  Sync completed synced=0
+
+01/Apr/2024 10:06:03 PM{LETZ} - 
+9191 - Started RedeemedCoupon 
+
+01/Apr/2024 10:06:03 PM{LETZ} - 
+9191 - Completed RedeemedCoupon Count 0
+
+01/Apr/2024 10:06:03 PM{LETZ} - 
+9191 - OutstandingDailyCollection
+
+01/Apr/2024 10:06:03 PM{LETZ} - 0 to be updated
+
+01/Apr/2024 10:06:03 PM{LETZ} - 
+9191 - Completed OutstandingDailyCollection 0
+
+01/Apr/2024 10:06:03 PM{LETZ} - 
+9191 - Started Delivery 
+
+01/Apr/2024 10:06:04 PM{LETZ} - 
+9191 - Completed Delivery count 0 
+
+01/Apr/2024 10:06:04 PM{LETZ} - 
+9191 - UpdateRouteInTransaction
+
+01/Apr/2024 10:06:04 PM{LETZ} - 
+9191 - completed UpdateRouteInTransaction
+
+01/Apr/2024 10:10:36 PM{LETZ} - 
+3854 - Started DeliveryFromApp 
+
+01/Apr/2024 10:10:37 PM{LETZ} - 
+3854 - Delievery APP  Sync completed synced=0
+
+01/Apr/2024 10:10:37 PM{LETZ} - 
+3854 - Started RedeemedCoupon 
+
+01/Apr/2024 10:10:37 PM{LETZ} - 
+3854 - Completed RedeemedCoupon Count 0
+
+01/Apr/2024 10:10:37 PM{LETZ} - 
+3854 - OutstandingDailyCollection
+
+01/Apr/2024 10:10:37 PM{LETZ} - 0 to be updated
+
+01/Apr/2024 10:10:37 PM{LETZ} - 
+3854 - Completed OutstandingDailyCollection 0
+
+01/Apr/2024 10:10:37 PM{LETZ} - 
+3854 - Started Delivery 
+
+01/Apr/2024 10:10:37 PM{LETZ} - 
+3854 - Completed Delivery count 0 
+
+01/Apr/2024 10:10:37 PM{LETZ} - 
+3854 - UpdateRouteInTransaction
+
+01/Apr/2024 10:10:38 PM{LETZ} - 
+3854 - completed UpdateRouteInTransaction
+
+01/Apr/2024 10:11:36 PM{LETZ} - System.Exception: Coupon saved but unable to update in cloud due to same leaf number aleady exist , please try again or contact for support
+   at BETask.BAL.CouponBAL.SaveCouponAPP(Int32 couponId) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\CouponBAL.cs:line 95
+   at BETask.BAL.CouponBAL.SaveCoupon(coupon coupon, List`1 listCoupon) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\CouponBAL.cs:line 27
+   at BETask.Views.CouponSaleForm.SaveCoupon() in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\CouponSaleForm.cs:line 182
+
+01/Apr/2024 10:11:52 PM{LETZ} - System.Exception: Coupon book already assigned to another customer 
+   at BETask.DAL.DAL.CouponDAL.SaveCoupon(coupon _coupon, List`1 listCouponLeaf) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\DAL\CouponDAL.cs:line 80
+   at BETask.BAL.CouponBAL.SaveCoupon(coupon coupon, List`1 listCoupon) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\CouponBAL.cs:line 27
+   at BETask.Views.CouponSaleForm.SaveCoupon() in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\CouponSaleForm.cs:line 182
+
+01/Apr/2024 10:11:58 PM{LETZ} - System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of UNIQUE KEY constraint 'UK_coupon_leaf'. Cannot insert duplicate key in object 'dbo.coupon_leaf'. The duplicate key value is (123).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BETask.DAL.DAL.CouponDAL.SaveCoupon(coupon _coupon, List`1 listCouponLeaf) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\DAL\CouponDAL.cs:line 80
+   at BETask.BAL.CouponBAL.SaveCoupon(coupon coupon, List`1 listCoupon) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\CouponBAL.cs:line 27
+   at BETask.Views.CouponSaleForm.SaveCoupon() in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\CouponSaleForm.cs:line 182
+
+01/Apr/2024 10:12:04 PM{LETZ} - System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of UNIQUE KEY constraint 'UK_coupon_leaf'. Cannot insert duplicate key in object 'dbo.coupon_leaf'. The duplicate key value is (123).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BETask.DAL.DAL.CouponDAL.SaveCoupon(coupon _coupon, List`1 listCouponLeaf) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\DAL\CouponDAL.cs:line 80
+   at BETask.BAL.CouponBAL.SaveCoupon(coupon coupon, List`1 listCoupon) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\CouponBAL.cs:line 27
+   at BETask.Views.CouponSaleForm.SaveCoupon() in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\CouponSaleForm.cs:line 182
+
+01/Apr/2024 10:12:18 PM{LETZ} - System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of UNIQUE KEY constraint 'UK_coupon_leaf'. Cannot insert duplicate key in object 'dbo.coupon_leaf'. The duplicate key value is (123).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BETask.DAL.DAL.CouponDAL.SaveCoupon(coupon _coupon, List`1 listCouponLeaf) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\DAL\CouponDAL.cs:line 80
+   at BETask.BAL.CouponBAL.SaveCoupon(coupon coupon, List`1 listCoupon) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\CouponBAL.cs:line 27
+   at BETask.Views.CouponSaleForm.SaveCoupon() in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\CouponSaleForm.cs:line 182
+
+01/Apr/2024 10:12:28 PM{LETZ} - System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of UNIQUE KEY constraint 'UK_coupon_leaf'. Cannot insert duplicate key in object 'dbo.coupon_leaf'. The duplicate key value is (123).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BETask.DAL.DAL.CouponDAL.SaveCoupon(coupon _coupon, List`1 listCouponLeaf) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\DAL\CouponDAL.cs:line 80
+   at BETask.BAL.CouponBAL.SaveCoupon(coupon coupon, List`1 listCoupon) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\CouponBAL.cs:line 27
+   at BETask.Views.CouponSaleForm.SaveCoupon() in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\CouponSaleForm.cs:line 182
+
+01/Apr/2024 10:12:41 PM{LETZ} - System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of UNIQUE KEY constraint 'UK_coupon_leaf'. Cannot insert duplicate key in object 'dbo.coupon_leaf'. The duplicate key value is (123).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BETask.DAL.DAL.CouponDAL.SaveCoupon(coupon _coupon, List`1 listCouponLeaf) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.DAL\DAL\CouponDAL.cs:line 80
+   at BETask.BAL.CouponBAL.SaveCoupon(coupon coupon, List`1 listCoupon) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\CouponBAL.cs:line 27
+   at BETask.Views.CouponSaleForm.SaveCoupon() in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\CouponSaleForm.cs:line 182
+
+01/Apr/2024 10:20:37 PM{LETZ} - 
+2500 - Started DeliveryFromApp 
+
+01/Apr/2024 10:20:37 PM{LETZ} - 
+2500 - Delievery APP  Sync completed synced=0
+
+01/Apr/2024 10:20:37 PM{LETZ} - 
+2500 - Started RedeemedCoupon 
+
+01/Apr/2024 10:20:37 PM{LETZ} - 
+2500 - Completed RedeemedCoupon Count 0
+
+01/Apr/2024 10:20:37 PM{LETZ} - 
+2500 - OutstandingDailyCollection
+
+01/Apr/2024 10:20:37 PM{LETZ} - 0 to be updated
+
+01/Apr/2024 10:20:37 PM{LETZ} - 
+2500 - Completed OutstandingDailyCollection 0
+
+01/Apr/2024 10:20:37 PM{LETZ} - 
+2500 - Started Delivery 
+
+01/Apr/2024 10:20:38 PM{LETZ} - 
+2500 - Completed Delivery count 0 
+
+01/Apr/2024 10:20:38 PM{LETZ} - 
+2500 - UpdateRouteInTransaction
+
+01/Apr/2024 10:20:38 PM{LETZ} - 
+2500 - completed UpdateRouteInTransaction

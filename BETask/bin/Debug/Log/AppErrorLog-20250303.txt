@@ -1,0 +1,12 @@
+
+03/03/2025 7:39:33 PM{LETZ} - System.ArgumentException: Column 'return_date' does not belong to table DeliveryReturn.
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at BETask.BAL.DeliveryBAL.PrintDeliveryReturn(DateTime dateFrom, DateTime dateTo, Int32 routeId, Int32 customerId, Int32 employeeId, Int32 itemId, Int32 returnType) in C:\Projects\BETask Falcon\Cloud\BETask\BAL\DeliveryBAL.cs:line 1249
+   at BETask.Views.DeliveryReturnReportForm.Print() in C:\Projects\BETask Falcon\Cloud\BETask\Views\DeliveryReturnReportForm.cs:line 253
+
+03/03/2025 7:41:33 PM{LETZ} - System.ArgumentException: Column 'return_date' does not belong to table DeliveryReturn.
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at BETask.BAL.DeliveryBAL.PrintDeliveryReturn(DateTime dateFrom, DateTime dateTo, Int32 routeId, Int32 customerId, Int32 employeeId, Int32 itemId, Int32 returnType) in C:\Projects\BETask Falcon\Cloud\BETask\BAL\DeliveryBAL.cs:line 1249
+   at BETask.Views.DeliveryReturnReportForm.Print() in C:\Projects\BETask Falcon\Cloud\BETask\Views\DeliveryReturnReportForm.cs:line 253

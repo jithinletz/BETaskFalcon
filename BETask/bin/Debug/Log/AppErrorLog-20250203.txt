@@ -1,0 +1,9 @@
+
+03/02/2025 3:18:00 PM{LETZ} - invalid try to login LETZ
+
+03/02/2025 3:18:07 PM{LETZ} - invalid try to login LETZ
+
+03/02/2025 3:31:18 PM{LETZ} - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BETask.Views.MiscWalletBalanceForm.Search() in C:\Projects\BETask Falcon\Cloud\BETask\Views\MiscWalletBalanceForm.cs:line 147
+
+03/02/2025 3:37:52 PM{LETZ} - invalid try to login LETZ

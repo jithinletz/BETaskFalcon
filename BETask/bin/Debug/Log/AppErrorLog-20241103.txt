@@ -1,0 +1,10 @@
+
+11/3/2024 8:04:47 PM{LETZ} - invalid try to login LETZ
+
+11/3/2024 8:18:44 PM{LETZ} - System.Exception: The connection was not closed. The connection's current state is open.
+   at BETask.BAL.CostCenterBAL.ValidateCostCenter(List`1 listTransaction) in C:\Projects\BETask Falcon\Cloud\BETask\BAL\CostCenterBAL.cs:line 176
+   at BETask.Views.PettyCashForm.SavePetty() in C:\Projects\BETask Falcon\Cloud\BETask\Views\PettyCashForm.cs:line 340
+
+11/3/2024 8:23:49 PM{LETZ} - System.Exception: Procedure or function SP_ValidateCostCenterTransaction has too many arguments specified.
+   at BETask.BAL.CostCenterBAL.ValidateCostCenter(List`1 listTransaction) in C:\Projects\BETask Falcon\Cloud\BETask\BAL\CostCenterBAL.cs:line 176
+   at BETask.Views.PettyCashForm.SavePetty() in C:\Projects\BETask Falcon\Cloud\BETask\Views\PettyCashForm.cs:line 340

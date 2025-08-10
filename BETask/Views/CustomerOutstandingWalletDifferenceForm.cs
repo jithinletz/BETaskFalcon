@@ -1,0 +1,214 @@
+﻿using BETask.Common;
+using BETask.BAL;
+using BETask.Model;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
+using EDMX = BETask.DAL.EDMX;
+using System.Data;
+
+namespace BETask.Views
+{
+    public partial class CustomerOutstandingWalletDifferenceForm : Form
+    {
+        public enum EnumFormEvents
+        {
+            FormLoad,
+            Cancel,
+            Close,
+            Search,
+            Print
+        }
+        OutstandingWalletButtonCollection button;
+        public CustomerOutstandingWalletDifferenceForm()
+        {
+            InitializeComponent();
+        }
+        private void ButtonActive(Enum activeEvent)
+        {
+
+            switch (activeEvent)
+            {
+                case EnumFormEvents.FormLoad:
+                    Search();
+                    break;
+                case EnumFormEvents.Cancel:
+
+                    break;
+                case EnumFormEvents.Close:
+                    this.BeginInvoke(new MethodInvoker(Close));
+                    break;
+                case EnumFormEvents.Search:
+                    Search();
+                    break;
+                case EnumFormEvents.Print:
+                    // Print();
+                    break;
+                default:
+                    break;
+
+            }
+        }
+        private void ButtonEvents(object sender, EventArgs e)
+        {
+            if (sender == button.BtnSearch)
+            {
+                ButtonActive(EnumFormEvents.Search);
+            }
+            else if (sender == button.BtnCancel)
+            {
+                ButtonActive(EnumFormEvents.Cancel);
+            }
+
+            else if (sender == button.BtnClose)
+            {
+                ButtonActive(EnumFormEvents.Close);
+            }
+            else if (sender == button.BtnPrint)
+            {
+                ButtonActive(EnumFormEvents.Print);
+            }
+        }
+
+        private void GetAllRoutes()
+        {
+            try
+            {
+                RouteBAL routeBAL = new RouteBAL();
+                List<EDMX.route> listRoute = routeBAL.GetAllRoutes();
+
+                foreach (EDMX.route route in listRoute)
+                {
+                    ComboboxItem _cmbItem = new ComboboxItem()
+                    {
+                        Text = route.route_name,
+                        Value = route.route_id
+                    };
+                    cmbRoute.Items.Add(_cmbItem);
+
+                }
+            }
+            catch (Exception ee)
+            {
+                General.Error(ee.ToString());
+                General.ShowMessage(General.EnumMessageTypes.Error, ee.Message);
+            }
+        }
+        private void GetCustomers()
+        {
+            CustomerBAL _customerBAL = new CustomerBAL();
+            try
+            {
+                int routeId = 0;
+                if (cmbRoute.Text != "")
+                {
+                    Object slectedRoute = cmbRoute.SelectedItem;
+                    routeId = (int)((BETask.Views.ComboboxItem)slectedRoute).Value;
+                }
+                List<CustomerModel> _lstCustomers = _customerBAL.GetAllCustomers(0, string.Empty, 1, routeId);
+                foreach (CustomerModel cust in _lstCustomers)
+                {
+                    ComboboxItem _cmbItem = new ComboboxItem()
+                    {
+                        Text = cust.Customer_Name,
+                        Value = cust.Customer_Id
+                    };
+                    cmbSupplier.Items.Add(_cmbItem);
+                }
+            }
+            catch (Exception ee)
+            {
+                General.Error(ee.ToString());
+                General.ShowMessage(General.EnumMessageTypes.Error, ee.Message);
+            }
+        }
+        private void Search()
+        {
+            try
+            {
+                General.ClearGrid(gridCustomer);
+                int routeId = 0;
+                if (cmbRoute.Text != "")
+                {
+                    Object slectedRoute = cmbRoute.SelectedItem;
+                    routeId = (int)((BETask.Views.ComboboxItem)slectedRoute).Value;
+                }
+
+
+                int customerId = 0;
+                if (cmbSupplier.Text != "")
+                {
+                    Object slectedCustomer = cmbSupplier.SelectedItem;
+                    customerId = (int)((BETask.Views.ComboboxItem)slectedCustomer).Value;
+                }
+                if (routeId > 0)
+                {
+                    CustomerBAL customerBAL = new CustomerBAL();
+                    List<DAL.Model.CustomerOutstandingvsWallet> listCustomer = customerBAL.GetCustomerOutstandingvsWallet(routeId, customerId, General.ConvertDateServerFormat(dtpDate.Value));
+                    if (listCustomer != null && listCustomer.Count > 0)
+                    {
+                        foreach (DAL.Model.CustomerOutstandingvsWallet cs in listCustomer)
+                        {
+                            gridCustomer.Rows.Add(cs.customerId, cs.CustomerName, cs.Route, cs.WalletNumber, cs.WalletBalance, cs.Outstanding);
+                        }
+                        gridCustomer.Rows.Add("", "", "", "", listCustomer.Sum(x => x.WalletBalance), listCustomer.Sum(x => x.Outstanding));
+                        General.GridBackcolorYellow(gridCustomer);
+                    }
+                }
+            }
+            catch (Exception ee)
+            {
+                General.Error(ee.ToString());
+                General.ShowMessage(General.EnumMessageTypes.Error, ee.Message);
+            }
+
+        }
+        private void FormLoad()
+        {
+            button = new OutstandingWalletButtonCollection
+            {
+                BtnSearch = btnSearch,
+                BtnClose = btnClose
+            };
+            GetAllRoutes();
+            GetCustomers();
+        }
+
+        private void CustomerOutstandingWalletDifferenceForm_Load(object sender, EventArgs e)
+        {
+            FormLoad();
+        }
+
+        private void gridCustomer_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+          
+        }
+
+        private void gridCustomer_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex < 5)
+            {
+                string cutomer = gridCustomer["clmCustomerName", e.RowIndex].Value.ToString();
+                int cutomerId = Convert.ToInt32(gridCustomer["clmCustomerId", e.RowIndex].Value.ToString());
+                Views.WalletForm wallet = new WalletForm(cutomer, cutomerId);
+                wallet.ShowDialog();
+            }
+            else
+            {
+                string cutomer = gridCustomer["clmCustomerName", e.RowIndex].Value.ToString();
+                int cutomerId = Convert.ToInt32(gridCustomer["clmCustomerId", e.RowIndex].Value.ToString());
+                CustomerStatementForm cstatment = new CustomerStatementForm(cutomer,0);
+                cstatment.ShowDialog();
+            }
+        }
+    }
+    class OutstandingWalletButtonCollection
+    {
+        public Button BtnSearch { get; set; }
+        public Button BtnCancel { get; set; }
+        public Button BtnClose { get; set; }
+        public Button BtnPrint { get; set; }
+
+    }
+}

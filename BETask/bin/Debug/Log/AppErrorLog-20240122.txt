@@ -1,0 +1,51 @@
+
+22/Jan/2024 08:52:17 PM{LETZ} - 0 to be updated
+
+22/Jan/2024 09:03:56 PM{LETZ} - 0 to be updated
+
+22/Jan/2024 09:09:52 PM{LETZ} - 0 to be updated
+
+22/Jan/2024 09:10:35 PM{LETZ} - Microsoft.Reporting.WinForms.LocalProcessingException: An error occurred during local report processing. ---> Microsoft.Reporting.DefinitionInvalidException: The definition of the report 'D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\bin\Debug//Reports\DepositCollection.rdlc' is invalid. ---> Microsoft.ReportingServices.ReportProcessing.ReportPublishingException: The Group expression for the grouping ‘Route’ refers to the field ‘Route’.  Report item expressions can only refer to fields within the current dataset scope or, if inside an aggregate, the specified dataset scope. Letters in the names of fields must use the correct case.
+   at Microsoft.ReportingServices.ReportPublishing.ReportPublishing.InternalCreateIntermediateFormat(Stream definitionStream, String& description, String& language, ParameterInfoCollection& parameters, DataSourceInfoCollection& dataSources, DataSetInfoCollection& sharedDataSetReferences, UserLocationFlags& userReferenceLocation, ArrayList& dataSetsName, Boolean& hasExternalImages, Boolean& hasHyperlinks, Byte[]& dataSetsHash)
+   at Microsoft.ReportingServices.ReportPublishing.ReportPublishing.CreateIntermediateFormat(Byte[] definition, String& description, String& language, ParameterInfoCollection& parameters, DataSourceInfoCollection& dataSources, DataSetInfoCollection& sharedDataSetReferences, UserLocationFlags& userReferenceLocation, ArrayList& dataSetsName, Boolean& hasExternalImages, Boolean& hasHyperlinks, Byte[]& dataSetsHash)
+   at Microsoft.ReportingServices.ReportProcessing.ReportProcessing.CompileOdpReport(PublishingContext reportPublishingContext, PublishingErrorContext errorContext, String& reportDescription, String& reportLanguage, ParameterInfoCollection& parameters, DataSourceInfoCollection& dataSources, DataSetInfoCollection& sharedDataSetReferences, UserLocationFlags& userReferenceLocation, ArrayList& dataSetsName, Boolean& hasExternalImages, Boolean& hasHyperlinks, Byte[]& dataSetsHash)
+   at Microsoft.ReportingServices.ReportProcessing.ReportProcessing.CreateIntermediateFormat(PublishingContext reportPublishingContext)
+   at Microsoft.Reporting.ReportCompiler.CompileReport(ICatalogItemContext context, Byte[] reportDefinition, Boolean generateExpressionHostWithRefusedPermissions, ControlSnapshot& snapshot)
+   --- End of inner exception stack trace ---
+   at Microsoft.Reporting.ReportCompiler.CompileReport(ICatalogItemContext context, Byte[] reportDefinition, Boolean generateExpressionHostWithRefusedPermissions, ControlSnapshot& snapshot)
+   at Microsoft.Reporting.LocalService.GetCompiledReport(PreviewItemContext itemContext, Boolean rebuild, ControlSnapshot& snapshot)
+   at Microsoft.Reporting.LocalService.CompileReport()
+   at Microsoft.Reporting.LocalService.Microsoft.Reporting.ILocalProcessingHost.CompileReport()
+   at Microsoft.Reporting.WinForms.LocalReport.EnsureExecutionSession()
+   --- End of inner exception stack trace ---
+   at Microsoft.Reporting.WinForms.LocalReport.EnsureExecutionSession()
+   at Microsoft.Reporting.WinForms.LocalReport.SetParameters(IEnumerable`1 parameters)
+   at BETask.Report.ReportForm.DepositCollection(String header, DataTable tblItems) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\ReportForm.cs:line 1827
+   at BETask.Report.ReportForm..ctor(Enum reportType, String header, DataTable tblData) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask.Report\ReportForm.cs:line 91
+   at BETask.BAL.DeliveryBAL.PrintDepositCollection(DateTime dateFrom, DateTime dateTo, Int32 customerId, Int32 itemId, Int32 routeId, String itemName) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\DeliveryBAL.cs:line 1541
+   at BETask.Views.DepositCollectionForm.Print() in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\Views\DepositCollectionForm.cs:line 198
+
+22/Jan/2024 09:19:53 PM{LETZ} - 0 to be updated
+
+22/Jan/2024 09:29:53 PM{LETZ} - 0 to be updated
+
+22/Jan/2024 09:39:53 PM{LETZ} - 0 to be updated
+
+22/Jan/2024 09:49:53 PM{LETZ} - 0 to be updated
+
+22/Jan/2024 10:01:36 PM{LETZ} - An error occurred while executing the command definition. See the inner exception for details.
+
+22/Jan/2024 10:01:39 PM{LETZ} - System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at BETask.BAL.HelpBAL.EmailError(String message, String error, Boolean MessageEmail) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\HelpBAL.cs:line 205
+
+22/Jan/2024 10:01:40 PM{LETZ} - 0 to be updated
+
+22/Jan/2024 10:11:26 PM{LETZ} - 0 to be updated
+
+22/Jan/2024 10:21:25 PM{LETZ} - 0 to be updated
+
+22/Jan/2024 11:07:55 PM{LETZ} - 0 to be updated

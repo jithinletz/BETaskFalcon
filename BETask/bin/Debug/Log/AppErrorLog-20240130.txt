@@ -1,0 +1,17 @@
+
+30/Jan/2024 09:02:55 PM{LETZ} - 0 to be updated
+
+30/Jan/2024 09:12:55 PM{LETZ} - 0 to be updated
+
+30/Jan/2024 09:22:56 PM{LETZ} - 0 to be updated
+
+30/Jan/2024 10:09:32 PM{LETZ} - An error occurred while executing the command definition. See the inner exception for details.
+
+30/Jan/2024 10:09:35 PM{LETZ} - System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at BETask.BAL.HelpBAL.EmailError(String message, String error, Boolean MessageEmail) in D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETask\BAL\HelpBAL.cs:line 205
+
+30/Jan/2024 10:09:36 PM{LETZ} - 0 to be updated

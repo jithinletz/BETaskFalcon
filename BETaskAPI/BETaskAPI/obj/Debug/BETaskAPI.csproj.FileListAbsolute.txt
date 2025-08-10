@@ -1,0 +1,243 @@
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\ApplicationInsights.config
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\BETaskAPI.dll.config
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\BETaskAPI.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\BETaskAPI.pdb
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Antlr3.Runtime.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\AutoMapper.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\BETask.Report.exe
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\BETaskAPI.DAL.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\EntityFramework.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\EntityFramework.SqlServer.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\log4net.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Microsoft.AI.DependencyCollector.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Microsoft.AI.Web.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Microsoft.AI.WindowsServer.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Microsoft.ApplicationInsights.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Newtonsoft.Json.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Net.Http.Formatting.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.Helpers.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.Http.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.Http.WebHost.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.Mvc.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.Optimization.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.Razor.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Deployment.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Razor.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\WebGrease.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\BETaskAPI.DAL.pdb
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\BETaskAPI.DAL.dll.config
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\AutoMapper.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\EntityFramework.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\EntityFramework.SqlServer.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\log4net.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Newtonsoft.Json.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Net.Http.Formatting.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.Helpers.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.Http.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.Http.WebHost.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.Mvc.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.Optimization.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.Razor.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Deployment.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Razor.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Antlr3.Runtime.pdb
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Microsoft.ApplicationInsights.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Microsoft.AI.DependencyCollector.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Microsoft.AI.WindowsServer.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\bin\Microsoft.AI.Web.xml
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.csprojResolveAssemblyReference.cache
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.csproj.CoreCompileInputs.cache
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.dll
+D:\Q10\Projects\TFS\BETask\DEV\BETask\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\ApplicationInsights.config
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\BETaskAPI.dll.config
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\BETaskAPI.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\BETaskAPI.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Antlr3.Runtime.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\AutoMapper.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\BETask.Report.exe
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\BETaskAPI.DAL.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\EntityFramework.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\EntityFramework.SqlServer.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\log4net.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Microsoft.AI.DependencyCollector.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Microsoft.AI.Web.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Microsoft.AI.WindowsServer.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Microsoft.ApplicationInsights.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Newtonsoft.Json.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Net.Http.Formatting.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.Helpers.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.Http.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.Http.WebHost.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.Mvc.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.Optimization.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.Razor.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Deployment.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Razor.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\WebGrease.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\BETaskAPI.DAL.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\BETaskAPI.DAL.dll.config
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\AutoMapper.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\EntityFramework.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\EntityFramework.SqlServer.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\log4net.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Newtonsoft.Json.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Net.Http.Formatting.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.Helpers.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.Http.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.Http.WebHost.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.Mvc.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.Optimization.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.Razor.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Deployment.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Razor.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Antlr3.Runtime.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Microsoft.ApplicationInsights.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Microsoft.AI.DependencyCollector.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Microsoft.AI.WindowsServer.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\bin\Microsoft.AI.Web.xml
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.csproj.CoreCompileInputs.cache
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.dll
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.csproj.AssemblyReference.cache
+D:\Q10\Projects\TFS\BETaskFalcon\DEV\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.csproj.CopyComplete
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\ApplicationInsights.config
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\BETaskAPI.dll.config
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\BETaskAPI.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\BETaskAPI.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Antlr3.Runtime.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\AutoMapper.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\BETask.Report.exe
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\BETaskAPI.DAL.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\EntityFramework.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\EntityFramework.SqlServer.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\log4net.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.DependencyCollector.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.Web.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.WindowsServer.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.ApplicationInsights.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Newtonsoft.Json.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Net.Http.Formatting.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Helpers.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Http.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Http.WebHost.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Mvc.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Optimization.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Razor.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Deployment.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Razor.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\WebGrease.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\BETaskAPI.DAL.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\BETaskAPI.DAL.dll.config
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\AutoMapper.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\EntityFramework.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\EntityFramework.SqlServer.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\log4net.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Newtonsoft.Json.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Net.Http.Formatting.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Helpers.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Http.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Http.WebHost.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Mvc.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Optimization.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Razor.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Deployment.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Razor.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Antlr3.Runtime.pdb
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.ApplicationInsights.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.DependencyCollector.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.WindowsServer.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.Web.xml
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.csproj.AssemblyReference.cache
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.csproj.CoreCompileInputs.cache
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.csproj.CopyComplete
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.dll
+D:\Q10\Projects\TFS\BETaskFalcon\Cloud\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.pdb
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\ApplicationInsights.config
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\BETaskAPI.dll.config
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\BETaskAPI.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\BETaskAPI.pdb
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Antlr3.Runtime.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\AutoMapper.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\BETask.Report.exe
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\BETaskAPI.DAL.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\EntityFramework.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\EntityFramework.SqlServer.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\log4net.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.DependencyCollector.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.Web.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.WindowsServer.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.ApplicationInsights.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Newtonsoft.Json.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Net.Http.Formatting.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Helpers.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Http.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Http.WebHost.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Mvc.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Optimization.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Razor.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Razor.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\WebGrease.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\BETaskAPI.DAL.pdb
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\BETaskAPI.DAL.dll.config
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\AutoMapper.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\EntityFramework.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\EntityFramework.SqlServer.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\log4net.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Newtonsoft.Json.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Net.Http.Formatting.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Helpers.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Http.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Http.WebHost.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Mvc.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Optimization.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.Razor.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\System.Web.WebPages.Razor.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Antlr3.Runtime.pdb
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.ApplicationInsights.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.DependencyCollector.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.WindowsServer.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\bin\Microsoft.AI.Web.xml
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.csproj.AssemblyReference.cache
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.csproj.CoreCompileInputs.cache
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.csproj.CopyComplete
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.dll
+C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI\obj\Debug\BETaskAPI.pdb
