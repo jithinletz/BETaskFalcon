@@ -192,3 +192,36 @@ C:\Projects\BETask Falcon\Cloud\BETask.Report\obj\Debug\BETask.Report.csproj.Cor
 C:\Projects\BETask Falcon\Cloud\BETask.Report\obj\Debug\BETask.Report.csproj.CopyComplete
 C:\Projects\BETask Falcon\Cloud\BETask.Report\obj\Debug\BETask.Report.exe
 C:\Projects\BETask Falcon\Cloud\BETask.Report\obj\Debug\BETask.Report.pdb
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\Reports\ItemTransferDateWiseReport.rdlc
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\BETask.Report.exe.config
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\BETask.Report.exe
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\BETask.Report.pdb
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\BETask.DAL.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\EntityFramework.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\EnvDTE.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\stdole.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\Microsoft.MSXML.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\BETask.DAL.pdb
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\bin\Debug\BETask.DAL.dll.config
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\obj\Debug\BETask.Report.csproj.AssemblyReference.cache
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\obj\Debug\BETask.Report.Properties.Resources.resources
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\obj\Debug\BETask.Report.ReportForm.resources
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\obj\Debug\BETask.Report.csproj.GenerateResource.cache
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\obj\Debug\RdlCompile.cache
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\obj\Debug\RdlCompile.compiled
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\obj\Debug\BETask.Report.csproj.CoreCompileInputs.cache
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\obj\Debug\BETask.Report.csproj.CopyComplete
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\obj\Debug\BETask.Report.exe
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.Report\obj\Debug\BETask.Report.pdb

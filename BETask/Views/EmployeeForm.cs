@@ -47,6 +47,7 @@ namespace BETask.Views
                     gridEmployee.CellEnter -= gridEmployee_CellClick;
                     LoadEmployee();
                     GetAllRoutes();
+                    GetAllSalesmanCreditLedgers();
                    
                     //txtCusName.Focus();
                     //GetAllCustomers();
@@ -148,37 +149,37 @@ namespace BETask.Views
             bool resp = false;
             if (General.IsTextboxEmpty(txtCode)) resp = false; else resp = true;
             if((General.IsTextboxEmpty(txtFirstname))) resp = false; else resp = true;
-            if (!string.IsNullOrEmpty(txtSalesmanCredit.Text)&& this._salemanCreditId==0)
-            {
-                DAL.DAL.AccountLedgerDAL ledgerDAL = new DAL.DAL.AccountLedgerDAL();
-                resp = ledgerDAL.ValidateLedger(txtSalesmanCredit.Text);
-                if (!resp)
-                {
-                    General.ShowMessage(General.EnumMessageTypes.Error, "Salesman credit ledgername already exist");
-                    txtSalesmanCredit.Focus();
-                }
+            //if (!string.IsNullOrEmpty(cmbSalesmanAccount.Text) && this._salemanCreditId==0)
+            //{
+            //    DAL.DAL.AccountLedgerDAL ledgerDAL = new DAL.DAL.AccountLedgerDAL();
+            //    resp = ledgerDAL.ValidateLedger(cmbSalesmanAccount.Text);
+            //    if (!resp)
+            //    {
+            //        General.ShowMessage(General.EnumMessageTypes.Error, "Salesman credit ledgername already exist");
+            //        cmbSalesmanAccount.Focus();
+            //    }
 
-            }
+            //}
             return resp;
         }
 
-        private int CreateSalesmanCreditLedger()
-        {
-            int ledgerId = 0; 
-            try
-            {
-                if (!string.IsNullOrEmpty(txtSalesmanCredit.Text))
-                {
-                    EmployeeBAL employeeBAL = new EmployeeBAL();
-                    ledgerId= employeeBAL.CreateSalesmanLedger(txtSalesmanCredit.Text, this._employeeId,this._salemanCreditId);
-                }
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-            return ledgerId;
-        }
+        //private int CreateSalesmanCreditLedger()
+        //{
+        //    int ledgerId = 0; 
+        //    try
+        //    {
+        //        if (!string.IsNullOrEmpty(txtSalesmanCredit.Text))
+        //        {
+        //            EmployeeBAL employeeBAL = new EmployeeBAL();
+        //            ledgerId= employeeBAL.CreateSalesmanLedger(txtSalesmanCredit.Text, this._employeeId,this._salemanCreditId);
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw;
+        //    }
+        //    return ledgerId;
+        //}
 
         private void SaveEmployee()
         {
@@ -194,9 +195,11 @@ namespace BETask.Views
                             Object selectedRoute = cmbRoute.SelectedItem;
                             routeId = (int)((BETask.Views.ComboboxItem)selectedRoute).Value;
                         }
-                       // if( _salemanCreditId==0)
-                       if(!string.IsNullOrEmpty(txtSalesmanCredit.Text))
-                            _salemanCreditId= CreateSalesmanCreditLedger();
+                        // if( _salemanCreditId==0)
+                        if (!string.IsNullOrEmpty(cmbSalesmanAccount.Text))
+                            _salemanCreditId = General.GetComboBoxSelectedValue(cmbSalesmanAccount);
+                        else
+                            _salemanCreditId = 0;
 
                         EDMX.employee employee = new EDMX.employee()
                         {
@@ -353,7 +356,7 @@ namespace BETask.Views
                 txtAddress1.Text = employee.address1;
                 txtAddress2.Text = employee.address2;
                 txtOtherdetails.Text = employee.other_details;
-                txtSalesmanCredit.Text = employee.salesman_credit_ledger != null ? employee.account_ledger.ledger_name : "";
+                cmbSalesmanAccount.Text = employee.salesman_credit_ledger != null ? employee.account_ledger.ledger_name : "";
                 _salemanCreditId = employee.salesman_credit_ledger != null ? Convert.ToInt32(employee.salesman_credit_ledger) : 0;
                 txtVehicle.Text = employee.vehicle;
                 txtHelper.Text = employee.helper;
@@ -401,9 +404,32 @@ namespace BETask.Views
 
         private void linkUpdateCustomerLedger_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (General.ShowMessageConfirm($"Do you want to update all salesman credit customers sales ledger to {txtSalesmanCredit.Text} ") == DialogResult.Yes)
+            if (General.ShowMessageConfirm($"Do you want to update all salesman credit customers sales ledger to {cmbSalesmanAccount.Text} ") == DialogResult.Yes)
             {
                 UpdateCustomerLedger();
+            }
+        }
+        private void GetAllSalesmanCreditLedgers()
+        {
+            try
+            {
+
+                AccountLedgerBAL accountLedger = new AccountLedgerBAL();
+                List<EDMX.account_ledger> _lsLedgers = accountLedger.GetAllSalesmanCreditLedger();
+                foreach (EDMX.account_ledger ledger in _lsLedgers)
+                {
+                    ComboboxItem _cmbItem = new ComboboxItem()
+                    {
+                        Text = ledger.ledger_name,
+                        Value = ledger.ledger_id
+                    };
+                    cmbSalesmanAccount.Items.Add(_cmbItem);
+                }
+            }
+            catch (Exception ee)
+            {
+                General.Error(ee.ToString());
+                General.ShowMessage(General.EnumMessageTypes.Error, ee.Message);
             }
         }
         private void UpdateCustomerLedger()
@@ -412,9 +438,10 @@ namespace BETask.Views
             {
                 EmployeeBAL employeeBAL = new EmployeeBAL();
                 int routeId = General.GetComboBoxSelectedValue(cmbRoute);
+               
                 if (routeId > 0 && this._salemanCreditId > 0)
                 {
-                    int result = employeeBAL.UpdateCustomerLedger_SalesmanCredit(routeId, this._employeeId, this._salemanCreditId, txtSalesmanCredit.Text, General.userName);
+                    int result = employeeBAL.UpdateCustomerLedger_SalesmanCredit(routeId, this._employeeId, this._salemanCreditId, cmbSalesmanAccount.Text, General.userName);
                     General.ShowMessage(General.EnumMessageTypes.Success, $"{result} succesffuly updated, please cross check");
                     linkUpdateCustomerLedger.Hide();
                 }
@@ -435,7 +462,7 @@ namespace BETask.Views
 
             if (this._salemanCreditId > 0)
             {
-                CustomerStatementForm statementForm = new CustomerStatementForm(txtSalesmanCredit.Text,"SALESMANCREDIT");
+                CustomerStatementForm statementForm = new CustomerStatementForm(cmbSalesmanAccount.Text,"SALESMANCREDIT");
                 statementForm.ShowDialog();
             }
         }

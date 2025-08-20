@@ -225,7 +225,15 @@ namespace BETaskAPI.Controllers
                 {
                     if (objCustomerCoupon.EnablePaymentGateway != 2)
                         objCustomerCoupon.EnablePaymentGateway = GetPaymentGatewayStatus();
-                    
+
+                    if (ValidateVersion(out var serverVersion, out var isSignouRequired))
+                    {
+                        objCustomerCoupon.ServerVersion = serverVersion;
+                        objCustomerCoupon.LogoutRequired = isSignouRequired;
+                    }
+
+
+
                     response = new Response<CustomerCoupon>
                     {
                         IsError = false,
@@ -321,6 +329,19 @@ namespace BETaskAPI.Controllers
             }
             catch { }
             return enableOnlinePayment;
+        }
+
+        private bool ValidateVersion(out string serverVersion,out int isSignOutRequired)
+        {
+             serverVersion = string.Empty;
+             isSignOutRequired = 0;
+            try
+            {
+                serverVersion = (ConfigurationManager.AppSettings["ServerVersion"]);
+                isSignOutRequired= Convert.ToInt32(ConfigurationManager.AppSettings["EnableOnlinePayment"]);
+                return true;
+            }
+            catch { return false; }
         }
     }
 

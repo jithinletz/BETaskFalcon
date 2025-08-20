@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BETask\\Views",
+    "\\CustomerAppApi",
+    "\\CustomerAppApi\\BETaskCustomerAPI",
+    "\\CustomerAppApi\\BETaskCustomerAPI\\Controllers",
+    "\\CustomerAppApi\\BETaskCustomerAPI\\Models"
+  ],
+  "SelectedNode": "\\CustomerAppApi\\BETaskCustomerAPI\\Controllers\\LogInController.cs",
+  "PreviewInSolutionExplorer": false
+}
