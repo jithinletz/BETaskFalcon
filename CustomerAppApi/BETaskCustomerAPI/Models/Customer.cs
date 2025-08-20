@@ -93,6 +93,9 @@ namespace BETaskAPI.Models
 
         public List<CustomerOffer> CustomerOffers { get; set; }
         public Customer Customer { get; set; }
+        public string ServerVersion { get; set; } = string.Empty;
+        public int LogoutRequired { get; set; } = 0;
+        public string LogoutMessage { get; set; } = "A new version of the application is needed. Update your app first, and sometimes you'll need to login after updating";
     }
 
     public class CustomerOffer

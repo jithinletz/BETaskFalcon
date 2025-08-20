@@ -148,6 +148,8 @@ namespace BETaskAPI.DAL
         {
             try
             {
+                if (objDeliveryRequest == null)
+                    return;
                 var requestTime = System.TimeZoneInfo.ConvertTimeFromUtc(
                            DateTime.UtcNow,
                            TimeZoneInfo.FindSystemTimeZoneById("Arabian Standard Time"));

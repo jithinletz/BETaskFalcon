@@ -56,3 +56,15 @@ C:\Projects\BETask Falcon\Cloud\BETask.APP\obj\Debug\BETask.APP.csproj.CoreCompi
 C:\Projects\BETask Falcon\Cloud\BETask.APP\obj\Debug\BETask.APP.csproj.CopyComplete
 C:\Projects\BETask Falcon\Cloud\BETask.APP\obj\Debug\BETask.APP.dll
 C:\Projects\BETask Falcon\Cloud\BETask.APP\obj\Debug\BETask.APP.pdb
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.APP\bin\Debug\BETask.APP.dll.config
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.APP\bin\Debug\BETask.APP.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.APP\bin\Debug\BETask.APP.pdb
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.APP\bin\Debug\EntityFramework.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.APP\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.APP\bin\Debug\EntityFramework.xml
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.APP\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.APP\obj\Debug\BETask.APP.csproj.AssemblyReference.cache
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.APP\obj\Debug\BETask.APP.csproj.CoreCompileInputs.cache
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.APP\obj\Debug\BETask.APP.csproj.CopyComplete
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.APP\obj\Debug\BETask.APP.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETask.APP\obj\Debug\BETask.APP.pdb
