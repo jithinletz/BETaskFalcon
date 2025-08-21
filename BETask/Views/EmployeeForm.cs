@@ -48,7 +48,6 @@ namespace BETask.Views
                     LoadEmployee();
                     GetAllRoutes();
                     GetAllSalesmanCreditLedgers();
-                   
                     //txtCusName.Focus();
                     //GetAllCustomers();
                     break;
@@ -298,7 +297,7 @@ namespace BETask.Views
         {
             try
             {
-                if (txtSearch.Text.Length > 0)
+                if (txtSearch.Text.Length >2)
                 {
                     List<EDMX.employee> searcList = new List<EDMX.employee>();
                     General.ClearGrid(gridEmployee);
@@ -390,6 +389,8 @@ namespace BETask.Views
                 BtnSave = btnSave
             };
             ButtonActive(EnumFormEvents.FormLoad);
+            General.SetScreenSize(sender,e, this);
+
             Application.DoEvents();
             
             

@@ -1,0 +1,14 @@
+
+21/08/2025 7:45:23 PM{LETZ} - ClearGridAdvanced gridEmployee Operation cannot be performed in this event handler.
+
+21/08/2025 7:45:23 PM{LETZ} - System.InvalidOperationException: Operation cannot be performed in this event handler.
+   at System.Windows.Forms.DataGridViewRowCollection.Add(Object[] values)
+   at BETask.Views.EmployeeForm.LoadEmployee()
+
+21/08/2025 7:45:26 PM{LETZ} - ClearGridAdvanced gridEmployee Operation cannot be performed in this event handler.
+
+21/08/2025 7:45:26 PM{LETZ} - System.InvalidOperationException: Operation cannot be performed in this event handler.
+   at System.Windows.Forms.DataGridViewRowCollection.Add(Object[] values)
+   at BETask.Views.EmployeeForm.LoadEmployee()
+
+21/08/2025 9:21:46 PM{LETZ} - invalid try to login LETZ

@@ -214,14 +214,17 @@ namespace BETask.Views
                 {
                     DAL.DAL.CustomerDAL customerDAL = new DAL.DAL.CustomerDAL();
                     List<EDMX.customer> listCustomer = customerDAL.GetAllcustomerBySalesmanLedger(ledgerId);
-                    foreach (EDMX.customer ledger in listCustomer)
+                    if (listCustomer != null)
                     {
-                        ComboboxItem _cmbItem = new ComboboxItem()
+                        foreach (EDMX.customer ledger in listCustomer)
                         {
-                            Text = ledger.customer_name,
-                            Value = ledger.ledger_id
-                        };
-                        cmbLedgerAccount.Items.Add(_cmbItem);
+                            ComboboxItem _cmbItem = new ComboboxItem()
+                            {
+                                Text = ledger.customer_name,
+                                Value = ledger.ledger_id
+                            };
+                            cmbLedgerAccount.Items.Add(_cmbItem);
+                        }
                     }
                 }
             }
@@ -650,7 +653,7 @@ namespace BETask.Views
                         dataRow["Credit"] = dr.Cells["clmCredit"].Value.ToString();
                         dataRow["Outstanding"] = dr.Cells["clmOutstanding"].Value.ToString();
                         dataRow["Advance"] = dr.Cells["clmAdvance"].Value.ToString();
-                        dataRow["Narration"] = dr.Cells["clmNarration"].Value.ToString();
+                        dataRow["Narration"] = dr.Cells["clmNarration"].Value != null ? dr.Cells["clmNarration"].Value.ToString() : string.Empty;
                         tblDetailed.Rows.Add(dataRow);
                     }
                     accountLedgerBAL.PrintCustomerAccountStatementDetailed(tblDetailed, header);
