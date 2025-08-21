@@ -188,6 +188,8 @@
     <EmbeddedResource Include="Reports\RoutewisesaleReport1.rdlc" />
     <EmbeddedResource Include="Reports\RoutewisesaleReport.rdlc" />
     <EmbeddedResource Include="Reports\SaleMonthlyAnalyse.rdlc" />
+    <EmbeddedResource Include="Reports\SalesInvoiceabudhabi.rdlc" />
+    <EmbeddedResource Include="Reports\SalesInvoicedubai.rdlc" />
     <EmbeddedResource Include="Reports\SalesInvoiceDOdubai.rdlc" />
     <EmbeddedResource Include="Reports\SalesInvoiceDOdubai2.rdlc" />
     <EmbeddedResource Include="Reports\SalesInvoiceDOabudhabi.rdlc" />

@@ -1105,6 +1105,7 @@ namespace BETask.Views
         {
             if (!loadfromCollection)
                 FormLoad();
+            General.SetScreenSize(sender, e, this);
         }
 
         private void cmbPaymentMode_SelectedIndexChanged(object sender, EventArgs e)

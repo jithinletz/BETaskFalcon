@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlSaveContent = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -40,6 +40,7 @@
             this.rdbEmployee = new System.Windows.Forms.RadioButton();
             this.txtDesignation = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
+            this.cmbSalesmanAccount = new System.Windows.Forms.ComboBox();
             this.cmbRoute = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.dtpResign = new System.Windows.Forms.DateTimePicker();
@@ -101,7 +102,6 @@
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.gridEmployee = new System.Windows.Forms.DataGridView();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.cmbSalesmanAccount = new System.Windows.Forms.ComboBox();
             this.clmId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
@@ -267,6 +267,17 @@
             this.label23.Size = new System.Drawing.Size(222, 40);
             this.label23.TabIndex = 73;
             this.label23.Text = "Salesman Credit";
+            // 
+            // cmbSalesmanAccount
+            // 
+            this.cmbSalesmanAccount.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.cmbSalesmanAccount.FormattingEnabled = true;
+            this.cmbSalesmanAccount.Location = new System.Drawing.Point(250, 812);
+            this.cmbSalesmanAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbSalesmanAccount.Name = "cmbSalesmanAccount";
+            this.cmbSalesmanAccount.Size = new System.Drawing.Size(828, 48);
+            this.cmbSalesmanAccount.TabIndex = 14;
+            this.cmbSalesmanAccount.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NextFocus);
             // 
             // cmbRoute
             // 
@@ -685,7 +696,7 @@
             this.tabAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabAddress.Name = "tabAddress";
             this.tabAddress.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabAddress.Size = new System.Drawing.Size(1181, 978);
+            this.tabAddress.Size = new System.Drawing.Size(1182, 978);
             this.tabAddress.TabIndex = 1;
             this.tabAddress.Text = "Personal Details";
             this.tabAddress.UseVisualStyleBackColor = true;
@@ -710,7 +721,7 @@
             this.panel3.Location = new System.Drawing.Point(4, 5);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1173, 968);
+            this.panel3.Size = new System.Drawing.Size(1174, 968);
             this.panel3.TabIndex = 19;
             // 
             // dtpDOB
@@ -1002,35 +1013,35 @@
             // 
             this.gridEmployee.AllowUserToAddRows = false;
             this.gridEmployee.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-            this.gridEmployee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.gridEmployee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridEmployee.BackgroundColor = System.Drawing.Color.White;
             this.gridEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmId,
             this.clmName});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridEmployee.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridEmployee.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridEmployee.Location = new System.Drawing.Point(0, 46);
             this.gridEmployee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gridEmployee.Name = "gridEmployee";
             this.gridEmployee.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridEmployee.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridEmployee.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.gridEmployee.RowHeadersVisible = false;
             this.gridEmployee.RowHeadersWidth = 82;
             this.gridEmployee.RowTemplate.Height = 24;
@@ -1051,23 +1062,13 @@
             this.txtSearch.TabIndex = 1;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
-            // cmbSalesmanAccount
-            // 
-            this.cmbSalesmanAccount.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-            this.cmbSalesmanAccount.FormattingEnabled = true;
-            this.cmbSalesmanAccount.Location = new System.Drawing.Point(250, 812);
-            this.cmbSalesmanAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cmbSalesmanAccount.Name = "cmbSalesmanAccount";
-            this.cmbSalesmanAccount.Size = new System.Drawing.Size(828, 48);
-            this.cmbSalesmanAccount.TabIndex = 14;
-            this.cmbSalesmanAccount.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NextFocus);
-            // 
             // clmId
             // 
             this.clmId.HeaderText = "Id";
             this.clmId.MinimumWidth = 10;
             this.clmId.Name = "clmId";
             this.clmId.ReadOnly = true;
+            this.clmId.Visible = false;
             this.clmId.Width = 80;
             // 
             // clmName

@@ -172,7 +172,9 @@ namespace BETask.BAL
                         DataTable tblReport = new DataTable();
                         if (_sale.payment_mode != "DO")
                         {
-                            RPT reportForm = new RPT(RPT.EnumReportType.SalesInvoice, "Tax Invoice", tblSales, tblSalesItems, "", address, customerEmail);
+                            // RPT reportForm = new RPT(RPT.EnumReportType.SalesInvoice, "Tax Invoice", tblSales, tblSalesItems, "", address, customerEmail);
+                            RPT reportForm = new RPT(RPT.EnumReportType.SalesInvoice, company.City.ToLower(), tblSales, tblSalesItems, "", address, customerEmail);
+
                             reportForm.Show();
                         }
                         else

@@ -1408,12 +1408,22 @@ namespace BETask.Report
         {
             try
             {
+                string reportName = $"SalesInvoice{header}.rdlc";
                 txtEmail.Text = customerEmail;
-                SetInvoiceLogo();
-                rv.LocalReport.ReportPath = $"{reportPath}\\SalesInvoice.rdlc";
+                if (File.Exists($"{reportPath}\\{reportName}"))
+                {
+                    rv.LocalReport.ReportPath = $"{reportPath}\\{reportName}";
+                }
+                else
+                {
+                    rv.LocalReport.ReportPath = $"{reportPath}\\SalesInvoice.rdlc";
+
+                }
+                txtEmail.Text = customerEmail;
+
                 ReportParameter[] parameters = new ReportParameter[3];
                 parameters[0] = new ReportParameter("header", header);
-                parameters[1] = new ReportParameter("logopath", logoPath,true);
+                parameters[1] = new ReportParameter("logopath", logoPath, true);
                 parameters[2] = new ReportParameter("address", companyAddress);
                 ReportDataSource rd = new ReportDataSource("dsSales", sale);
                 ReportDataSource rd1 = new ReportDataSource("dsSalesItems", saleItems);
