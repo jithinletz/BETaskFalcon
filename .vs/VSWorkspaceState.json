@@ -1,16 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BETask",
-    "\\BETask\\BAL",
-    "\\BETask\\Properties",
-    "\\BETask\\Views",
+    "\\BETask.DAL\\DAL",
     "\\CustomerAppApi",
     "\\CustomerAppApi\\BETaskCustomerAPI",
+    "\\CustomerAppApi\\BETaskCustomerAPI\\Common",
     "\\CustomerAppApi\\BETaskCustomerAPI\\Controllers",
-    "\\CustomerAppApi\\BETaskCustomerAPI\\DAL",
-    "\\CustomerAppApi\\BETaskCustomerAPI\\Models"
+    "\\CustomerAppApi\\BETaskCustomerAPI\\DAL"
   ],
-  "SelectedNode": "\\CustomerAppApi\\BETaskCustomerAPI\\Controllers\\ItemController.cs",
+  "SelectedNode": "\\CustomerAppApi\\BETaskCustomerAPI\\Common\\Email.cs",
   "PreviewInSolutionExplorer": false
 }

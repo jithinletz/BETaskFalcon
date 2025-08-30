@@ -45,3 +45,15 @@ C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.
 C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.dll
 C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.pdb
 C:\Projects\BETask Falcon\Cloud\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.csproj.AssemblyReference.cache
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETaskAPI\BETaskAPI.DAL\bin\Debug\BETaskAPI.DAL.dll.config
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETaskAPI\BETaskAPI.DAL\bin\Debug\BETaskAPI.DAL.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETaskAPI\BETaskAPI.DAL\bin\Debug\BETaskAPI.DAL.pdb
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.xml
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETaskAPI\BETaskAPI.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.csproj.AssemblyReference.cache
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.csproj.CoreCompileInputs.cache
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.csproj.CopyComplete
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.dll
+C:\Users\jithu\Source\Repos\jithinletz\BETaskFalcon\BETaskAPI\BETaskAPI.DAL\obj\Debug\BETaskAPI.DAL.pdb

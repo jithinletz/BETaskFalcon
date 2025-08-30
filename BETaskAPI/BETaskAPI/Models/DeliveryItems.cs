@@ -31,6 +31,8 @@ namespace BETaskAPI.Models
         public int IsDeposit { get; set; } = 2;
         public int IsRefund { get; set; } = 2;
         public int OldLeafCount { get; set; }
+        public int IsMailSend { get; set; }
+        public int CustomerEmail { get; set; }
 
     }
 

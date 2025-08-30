@@ -5,15 +5,17 @@ using BETaskAPI.Models;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Globalization;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Web.Http;
 
 namespace BETaskAPI.Controllers
 {
-    
+
     public class DeliveryController : ApiController
     {
 
@@ -47,15 +49,15 @@ namespace BETaskAPI.Controllers
                 List<delivery> lstDelivery = objDelivery.GetAllDeliveryCustomers(selectedDate, userId, customerName);
                 foreach (delivery del in lstDelivery)
                 {
-                    
-                    del.delivery_items = del.delivery_items.OrderBy(x=>x.delivery_time).ToList();
+
+                    del.delivery_items = del.delivery_items.OrderBy(x => x.delivery_time).ToList();
                     foreach (delivery_items delItems in del.delivery_items)
                     {
                         ++a;
 
                         /*Distance calculation*/
                         int distance = 0;
-                        int.TryParse(delItems.customer.location_distance,out distance); 
+                        int.TryParse(delItems.customer.location_distance, out distance);
                         //var input = delItems.customer.remarks;
                         //if (!string.IsNullOrEmpty(input))
                         //{
@@ -71,17 +73,17 @@ namespace BETaskAPI.Controllers
                         //    }
                         //}
                         ///*End  Distance calculation*/
-                        
+
 
                         if (delItems.customer != null)
                         {
-                            if (!deliveryCustomers.Any(c => c.CustomerId == delItems.customer.customer_id && c.DeliveryId==delItems.delivery_id))
+                            if (!deliveryCustomers.Any(c => c.CustomerId == delItems.customer.customer_id && c.DeliveryId == delItems.delivery_id))
                             {
-                                decimal outstanding = 0,walletBalance=0;
+                                decimal outstanding = 0, walletBalance = 0;
                                 if (delItems.customer.wallet_balance != null)
                                     walletBalance = Convert.ToDecimal(delItems.customer.wallet_balance);
-                               
-                                if (delItems.customer.payment_mode!=null && delItems.customer.payment_mode.ToLower() == "do")
+
+                                if (delItems.customer.payment_mode != null && delItems.customer.payment_mode.ToLower() == "do")
                                     outstanding = 0;
                                 int delStatus = delItems.status == 1 ? 3 : delItems.status;
                                 string deliveryTime = "";
@@ -108,11 +110,11 @@ namespace BETaskAPI.Controllers
                                     DeliveryStatus = delStatus,//3 Pending , 4 Delivered, 5 Removed , 6 Hold,
                                     WalletNumber = delItems.customer == null ? string.Empty : delItems.customer.wallet_number,
                                     WalletBalance = delItems.customer == null ? 0 : Convert.ToDecimal(delItems.customer.wallet_balance),
-                                    Remarks="doordelivery",
-                                    DistanceRadious=distance,
-                                    Outstanding=outstanding,
-                                    Payment_mode= delItems.customer == null ? string.Empty : delItems.customer.payment_mode,
-                                    
+                                    Remarks = "doordelivery",
+                                    DistanceRadious = distance,
+                                    Outstanding = outstanding,
+                                    Payment_mode = delItems.customer == null ? string.Empty : delItems.customer.payment_mode,
+
                                 });
                             }
                         }
@@ -123,7 +125,7 @@ namespace BETaskAPI.Controllers
                 {
                     IsError = false,
                     Message = "Delivery Customer details fetched sucessfully",
-                    Result = deliveryCustomers.OrderBy(x=>x.DeliveryStatus).ToList(),
+                    Result = deliveryCustomers.OrderBy(x => x.DeliveryStatus).ToList(),
                     TotalRecords = deliveryCustomers.Count
                 };
             }
@@ -220,7 +222,7 @@ namespace BETaskAPI.Controllers
 
                 throw;
             }
-          
+
 
 
             var date = System.TimeZoneInfo.ConvertTimeFromUtc(
@@ -249,7 +251,7 @@ namespace BETaskAPI.Controllers
 
                 if (collection.PaymentMode.ToLower() == "cash")
                 {
-                    throw new Exception("Cash collection won't allow to cash customer"); 
+                    throw new Exception("Cash collection won't allow to cash customer");
                 }
                 /* if (collection.CollectedAmount == 0 && collection.PaymentMode.ToLower() == "coupon")
                      collection.PaymentMode = "Credit";*/
@@ -284,7 +286,7 @@ namespace BETaskAPI.Controllers
                     };
                     string resp = objDelivery.SaveDailyCollections(obj, collection.CouponNumber);
 
-                   // Logger.Error($"Collection update : {resp}");
+                    // Logger.Error($"Collection update : {resp}");
 
                     response = new Response<int>()
                     {
@@ -311,14 +313,14 @@ namespace BETaskAPI.Controllers
                 response = new Response<int>()
                 {
                     IsError = true,
-                    Message = "Error on Collections "+ex.Message,
+                    Message = "Error on Collections " + ex.Message,
                     Result = 0
                 };
             }
             return Ok(response);
         }
 
-       
+
         [System.Web.Http.HttpPost]
         [Route("api/Delivery/SaveDailyCollectionsWithItems")]
         public IHttpActionResult SaveDailyCollectionsWithItems(DailyCollectionWithItem collection)
@@ -338,13 +340,13 @@ namespace BETaskAPI.Controllers
 
                     decimal qtyNonFoc = 0;
                     var dailyCollection = GetDailyCollection(collection);
-                    var listItems = GetDeliveryCustomerAgreementItems(collection, customerItem, defaultItem, dailyCollection,ref qtyNonFoc);
+                    var listItems = GetDeliveryCustomerAgreementItems(collection, customerItem, defaultItem, dailyCollection, ref qtyNonFoc);
                     decimal rechargeTax = General.GetRechargeTax();
 
                     //Saving
                     objDelivery.SaveDailyCollections(dailyCollection, listItems, collection.CouponNumber, rechargeTax, qtyNonFoc);
 
-                  
+
 
                     response = new Response<int>()
                     {
@@ -353,7 +355,7 @@ namespace BETaskAPI.Controllers
                         Message = "Daily collection saved successfully",
                         TotalRecords = 1
                     };
-                  
+
                 }
                 else
                 {
@@ -457,7 +459,7 @@ namespace BETaskAPI.Controllers
             }
         }
 
-        private static List<customer_aggrement> GetDeliveryCustomerAgreementItems(DailyCollectionWithItem collection, List<CustomerItem> customerItem, int defaultItem, daily_collection dailyCollection,ref decimal qtyNonFoc  )
+        private static List<customer_aggrement> GetDeliveryCustomerAgreementItems(DailyCollectionWithItem collection, List<CustomerItem> customerItem, int defaultItem, daily_collection dailyCollection, ref decimal qtyNonFoc)
         {
             CustomerAggrementDAL customerDAL = new CustomerAggrementDAL();
             // Logger.Error($"# DO check {obj.customer_id} {obj.payment_mode}#");
@@ -535,13 +537,13 @@ namespace BETaskAPI.Controllers
 
         public IHttpActionResult GetReturnItems(int customerId)
         {
-            Response<List<ItemMini>> response = null; 
+            Response<List<ItemMini>> response = null;
             List<ItemMini> items = new List<ItemMini>();
             //Logger.Error("GetReturnItems - 1");
             try
             {
                 List<customer_aggrement> listAggrement = objAggrement.GetCustomerAggrement(customerId);
-                listAggrement = listAggrement.Where(x => x.show_app == 1 || x.show_app==null).ToList();
+                listAggrement = listAggrement.Where(x => x.show_app == 1 || x.show_app == null).ToList();
                 foreach (customer_aggrement obj in listAggrement)
                 {
                     if (obj.item != null)
@@ -554,7 +556,7 @@ namespace BETaskAPI.Controllers
                             decimal maxQty = deliveryDAL.GetLastDeliveryQty(obj.item_id, customerId);
                             decimal _maxQtyAgree = 0;
 
-                            if (maxQty>= 0)
+                            if (maxQty >= 0)
                             {
                                 try
                                 {
@@ -579,7 +581,7 @@ namespace BETaskAPI.Controllers
                             }
                         }
                     }
-                } 
+                }
                 response = new Response<List<ItemMini>>()
                 {
                     IsError = false,
@@ -592,12 +594,12 @@ namespace BETaskAPI.Controllers
             catch (Exception ex)
             {
                 Logger.Error("Exception occured while GetReturnItems . Please check the logs for more details", ex);
-                response =new Response<List<ItemMini>>()
+                response = new Response<List<ItemMini>>()
                 {
                     IsError = true,
                     Message = "Exception occured while GetReturnItems . Please check the logs for more details"
                 };
-            } 
+            }
             return Ok(response);
         }
 
@@ -673,7 +675,7 @@ namespace BETaskAPI.Controllers
         */
         public IHttpActionResult GetPermanantReturnItems(int customerId)
         {
-            
+
 
             Response<List<ItemMini>> response = null;
             List<ItemMini> items = new List<ItemMini>();
@@ -694,8 +696,8 @@ namespace BETaskAPI.Controllers
 
                         });
 
-                            }
-                        }
+                    }
+                }
                 response = new Response<List<ItemMini>>()
                 {
                     IsError = false,
@@ -725,11 +727,12 @@ namespace BETaskAPI.Controllers
             List<delivery_return> returnItems = new List<delivery_return>();
             try
             {
-                var date = System.TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow,TimeZoneInfo.FindSystemTimeZoneById("Arabian Standard Time"));
-                if (deliveryReturn != null && deliveryReturn.ReturnItems!=null)
+                var date = System.TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Arabian Standard Time"));
+                if (deliveryReturn != null && deliveryReturn.ReturnItems != null)
                 {
 
-                    foreach (DeliveryReturnItem _return in deliveryReturn.ReturnItems) {
+                    foreach (DeliveryReturnItem _return in deliveryReturn.ReturnItems)
+                    {
                         if (_return.Qty > 0)
                         {
                             returnItems.Add(new delivery_return()
@@ -741,11 +744,11 @@ namespace BETaskAPI.Controllers
                                 remarks = deliveryReturn.Remarks,
                                 return_date = date,
                                 status = 4,
-                                return_type=deliveryReturn.ReturnType,
-                                server_time=date
+                                return_type = deliveryReturn.ReturnType,
+                                server_time = date
                             });
                         }
-                    }                      
+                    }
                     objDelivery.SaveDeliveryReturn(returnItems);
                     response = new Response<int>()
                     {
@@ -771,7 +774,7 @@ namespace BETaskAPI.Controllers
                 response = new Response<int>()
                 {
                     IsError = true,
-                    Message =$"Erro occured while Saving delivery return . {ex.Message}",
+                    Message = $"Erro occured while Saving delivery return . {ex.Message}",
                     Result = 3
                 };
             }
@@ -799,8 +802,8 @@ namespace BETaskAPI.Controllers
                         IsError = false,
                         Message = deliveryId > 0 ? "Valid" : "You have no permission to create delivery for requested date",
                         Result = deliveryId,
-                        TotalRecords=1
-                        
+                        TotalRecords = 1
+
                     };
                 }
             }
@@ -824,7 +827,7 @@ namespace BETaskAPI.Controllers
             decimal cartTotal = 0;
             try
             {
-               
+
                 if (itemCart != null && itemCart.Count > 0)
                 {
                     int customerId = itemCart[0].CustomerId;
@@ -836,7 +839,7 @@ namespace BETaskAPI.Controllers
                             if (it.Qty > 0 && it.Rate != 0)
                             {
 
-                                DAL.EDMX.customer_aggrement agreement = listAgree.Where(x => x.item_id == it.ItemId && x.unit_price != 0 && x.unit_price <=it.Rate).FirstOrDefault();
+                                DAL.EDMX.customer_aggrement agreement = listAgree.Where(x => x.item_id == it.ItemId && x.unit_price != 0 && x.unit_price <= it.Rate).FirstOrDefault();
                                 if (agreement != null)
                                 {
                                     decimal rate = General.GetRateWithTax(agreement);
@@ -846,7 +849,7 @@ namespace BETaskAPI.Controllers
                                 }
                             }
                         }
-                        cartTotal= General.TruncateDecimalPlaces(cartTotal);
+                        cartTotal = General.TruncateDecimalPlaces(cartTotal);
                         response = new Response<decimal>()
                         {
                             IsError = false,
@@ -869,9 +872,10 @@ namespace BETaskAPI.Controllers
             }
             return Ok(response);
         }
+
         [System.Web.Http.HttpGet]
         [Route("api/Delivery/ValidateDeliveryLeaf")]
-        public IHttpActionResult ValidateDeliveryLeaf(string leafNo,int employeeId)
+        public IHttpActionResult ValidateDeliveryLeaf(string leafNo, int employeeId)
         {
             int result = 2;
             Response<int> response = null;
@@ -885,7 +889,7 @@ namespace BETaskAPI.Controllers
                     if (!this.DOValidateDODeliveryLeaf)
                         result = 1;
                     else
-                        result = delivery.ValidateDeliveryLeaf(leafNo.ToUpper(),employeeId);
+                        result = delivery.ValidateDeliveryLeaf(leafNo.ToUpper(), employeeId);
                     string message = "";
                     switch (result)
                     {
@@ -907,7 +911,7 @@ namespace BETaskAPI.Controllers
                         IsError = false,
                         Message = message,
                         Result = result,
-                        TotalRecords=1
+                        TotalRecords = 1
                     };
                     //Logger.Info($" Validation of Leaf {leafNo} is - {message}");
                 }
@@ -915,6 +919,47 @@ namespace BETaskAPI.Controllers
             catch (Exception ex) { }
             return Ok(response);
         }
+
+        [System.Web.Http.HttpGet]
+        [Route("api/Delivery/SendInvoiceAfterDelivery")]
+        public IHttpActionResult SendInvoiceAfterDelivery(int deliveryId,string customerName,string customerId, int employeeId,string customerEmail)
+        {
+            int result = 1;
+            Response<int> response = null;
+            try
+            {
+                var objMail = new Email();
+                objMail.Subject = $"{ConfigurationManager.AppSettings["EmailSubject"].Trim()} - For {customerName} ";
+                objMail.Body = $"Dear {customerName},<br> {ConfigurationManager.AppSettings["EmailBody"].Trim()}<br><br><br><br><br>";
+                objMail.To = customerEmail.Split(';').ToList<string>();
+
+                Email mail = new Email(objMail);
+                mail.Send();
+
+                response = new Response<int>()
+                {
+                    IsError = false,
+                    Message = "Mail Sent",
+                    Result = result,
+                    TotalRecords = 1
+                };
+            }
+            catch (Exception ex) 
+            {
+                response = new Response<int>()
+                {
+                    IsError = true,
+                    Message = "Mail Not Sent",
+                    Result = result,
+                    TotalRecords =0
+                };
+            }
+            return Ok(response);
+        }
+
+
+       
+
         /// <summary>
         /// if newScreen then new delivery screen will show
         /// if DOValidateDODeliveryLeaf will validate delivery entered in new DO delivery mode leafs
@@ -923,7 +968,7 @@ namespace BETaskAPI.Controllers
         {
             try
             {
-                int newScreen =Convert.ToInt32(Convert.ToDecimal(ConfigurationManager.AppSettings["DoNewScreen"]));
+                int newScreen = Convert.ToInt32(Convert.ToDecimal(ConfigurationManager.AppSettings["DoNewScreen"]));
                 int doValidatiion = Convert.ToInt32(Convert.ToDecimal(ConfigurationManager.AppSettings["ValidateDoLeaf"]));
                 this.DoNewScreen = newScreen == 1 ? true : false;
                 this.DOValidateDODeliveryLeaf = doValidatiion == 1 ? true : false;
@@ -936,7 +981,7 @@ namespace BETaskAPI.Controllers
             //return new DateTime(dateTime.Year, dateTime.Month, dateTime.Day);
             return DateTime.Parse(dateTime.ToString("yyyy/MM/dd"));
         }
-        private string SetDeafultPaymentMode(int customerId,string selectedPayment)
+        private string SetDeafultPaymentMode(int customerId, string selectedPayment)
         {
             string paymentMode = selectedPayment;
             Models.CustomerPaymentMode customerPaymentMode = new CustomerPaymentMode();
@@ -967,9 +1012,11 @@ namespace BETaskAPI.Controllers
             }
             catch { }
         }
-       
 
-       
+
+
+
+
 
 
     }
